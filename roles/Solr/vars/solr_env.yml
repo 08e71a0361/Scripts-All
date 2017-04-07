@@ -1,0 +1,18 @@
+# Solr Credentials
+solr_user: solr
+solr_group: solr
+solr_pass: solr@123
+
+
+# Installation Paths
+common:
+  install_path: /usr/local
+  soft_path: /opt
+
+
+# Solr Version
+solr_version: solr-6.3.0
+
+# Java Variables
+
+java_home: /opt/java

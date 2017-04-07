@@ -1,0 +1,31 @@
+---
+- hosts: magento
+  remote_user: root
+
+  tasks:
+  - include: /usr/mys/yaml/roles/Apache/tasks/main.yml
+  - include: /usr/mys/yaml/roles/Redis/tasks/main.yml
+#  - include: /usr/mys/yaml/roles/Mysql/tasks/main.yml
+#  - include: /usr/mys/yaml/roles/ApacheSolr/tasks/main.yml
+
+# Installation of Magento 
+  - name: Install PHP & Magento Dependencies
+    yum: name={{ item }} state=latest
+    with_items:
+      - curl
+      - dom
+      - gd
+      - mcrypt
+      - pcre
+      - php-pdo
+
+  - name: Install Python Dependencies
+    pip: name={{ item }} state=latest
+    with_items:
+      - iconv
+  - name: Setup configuration for Magento
+    unarchive: src=/usr/mys/yaml/roles/Magento/files/magento-enterprise-1.14.2.1.tar.gz dest=/var/www/html/
+  
+  
+  
+  

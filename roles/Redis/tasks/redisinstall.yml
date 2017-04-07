@@ -1,0 +1,18 @@
+---
+- name: Install Epel-Release
+  yum_repository:
+    name: epel
+    description: EPEL YUM repo
+    baseurl: http://download.fedoraproject.org/pub/epel/$releasever/$basearch/
+    gpgcheck: no
+- name: Install Redis using yum_repository
+  yum: name=redis state=latest
+
+#- name: Install redis using Yum
+#  yum: name=redis state=latest
+
+- name: Start service
+  service: name=redis state=started enabled=yes
+
+- name: restart Redis
+  service: name=redis state=restarted

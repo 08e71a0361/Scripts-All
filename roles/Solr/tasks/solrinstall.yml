@@ -1,0 +1,11 @@
+---
+
+- include_vars: solr_env.yml
+- name: unpacking archive  
+  unarchive: creates={{ common['install_path'] }}/{{ solr_version}} src=files/{{ solr_version }}.tgz dest={{ common['install_path'] }} owner={{ solr_user }} group={{ solr_group }}
+
+- name: Change Directory permission
+  file: path={{ common['install_path'] }}/{{ solr_version }} owner={{ solr_user }} group={{ solr_group }} recurse=yes state=directory
+
+- name: Create a Symbolic link for /opt/solr
+  file: src={{ common['install_path'] }}/{{ solr_version }} path={{ soft_path }}/solr state=link owner={{ solr_user }} group={{ solr_group }} force=yes

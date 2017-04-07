@@ -1,0 +1,34 @@
+---
+
+vars:
+hostname: winserver.sym.com
+dbname: sample
+dbport: 3306
+dbuser: userapp
+dbpassword: userapp@123
+dscbhost: winserver.sym.com
+mdmtomcat:
+dscbdbname:
+dscbdbport:
+dscbdbuser:
+dscbdbpasswd:
+
+
+
+tasks:
+
+- include_vars: ../../changehostname/vars/host-config.yaml
+- name: installing SVN & MDM server
+  raw:  CMD /C "C:\Users\Yesudas.Mallipeddi\Downloads\TalendInstaller\<Installable File> --mdmdbhost <hostname> --mdmdbname --mdmdbportmysql --mdmdbuser --mdmdbpassword --mdmDatabaseType --mdmUseTomcat --dscDBType --dscDBHost --dscDBPort --dscDBName --dscDBUser  --dscDBPswd --svnInstall"
+
+#- name: Install Talend Administrator Center
+#  raw: CMD /C  "C:\Users\Yesudas.Mallipeddi\Downloads\TalendInstaller\<Installable File>   --installServiceTAC --installServiceLogserv --installServiceCmdline"
+
+#- name: Install Talend Job Server
+#  raw: CMD /C  "C:\Users\Yesudas.Mallipeddi\Downloads\TalendInstaller\<Installable File> --installServiceJobServer  --enable-components jobserver"
+
+#- name: Install ESB Server
+#  raw: CMD /C  "C:\Users\Yesudas.Mallipeddi\Downloads\TalendInstaller\<Installable File> --enable-components esb --installer-language en"
+
+#- name: Install Talend Studio
+#  raw: CMD /C  " C:\Users\Yesudas.Mallipeddi\Downloads\TalendInstaller\<Installable File> --enable-components studio --installer-language en"

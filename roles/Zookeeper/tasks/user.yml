@@ -1,0 +1,5 @@
+---
+
+
+  - name: Create a User for zookeeper. # user creation
+    user: name={{ zookeeper_user }} password={{ zookeeper_password }}

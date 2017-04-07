@@ -1,0 +1,42 @@
+---
+- name: mysql base repo
+  get_url:
+    url: epel
+    description: EPEL YUM repo
+    baseurl: http://repo.mysql.com//mysql57-community-release-el7-9.noarch.rpm
+    dest: /etc/yum.repos.d/
+    mode:
+    gpgcheck: no
+
+- name: mysql base repo
+  yum_repository:
+    name: epel
+    description: EPEL YUM repo
+    baseurl: http://repo.mysql.com/yum/mysql-connectors-community/el/7/$basearch/
+    gpgcheck: no
+
+
+- name: mysql community repo
+  yum_repository:
+    name: epel
+    description: EPEL YUM repo
+    baseurl: http://repo.mysql.com/yum/mysql-5.7-community/el/7/SRPMS
+    gpgcheck: no
+
+
+- name: Install Mysql package
+  yum: name={{ item }} state=present
+  with_items:
+   - mysql-server
+   - MySQL-python
+   - libselinux-python
+   - libsemanage-python
+
+- name: Create Mysql configuration file
+  template: src=mysql.cnf.j2 dest=/etc/mysql.cnf
+  notify: 
+  - restart mysql
+
+- name: Start Mysql Service
+  service: name=mysqld state=started enabled=true
+

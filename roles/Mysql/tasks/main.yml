@@ -1,0 +1,5 @@
+---
+#- include_Vars: mysql_env.yml
+
+# Install Mysql
+- include: mysqlinstall.yml

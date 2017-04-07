@@ -1,0 +1,38 @@
+---
+#EC2.Yml
+#
+- name: Create a new instance
+  hosts: localhost
+  connection: local
+  gather_facts: False
+  vars:
+    aws_access_key: 
+    aws_secret_key: 
+    instance_type: t2.micro
+    image: ami-b73b63a0
+    region: us-east-1
+    subnet: subnet-49fb2d75
+    vpc_subnet_id: vpc-f3ef0695
+    groupname: euo
+    assign_public_ip: yes
+  tasks:
+    - name: Launch instance
+      ec2:
+         aws_access_key: "{{ aws_access_key }}"
+         aws_secret_key: "{{ aws_secret_key }}"
+         key_name: "{{ keypair }}"
+         group_id: "{{ security_group }}"
+         instance_type: "{{ instance_type }}"
+         image: "{{ image }}"
+         wait: true
+         region: "{{ region }}"
+         vpc_subnet_id: "{{ subnet }}"
+         assign_public_ip: "{{ assign_public_ip }}"
+         count: 1
+      register: ec2
+    - name: Add new instance to host group
+      add_host: hostname={{ item.public_ip }} groupname= euo
+      with_items: ec2.instances
+    - name: Wait for SSH to come up
+      wait_for: state=started host={{ item.public_dns_name }} port=22 delay=60 timeout=320 state=started      
+      with_items: ec2.instances	  

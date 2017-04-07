@@ -1,0 +1,69 @@
+#!/bin/bash
+#
+# zookeeper     Startup script for the zookeeper server
+#
+# chkconfig: - 64 36
+# description: Zookeeper Server
+#
+# processname: zkserver
+#
+
+# Source function library
+. /etc/rc.d/init.d/functions
+
+if [ -f /etc/sysconfig/zkserver ]; then
+    . /etc/sysconfig/zkserver
+fi
+
+prog="zookeeper"
+zkserver="{{ soft_link_base_path }}/bin/zkServer.sh"
+START_OPTIONS="start"
+STOP_OPTIONS="stop"
+RETVAL=0
+
+start() {
+    echo -n $"Starting $prog: "
+    su {{ zookeeper_user }} -c "numactl --interleave=all $zkserver $START_OPTIONS"
+    RETVAL=$?
+    echo
+    [ $RETVAL -eq 0 ] && touch /var/lock/subsys/$prog
+    return $RETVAL
+}
+
+stop() {
+    echo -n $"Stopping $prog: "
+    su {{ zookeeper_user }} -c "numactl --interleave=all $zkserver $STOP_OPTIONS"
+    RETVAL=$?
+    echo
+    [ $RETVAL -eq 0 ] && rm -f /var/lock/subsys/$prog
+    return $RETVAL
+}
+
+
+case "$1" in
+    start)
+        start
+        ;;
+    stop)
+        stop
+        ;;
+    restart)
+        stop
+        start
+        ;;
+    condrestart)
+        if [ -f /var/lock/subsys/$prog ]; then
+            stop
+            start
+        fi
+        ;;
+    status)
+        $zkserver status
+        RETVAL=$?
+        ;;
+    *)
+        echo $"Usage: $0 {start|stop|restart|condrestart|status}"
+        RETVAL=1
+esac
+
+exit $RETVAL

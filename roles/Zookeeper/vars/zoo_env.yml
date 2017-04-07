@@ -1,0 +1,36 @@
+---
+
+# --------------------------------------
+# USERs
+# --------------------------------------
+
+zookeeper_user: zkadmin
+zookeeper_group: zkadmin
+zookeeper_password: zkadmin123
+
+# --------------------------------------
+# COMMON FOR INSTALL PATH
+# --------------------------------------
+
+# Common Location information.
+common:
+  install_base_path: /usr/local
+  soft_link_base_path: /opt
+
+# --------------------------------------
+# Zookeeper Variables.
+# --------------------------------------
+
+# Zookeeper Version.
+zookeeper_version: zookeeper-3.4.5-cdh5.1.2
+
+# Zookeeper Storage and Logging.
+zookeeper_data_store: /usr/mys/zookeeper
+zookeeper_logging: /usr/mys/zookeeper_logging
+
+
+# --------------------------------------
+# JAVA Variables.
+# --------------------------------------
+java_home: /opt/java
+

@@ -1,0 +1,11 @@
+---
+
+remote_dest_installer_path: /s01/tomcat
+
+remote_path: /u01/app/apache/tomcat
+
+#src_base_path: /root/JCPbinaries
+
+tomcat_base: /data/tomcat-jcp1
+     
+

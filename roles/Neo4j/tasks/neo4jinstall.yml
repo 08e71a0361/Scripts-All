@@ -1,0 +1,28 @@
+---
+- include_vars: ../vars/env.yml
+- name: Create directory structure
+  file: state=directory
+        path=/u01/neo4j/instance01
+
+- name: Download neo4j
+  get_url: url=https://neo4j.com/artifact.php?name=neo4j-enterprise-3.0.7-unix.tar.gz
+           dest=/u01/neo4j/instance01/neo4j-enterprise-3.0.7-unix.tar.gz
+
+- name: Unzip Zip file
+  command: tar xvzf neo4j-community-{{ neo4j_version }}-unix.tar.gz chdir=/u01/neo4j/instance01
+
+- name: Remove tar file
+  command: rm -rf /opt/neo4j/neo4j-community-{{ neo4j_version }}-unix.tar.gz
+
+- name: Copy Config
+  copy: src=../files/neo4j-server.properties
+        dest=/opt/neo4j/neo4j-community-{{ neo4j_version }}/conf/neo4j-server.properties
+        owner=root
+        group=root
+        mode=0644
+
+- name: Copy Upstart Job
+  copy: src=../files/neo4j.conf dest=/etc/init/neo4j.conf owner=root group=root mode=0644
+
+- name: Start
+  command: sudo start neo4j console

@@ -1,0 +1,45 @@
+zookeeper_user: zkadmin
+zookeeper_group: zkadmin
+zookeeper_password: zkadmin123
+
+kafka_user: kafkaadmin
+kafka_group: kafkaadmin
+kafka_password: kafkaadmin123
+
+
+# --------------------------------------
+# COMMON FOR INSTALL PATH
+# --------------------------------------
+
+# Common Location information.
+common:
+  install_base_path: /usr/local
+  soft_link_base_path: /opt
+
+# --------------------------------------
+# KAFKA VARIABLES
+# --------------------------------------
+
+kafka_version: kafka_2.11-0.10.1.0
+
+
+# Data Storage path on Destination kafka Nodes.
+kafka_data_store: /usr/mys/kafka
+
+
+# --------------------------------------
+# ZK VARIABLES
+# --------------------------------------
+
+
+# Zookeeper Version.
+zookeeper_version: zookeeper-3.4.9.tar
+
+# Zookeeper Storage and Logging.
+zookeeper_data_store: /usr/mys/zookeeper
+zookeeper_logging: /usr/mys/zookeeper_logging
+
+# --------------------------------------
+# JAVA Variables.
+# --------------------------------------
+java_home: /opt/java

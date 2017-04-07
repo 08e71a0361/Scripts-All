@@ -1,0 +1,3 @@
+---
+- name: Start solr server 
+  command: sh  "{{ common['soft_path'] }}"/solr/bin/solr start

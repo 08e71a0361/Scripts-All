@@ -1,0 +1,10 @@
+---
+
+# Create Solr User
+- include: user.yml
+
+# Install Solr
+- include: solrinstall.yml
+
+# Configure Solr
+- include: start_solr.yml

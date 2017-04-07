@@ -1,0 +1,4 @@
+---
+
+  - name: Create a User 
+    user: name={{ kafka_user }} password={{ kafka_password }}

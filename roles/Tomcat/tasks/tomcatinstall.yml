@@ -1,0 +1,47 @@
+---
+- name: Create a Remote Installer Directory.
+  file: path={{ remote_dest_installer_path }} state=directory
+
+- name: Create a First  Remote Directory to Store our Data.
+  file: path={{ remote_dest_path1 }} state=directory
+  
+- name: Copy Archive from ConfMgr to Destination Servers.
+  copy: src={{ src_base_path }}/apache-tomcat-7.0.59.tar.gz dest={{ remote_dest_installer_path }}
+
+  # Password Generated using python command below.
+  #     python -c "from passlib.hash import sha512_crypt; import getpass; print sha512_crypt.encrypt(getpass.getpass())"
+  # Current `jcpapp` password is = hdadmin@123
+
+  #- name: Create a User `jcpapp`.
+  #  user: name=jcpapp password=$6$rounds=40000$1qjG/hovLZOkcerH$CK4Or3w8rR3KabccowciZZUeD.nIwR/VINUa2uPsmGK/2xnmOt80TjDwbof9rNvnYY6icCkdAR2qrFquirBtT1
+
+- name: UnArchive the Package in Destination Server.
+  unarchive: src={{ remote_dest_installer_path }}/apache-tomcat-7.0.59.tar.gz dest={{ remote_dest_path1 }} 
+
+- name: Change Directory Permissions.
+  file: path={{ remote_dest_path1 }}/apache-tomcat-7.0.59 owner=jcpapp group=jcpapp recurse=yes
+
+- name: Creating a Symbolic Link in /opt/tomcat-jcp1.
+  file: src={{ remote_dest_path1 }}/apache-tomcat-7.0.59 path={{ tomcat_base1 }} state=link owner=jcpapp group=jcpapp
+
+- name: Updating Configuration File in Tomcat-Jcp1.
+  template: src=config/config-jcp1/server.xml dest={{ tomcat_base1 }}/conf/server.xml owner=jcpapp group=jcpapp
+
+- name: Updating Configuration File in Tomcat-Jcp1.
+  template: src=config/config-jcp1/catalina.properties dest={{ tomcat_base1 }}/conf/catalina.properties owner=jcpapp group=jcpapp
+
+- name: Updating JVMParameter Configuration File in Tomcat.
+  copy: src=config/config-jcp1/setenv.sh dest={{ tomcat_base1 }}/bin owner=jcpapp group=jcpapp
+  
+- name: Change File Permission
+  file: path={{ tomcat_base1 }}/bin/setenv.sh mode=0777 owner=jcpapp group=jcpapp
+
+- name: Configuring Start Script
+  copy: src=config/config-jcp1/tomcat-start.sh dest={{ tomcat_base1 }}/bin owner=jcpapp group=jcpapp
+  
+- name: Change File Permission of Start Script On First Tomcat Server
+  file: path={{ tomcat_base1 }}/bin/tomcat-start.sh mode=0777 owner=jcpapp group=jcpapp
+
+- name: Starting First Tomcat Server
+  command: sh {{ tomcat_base1 }}/bin/tomcat-start.sh
+  

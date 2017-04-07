@@ -1,0 +1,32 @@
+---
+- name: create directory
+  shell: mkdir certificate chdir=/home/liferay
+- name: Download LDAP certificate from S3 place it in liferay home folder
+  get_url:
+    url:  http://euo.s3-website-us-east-1.amazonaws.com/Software/Liferay/Template/Intermediate1.crt
+    dest: /home/liferay/certificate
+    mode: 0754
+- name: Install the certificate
+  shell: ./keytool -import -trustcacerts -alias Intermediate1 -file  /home/liferay/certificate/Intermediate1.crt -keystore /opt/java/jdk1.8.0_91/jre/lib/security/cacerts  chdir=/opt/java/jdk1.8.0_91/bin
+- name: Download Liferay Server from S3
+  get_url:
+    url:  http://euo.s3-website-us-east-1.amazonaws.com/Software/Liferay/liferay-portal-tomcat-6.2-ee-sp14-20151105114451508.zip
+    dest: /home/liferay
+    mode: 0754    
+- name: Extract Liferay Server
+  shell: unzip liferay-portal-tomcat-6.2-ee-sp14-20151105114451508.zip  chdir=/home/liferay/
+- name: Download portal-ext properties file from S3 place it in liferay home folder
+  get_url:
+    url:  http://euo.s3-website-us-east-1.amazonaws.com/Software/Liferay/Template/portal-ext.properties
+    dest: /home/liferay/liferay-portal-6.2-ee-sp14
+    mode: 0754
+- name: create directory
+  shell: mkdir deploy chdir=/home/liferay/liferay-portal-6.2-ee-sp14
+- name: Download license from S3 and place it in deploy folder
+  get_url:
+    url:  http://euo.s3-website-us-east-1.amazonaws.com/Software/Liferay/Template/license-portaldevelopment-developer-6.2ee-compucom.xml
+    dest: /home/liferay/liferay-portal-6.2-ee-sp14/deploy
+    mode: 0754
+- name: Start the server
+  shell: nohup /home/liferay/liferay-portal-6.2-ee-sp14/tomcat-7.0.62/bin/catalina.sh start 
+

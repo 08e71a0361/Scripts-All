@@ -1,0 +1,13 @@
+---
+
+hostname: winserver.sym.com
+dbname: sample
+dbport: 3306
+dbuser: userapp
+dbpassword: userapp@123
+dscbhost: winserver.sym.com
+mdmtomcat:
+dscbdbname:
+dscbdbport:
+dscbdbuser:
+dscbdbpasswd:
