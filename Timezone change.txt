@@ -1,0 +1,9 @@
+
+We need to unlink first 
+
+
+--> unlink /etc/localtime
+
+Then change timezone requried
+
+--> ln -s /usr/share/zoneinfo/America/Los_Angeles /etc/localtime
