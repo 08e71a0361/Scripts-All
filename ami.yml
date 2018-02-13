@@ -1,0 +1,19 @@
+---
+- hosts: localhost
+  #gather_facts: no
+  vars:
+    aws_access_key: "AKIAJZL5V2SCFX6TZHUA"
+    aws_secret_key: "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"
+    region: ap-south-1
+    instance_id: i-00532fb3fdf19747c
+    ami_name: newtest
+  tasks:
+    - name: create ami
+      ec2_ami:
+        no_reboot: yes
+        instance_id: "{{instance_id}}"
+        region: "{{ region }}"
+        wait: yes
+        name: "{{ ami_name }}"
+      register: image
+
