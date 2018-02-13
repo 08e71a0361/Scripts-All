@@ -1,0 +1,10 @@
+find the volume fdisk -l
+
+mount /dev/? /name(newvolume name)
+ex: mount /dev/xvdg  /mnt
+
+find
+
+ df -h 
+ 
+ no need unmount /mnt
