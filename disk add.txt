@@ -1,0 +1,2040 @@
+","addressLine2":"Crossville, 38555, TN USA","email":"dananorthamericadc@dana.com","contactNo":"Tel: (800) 621 8084   Fax: (800) 332 6124"}},"java.lang.Object":{"attributes":{}}}}}}}},"tenantId":1}},"java.lang.Object":{"attributes":{}}}}
+2018-02-15 08:33:03,458 DEBUG gframework.orm.jpa.JpaTransactionManager: 759 - Initiating transaction commit
+2018-02-15 08:33:03,458 DEBUG gframework.orm.jpa.JpaTransactionManager: 512 - Committing JPA transaction on EntityManager [org.hibernate.jpa.internal.EntityManagerImpl@57522348]
+2018-02-15 08:33:03,459 DEBUG gframework.orm.jpa.JpaTransactionManager: 600 - Closing JPA EntityManager [org.hibernate.jpa.internal.EntityManagerImpl@57522348] after transaction
+2018-02-15 08:33:03,459 DEBUG mework.orm.jpa.EntityManagerFactoryUtils: 435 - Closing JPA EntityManager
+^C
+[root@ip-172-28-0-177 logs]# df -h
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/xvda1       30G   26G  3.6G  88% /
+devtmpfs        3.9G   64K  3.9G   1% /dev
+tmpfs           3.9G     0  3.9G   0% /dev/shm
+[root@ip-172-28-0-177 logs]# vi /etc/logrotate.d/tomcat
+[root@ip-172-28-0-177 logs]# vi /etc/logrotate.d/tomcat
+[root@ip-172-28-0-177 logs]# logrotate --force /etc/logrotate.d/tomcat
+[root@ip-172-28-0-177 logs]# ls -ltr
+total 207184
+-rw-r----- 1 root root       0 Nov  9 12:09 manager.2017-11-09.log
+-rw-r----- 1 root root       0 Nov  9 12:09 host-manager.2017-11-09.log
+-rw-r----- 1 root root    1627 Nov  9 12:21 localhost.2017-11-09.log
+-rw-r----- 1 root root  499800 Nov  9 12:42 catalina.2017-11-09.log
+-rw-r----- 1 root root   14911 Nov  9 12:54 localhost_access_log.2017-11-09.txt
+-rw-r----- 1 root root       0 Nov 13 11:16 manager.2017-11-13.log
+-rw-r----- 1 root root       0 Nov 13 11:16 host-manager.2017-11-13.log
+-rw-r----- 1 root root     814 Nov 13 11:16 localhost.2017-11-13.log
+-rw-r----- 1 root root  242182 Nov 13 11:17 catalina.2017-11-13.log
+-rw-r----- 1 root root  326628 Nov 14 00:00 localhost_access_log.2017-11-13.txt
+-rw-r----- 1 root root    1352 Nov 14 10:17 catalina.2017-11-14.log
+-rw-r----- 1 root root  629570 Nov 15 00:00 localhost_access_log.2017-11-14.txt
+-rw-r----- 1 root root       0 Nov 15 11:30 manager.2017-11-15.log
+-rw-r----- 1 root root       0 Nov 15 11:30 host-manager.2017-11-15.log
+-rw-r----- 1 root root    1391 Nov 15 11:30 localhost.2017-11-15.log
+-rw-r----- 1 root root  256125 Nov 15 13:58 catalina.2017-11-15.log
+-rw-r----- 1 root root  977674 Nov 15 23:59 localhost_access_log.2017-11-15.txt
+-rw-r----- 1 root root       0 Nov 16 04:05 manager.2017-11-16.log
+-rw-r----- 1 root root       0 Nov 16 04:05 host-manager.2017-11-16.log
+-rw-r----- 1 root root    4287 Nov 16 13:02 localhost.2017-11-16.log
+-rw-r----- 1 root root  851219 Nov 16 23:59 localhost_access_log.2017-11-16.txt
+-rw-r----- 1 root root       0 Nov 17 06:39 manager.2017-11-17.log
+-rw-r----- 1 root root       0 Nov 17 06:39 host-manager.2017-11-17.log
+-rw-r----- 1 root root   74613 Nov 17 16:35 localhost.2017-11-17.log
+-rw-r----- 1 root root    8888 Nov 19 09:56 catalina.2017-11-19.log
+-rw-r----- 1 root root    1680 Nov 20 22:29 catalina.2017-11-20.log
+-rw-r----- 1 root root   12569 Nov 20 22:42 localhost.2017-11-20.log
+-rw-r----- 1 root root   12568 Nov 21 00:33 localhost.2017-11-21.log
+-rw-r----- 1 root root     795 Nov 21 21:47 catalina.2017-11-21.log
+-rw-r----- 1 root root     796 Nov 22 22:52 catalina.2017-11-22.log
+-rw-r----- 1 root root 2803129 Nov 22 23:59 localhost_access_log.2017-11-22.txt
+-rw-r----- 1 root root 1221655 Nov 24 00:00 localhost_access_log.2017-11-23.txt
+-rw-r----- 1 root root    1326 Nov 24 18:24 catalina.2017-11-24.log
+-rw-r----- 1 root root 1562569 Nov 25 00:00 localhost_access_log.2017-11-24.txt
+-rw-r----- 1 root root     265 Nov 25 16:25 catalina.2017-11-25.log
+-rw-r----- 1 root root 1557250 Nov 26 00:00 localhost_access_log.2017-11-25.txt
+-rw-r----- 1 root root     796 Nov 26 22:09 catalina.2017-11-26.log
+-rw-r----- 1 root root 1500965 Nov 27 00:00 localhost_access_log.2017-11-26.txt
+-rw-r----- 1 root root     796 Nov 27 20:13 catalina.2017-11-27.log
+-rw-r----- 1 root root 4002322 Nov 28 00:00 localhost_access_log.2017-11-27.txt
+-rw-r----- 1 root root   12568 Nov 28 02:40 localhost.2017-11-28.log
+-rw-r----- 1 root root    1415 Nov 28 20:31 catalina.2017-11-28.log
+-rw-r----- 1 root root 6613600 Nov 29 00:00 localhost_access_log.2017-11-28.txt
+-rw-r----- 1 root root     531 Nov 29 14:21 catalina.2017-11-29.log
+-rw-r----- 1 root root 4632050 Nov 29 23:59 localhost_access_log.2017-11-29.txt
+-rw-r----- 1 root root     531 Nov 30 08:38 catalina.2017-11-30.log
+-rw-r----- 1 root root 3603657 Nov 30 23:59 localhost_access_log.2017-11-30.txt
+-rw-r----- 1 root root     795 Dec  1 01:43 catalina.2017-12-01.log
+-rw-r----- 1 root root 5328764 Dec  2 00:00 localhost_access_log.2017-12-01.txt
+-rw-r----- 1 root root     795 Dec  2 16:30 catalina.2017-12-02.log
+-rw-r----- 1 root root 3586762 Dec  2 23:59 localhost_access_log.2017-12-02.txt
+-rw-r----- 1 root root     796 Dec  3 21:58 catalina.2017-12-03.log
+-rw-r----- 1 root root 2242711 Dec  4 00:00 localhost_access_log.2017-12-03.txt
+-rw-r----- 1 root root     530 Dec  4 22:33 catalina.2017-12-04.log
+-rw-r----- 1 root root 3201558 Dec  5 00:00 localhost_access_log.2017-12-04.txt
+-rw-r----- 1 root root    1682 Dec  5 21:43 catalina.2017-12-05.log
+-rw-r----- 1 root root 2606608 Dec  5 23:59 localhost_access_log.2017-12-05.txt
+-rw-r----- 1 root root     266 Dec  6 17:10 catalina.2017-12-06.log
+-rw-r----- 1 root root 2872833 Dec  6 23:59 localhost_access_log.2017-12-06.txt
+-rw-r----- 1 root root     531 Dec  7 21:37 catalina.2017-12-07.log
+-rw-r----- 1 root root 2713110 Dec  8 00:00 localhost_access_log.2017-12-07.txt
+-rw-r----- 1 root root    1681 Dec  8 22:48 catalina.2017-12-08.log
+-rw-r----- 1 root root 2429310 Dec  8 23:59 localhost_access_log.2017-12-08.txt
+-rw-r----- 1 root root     531 Dec  9 23:02 catalina.2017-12-09.log
+-rw-r----- 1 root root 2127307 Dec 10 00:00 localhost_access_log.2017-12-09.txt
+-rw-r----- 1 root root     531 Dec 10 18:18 catalina.2017-12-10.log
+-rw-r----- 1 root root 1277831 Dec 10 23:59 localhost_access_log.2017-12-10.txt
+-rw-r----- 1 root root     795 Dec 11 19:36 catalina.2017-12-11.log
+-rw-r----- 1 root root 2256629 Dec 12 00:00 localhost_access_log.2017-12-11.txt
+-rw-r----- 1 root root    1151 Dec 12 07:10 catalina.2017-12-12.log
+-rw-r----- 1 root root 2590293 Dec 12 23:59 localhost_access_log.2017-12-12.txt
+-rw-r----- 1 root root     795 Dec 13 15:35 catalina.2017-12-13.log
+-rw-r----- 1 root root 2145128 Dec 13 23:59 localhost_access_log.2017-12-13.txt
+-rw-r----- 1 root root     795 Dec 14 20:10 catalina.2017-12-14.log
+-rw-r----- 1 root root   25137 Dec 14 23:20 localhost.2017-12-14.log
+-rw-r----- 1 root root 2552275 Dec 14 23:59 localhost_access_log.2017-12-14.txt
+-rw-r----- 1 root root    2568 Dec 15 22:59 catalina.2017-12-15.log
+-rw-r----- 1 root root 2085543 Dec 16 00:00 localhost_access_log.2017-12-15.txt
+-rw-r----- 1 root root    8622 Dec 16 23:28 catalina.2017-12-16.log
+-rw-r----- 1 root root 1485796 Dec 17 00:00 localhost_access_log.2017-12-16.txt
+-rw-r----- 1 root root     531 Dec 17 10:15 catalina.2017-12-17.log
+-rw-r----- 1 root root  927172 Dec 18 00:00 localhost_access_log.2017-12-17.txt
+-rw-r----- 1 root root       0 Dec 18 06:04 manager.2017-12-18.log
+-rw-r----- 1 root root       0 Dec 18 06:04 host-manager.2017-12-18.log
+-rw-r----- 1 root root    1715 Dec 18 06:05 localhost.2017-12-18.log
+-rw-r----- 1 root root  485319 Dec 18 22:30 catalina.2017-12-18.log
+-rw-r----- 1 root root 2488768 Dec 19 00:00 localhost_access_log.2017-12-18.txt
+-rw-r----- 1 root root     265 Dec 19 16:37 catalina.2017-12-19.log
+-rw-r----- 1 root root 1988237 Dec 20 00:00 localhost_access_log.2017-12-19.txt
+-rw-r----- 1 root root    2566 Dec 20 19:08 catalina.2017-12-20.log
+-rw-r----- 1 root root 2562821 Dec 20 23:59 localhost_access_log.2017-12-20.txt
+-rw-r----- 1 root root    1680 Dec 21 23:24 catalina.2017-12-21.log
+-rw-r----- 1 root root 2226730 Dec 22 00:00 localhost_access_log.2017-12-21.txt
+-rw-r----- 1 root root     795 Dec 22 21:20 catalina.2017-12-22.log
+-rw-r----- 1 root root 2139031 Dec 23 00:00 localhost_access_log.2017-12-22.txt
+-rw-r----- 1 root root    1415 Dec 23 21:39 catalina.2017-12-23.log
+-rw-r----- 1 root root 1285253 Dec 23 23:59 localhost_access_log.2017-12-23.txt
+-rw-r----- 1 root root     795 Dec 24 19:44 catalina.2017-12-24.log
+-rw-r----- 1 root root 1212184 Dec 25 00:00 localhost_access_log.2017-12-24.txt
+-rw-r----- 1 root root     530 Dec 25 10:41 catalina.2017-12-25.log
+-rw-r----- 1 root root 1235302 Dec 26 00:00 localhost_access_log.2017-12-25.txt
+-rw-r----- 1 root root    1325 Dec 26 20:35 catalina.2017-12-26.log
+-rw-r----- 1 root root 1998596 Dec 26 23:59 localhost_access_log.2017-12-26.txt
+-rw-r----- 1 root root     265 Dec 27 16:54 catalina.2017-12-27.log
+-rw-r----- 1 root root 2138700 Dec 28 00:00 localhost_access_log.2017-12-27.txt
+-rw-r----- 1 root root     530 Dec 28 06:05 catalina.2017-12-28.log
+-rw-r----- 1 root root 2204218 Dec 29 00:00 localhost_access_log.2017-12-28.txt
+-rw-r----- 1 root root     795 Dec 29 08:53 catalina.2017-12-29.log
+-rw-r----- 1 root root 1945638 Dec 29 23:59 localhost_access_log.2017-12-29.txt
+-rw-r----- 1 root root     530 Dec 30 20:24 catalina.2017-12-30.log
+-rw-r----- 1 root root 1305027 Dec 31 00:00 localhost_access_log.2017-12-30.txt
+-rw-r----- 1 root root     265 Dec 31 15:54 catalina.2017-12-31.log
+-rw-r----- 1 root root 1358328 Dec 31 23:59 localhost_access_log.2017-12-31.txt
+-rw-r----- 1 root root    1150 Jan  1 07:05 catalina.2018-01-01.log
+-rw-r----- 1 root root 1360426 Jan  2 00:00 localhost_access_log.2018-01-01.txt
+-rw-r----- 1 root root     530 Jan  2 18:13 catalina.2018-01-02.log
+-rw-r----- 1 root root 2209844 Jan  3 00:00 localhost_access_log.2018-01-02.txt
+-rw-r----- 1 root root    1328 Jan  3 22:40 catalina.2018-01-03.log
+-rw-r----- 1 root root 2575137 Jan  3 23:59 localhost_access_log.2018-01-03.txt
+-rw-r----- 1 root root     530 Jan  4 21:55 catalina.2018-01-04.log
+-rw-r----- 1 root root 2439730 Jan  4 23:59 localhost_access_log.2018-01-04.txt
+-rw-r----- 1 root root    1682 Jan  5 15:47 catalina.2018-01-05.log
+-rw-r----- 1 root root 2345628 Jan  5 23:59 localhost_access_log.2018-01-05.txt
+-rw-r----- 1 root root     531 Jan  6 19:41 catalina.2018-01-06.log
+-rw-r----- 1 root root 1344585 Jan  6 23:59 localhost_access_log.2018-01-06.txt
+-rw-r----- 1 root root     531 Jan  7 21:11 catalina.2018-01-07.log
+-rw-r----- 1 root root 1272046 Jan  7 23:59 localhost_access_log.2018-01-07.txt
+-rw-r----- 1 root root 2876244 Jan  9 00:00 localhost_access_log.2018-01-08.txt
+-rw-r----- 1 root root     796 Jan  9 18:19 catalina.2018-01-09.log
+-rw-r----- 1 root root 2614176 Jan 10 00:00 localhost_access_log.2018-01-09.txt
+-rw-r----- 1 root root    1692 Jan 10 09:48 localhost.2018-01-10.log
+-rw-r----- 1 root root    1681 Jan 10 16:59 catalina.2018-01-10.log
+-rw-r----- 1 root root 3860104 Jan 11 00:00 localhost_access_log.2018-01-10.txt
+-rw-r----- 1 root root     530 Jan 11 20:05 catalina.2018-01-11.log
+-rw-r----- 1 root root 4745994 Jan 12 00:00 localhost_access_log.2018-01-11.txt
+-rw-r----- 1 root root    2210 Jan 12 22:26 catalina.2018-01-12.log
+-rw-r----- 1 root root 4229441 Jan 13 00:00 localhost_access_log.2018-01-12.txt
+-rw-r----- 1 root root    1151 Jan 13 10:30 catalina.2018-01-13.log
+-rw-r----- 1 root root 2180735 Jan 13 23:59 localhost_access_log.2018-01-13.txt
+-rw-r----- 1 root root 1381216 Jan 14 23:59 localhost_access_log.2018-01-14.txt
+-rw-r----- 1 root root     795 Jan 15 16:09 catalina.2018-01-15.log
+-rw-r----- 1 root root 2542867 Jan 15 23:59 localhost_access_log.2018-01-15.txt
+-rw-r----- 1 root root     531 Jan 16 18:22 catalina.2018-01-16.log
+-rw-r----- 1 root root 3013835 Jan 17 00:00 localhost_access_log.2018-01-16.txt
+-rw-r----- 1 root root    1682 Jan 17 17:28 catalina.2018-01-17.log
+-rw-r----- 1 root root 3157603 Jan 17 23:59 localhost_access_log.2018-01-17.txt
+-rw-r----- 1 root root    1947 Jan 18 22:15 catalina.2018-01-18.log
+-rw-r----- 1 root root 3048784 Jan 19 00:00 localhost_access_log.2018-01-18.txt
+-rw-r----- 1 root root       0 Jan 19 06:46 manager.2018-01-19.log
+-rw-r----- 1 root root       0 Jan 19 06:46 host-manager.2018-01-19.log
+-rw-r----- 1 root root    1714 Jan 19 06:46 localhost.2018-01-19.log
+-rw-r----- 1 root root  496522 Jan 19 14:51 catalina.2018-01-19.log
+-rw-r----- 1 root root 3370642 Jan 19 23:59 localhost_access_log.2018-01-19.txt
+-rw-r----- 1 root root     265 Jan 20 18:38 catalina.2018-01-20.log
+-rw-r----- 1 root root 1540485 Jan 21 00:00 localhost_access_log.2018-01-20.txt
+-rw-r----- 1 root root    2830 Jan 21 21:19 catalina.2018-01-21.log
+-rw-r----- 1 root root 1359439 Jan 21 23:59 localhost_access_log.2018-01-21.txt
+-rw-r----- 1 root root     530 Jan 22 23:47 catalina.2018-01-22.log
+-rw-r----- 1 root root 3179674 Jan 23 00:00 localhost_access_log.2018-01-22.txt
+-rw-r----- 1 root root     531 Jan 23 13:51 catalina.2018-01-23.log
+-rw-r----- 1 root root 2593879 Jan 24 00:00 localhost_access_log.2018-01-23.txt
+-rw-r----- 1 root root     530 Jan 24 16:34 catalina.2018-01-24.log
+-rw-r----- 1 root root 2808925 Jan 25 00:00 localhost_access_log.2018-01-24.txt
+-rw-r----- 1 root root     796 Jan 25 22:44 catalina.2018-01-25.log
+-rw-r----- 1 root root 2486708 Jan 26 00:00 localhost_access_log.2018-01-25.txt
+-rw-r----- 1 root root    8886 Jan 26 17:29 catalina.2018-01-26.log
+-rw-r----- 1 root root 2329039 Jan 26 23:59 localhost_access_log.2018-01-26.txt
+-rw-r----- 1 root root     530 Jan 27 21:49 catalina.2018-01-27.log
+-rw-r----- 1 root root 1150207 Jan 27 23:59 localhost_access_log.2018-01-27.txt
+-rw-r----- 1 root root     531 Jan 28 23:47 catalina.2018-01-28.log
+-rw-r----- 1 root root 1016343 Jan 28 23:59 localhost_access_log.2018-01-28.txt
+-rw-r----- 1 root root     530 Jan 29 23:23 catalina.2018-01-29.log
+-rw-r----- 1 root root 2401342 Jan 29 23:59 localhost_access_log.2018-01-29.txt
+-rw-r----- 1 root root    1063 Jan 30 23:08 catalina.2018-01-30.log
+-rw-r----- 1 root root 2938129 Jan 30 23:59 localhost_access_log.2018-01-30.txt
+-rw-r----- 1 root root     796 Jan 31 14:35 catalina.2018-01-31.log
+-rw-r----- 1 root root 2871459 Jan 31 23:59 localhost_access_log.2018-01-31.txt
+-rw-r----- 1 root root       0 Feb  1 07:09 manager.2018-02-01.log
+-rw-r----- 1 root root       0 Feb  1 07:09 host-manager.2018-02-01.log
+-rw-r----- 1 root root   24106 Feb  1 19:59 localhost.2018-02-01.log
+-rw-r----- 1 root root  454571 Feb  1 21:43 catalina.2018-02-01.log
+-rw-r----- 1 root root 3076189 Feb  2 00:00 localhost_access_log.2018-02-01.txt
+-rw-r----- 1 root root    1591 Feb  2 21:13 catalina.2018-02-02.log
+-rw-r----- 1 root root 2576706 Feb  3 00:00 localhost_access_log.2018-02-02.txt
+-rw-r----- 1 root root     265 Feb  3 14:44 catalina.2018-02-03.log
+-rw-r----- 1 root root 1120372 Feb  3 23:59 localhost_access_log.2018-02-03.txt
+-rw-r----- 1 root root     530 Feb  4 15:08 catalina.2018-02-04.log
+-rw-r----- 1 root root  968659 Feb  4 23:59 localhost_access_log.2018-02-04.txt
+-rw-r----- 1 root root    1061 Feb  5 22:39 catalina.2018-02-05.log
+-rw-r----- 1 root root 2592423 Feb  5 23:59 localhost_access_log.2018-02-05.txt
+-rw-r----- 1 root root    2832 Feb  6 20:43 catalina.2018-02-06.log
+-rw-r----- 1 root root 2465447 Feb  7 00:00 localhost_access_log.2018-02-06.txt
+-rw-r----- 1 root root     530 Feb  7 20:37 catalina.2018-02-07.log
+-rw-r----- 1 root root 2862611 Feb  8 00:00 localhost_access_log.2018-02-07.txt
+-rw-r----- 1 root root     795 Feb  8 18:57 catalina.2018-02-08.log
+-rw-r----- 1 root root 2970879 Feb  9 00:00 localhost_access_log.2018-02-08.txt
+-rw-r----- 1 root root    1683 Feb  9 19:00 catalina.2018-02-09.log
+-rw-r----- 1 root root 3190755 Feb  9 23:59 localhost_access_log.2018-02-09.txt
+-rw-r----- 1 root root     797 Feb 10 19:29 catalina.2018-02-10.log
+-rw-r----- 1 root root 1234899 Feb 10 23:59 localhost_access_log.2018-02-10.txt
+-rw-r----- 1 root root     266 Feb 11 19:02 catalina.2018-02-11.log
+-rw-r----- 1 root root  984853 Feb 11 23:59 localhost_access_log.2018-02-11.txt
+-rw-r----- 1 root root    1947 Feb 12 18:58 catalina.2018-02-12.log
+-rw-r----- 1 root root 2612319 Feb 12 23:59 localhost_access_log.2018-02-12.txt
+-rw-r----- 1 root root     266 Feb 13 01:27 catalina.2018-02-13.log
+-rw-r----- 1 root root   33825 Feb 13 20:28 localhost.2018-02-13.log
+-rw-r----- 1 root root 2690398 Feb 14 00:00 localhost_access_log.2018-02-13.txt
+-rw-r----- 1 root root    1064 Feb 14 20:49 catalina.2018-02-14.log
+-rw-r----- 1 root root   11276 Feb 14 21:23 localhost.2018-02-14.log
+-rw-r----- 1 root root 2626587 Feb 15 00:00 localhost_access_log.2018-02-14.txt
+-rw-r----- 1 root root     265 Feb 15 01:24 catalina.2018-02-15.log
+-rw-r----- 1 root root  486523 Feb 15 08:35 localhost_access_log.2018-02-15.txt
+-rw-rw---- 1 root root      20 Feb 15 08:36 catalina.out.1.gz
+-rw-rw---- 1 root root       0 Feb 15 08:36 catalina.out
+[root@ip-172-28-0-177 logs]# ls -lhtr
+total 203M
+-rw-r----- 1 root root    0 Nov  9 12:09 manager.2017-11-09.log
+-rw-r----- 1 root root    0 Nov  9 12:09 host-manager.2017-11-09.log
+-rw-r----- 1 root root 1.6K Nov  9 12:21 localhost.2017-11-09.log
+-rw-r----- 1 root root 489K Nov  9 12:42 catalina.2017-11-09.log
+-rw-r----- 1 root root  15K Nov  9 12:54 localhost_access_log.2017-11-09.txt
+-rw-r----- 1 root root    0 Nov 13 11:16 manager.2017-11-13.log
+-rw-r----- 1 root root    0 Nov 13 11:16 host-manager.2017-11-13.log
+-rw-r----- 1 root root  814 Nov 13 11:16 localhost.2017-11-13.log
+-rw-r----- 1 root root 237K Nov 13 11:17 catalina.2017-11-13.log
+-rw-r----- 1 root root 319K Nov 14 00:00 localhost_access_log.2017-11-13.txt
+-rw-r----- 1 root root 1.4K Nov 14 10:17 catalina.2017-11-14.log
+-rw-r----- 1 root root 615K Nov 15 00:00 localhost_access_log.2017-11-14.txt
+-rw-r----- 1 root root    0 Nov 15 11:30 manager.2017-11-15.log
+-rw-r----- 1 root root    0 Nov 15 11:30 host-manager.2017-11-15.log
+-rw-r----- 1 root root 1.4K Nov 15 11:30 localhost.2017-11-15.log
+-rw-r----- 1 root root 251K Nov 15 13:58 catalina.2017-11-15.log
+-rw-r----- 1 root root 955K Nov 15 23:59 localhost_access_log.2017-11-15.txt
+-rw-r----- 1 root root    0 Nov 16 04:05 manager.2017-11-16.log
+-rw-r----- 1 root root    0 Nov 16 04:05 host-manager.2017-11-16.log
+-rw-r----- 1 root root 4.2K Nov 16 13:02 localhost.2017-11-16.log
+-rw-r----- 1 root root 832K Nov 16 23:59 localhost_access_log.2017-11-16.txt
+-rw-r----- 1 root root    0 Nov 17 06:39 manager.2017-11-17.log
+-rw-r----- 1 root root    0 Nov 17 06:39 host-manager.2017-11-17.log
+-rw-r----- 1 root root  73K Nov 17 16:35 localhost.2017-11-17.log
+-rw-r----- 1 root root 8.7K Nov 19 09:56 catalina.2017-11-19.log
+-rw-r----- 1 root root 1.7K Nov 20 22:29 catalina.2017-11-20.log
+-rw-r----- 1 root root  13K Nov 20 22:42 localhost.2017-11-20.log
+-rw-r----- 1 root root  13K Nov 21 00:33 localhost.2017-11-21.log
+-rw-r----- 1 root root  795 Nov 21 21:47 catalina.2017-11-21.log
+-rw-r----- 1 root root  796 Nov 22 22:52 catalina.2017-11-22.log
+-rw-r----- 1 root root 2.7M Nov 22 23:59 localhost_access_log.2017-11-22.txt
+-rw-r----- 1 root root 1.2M Nov 24 00:00 localhost_access_log.2017-11-23.txt
+-rw-r----- 1 root root 1.3K Nov 24 18:24 catalina.2017-11-24.log
+-rw-r----- 1 root root 1.5M Nov 25 00:00 localhost_access_log.2017-11-24.txt
+-rw-r----- 1 root root  265 Nov 25 16:25 catalina.2017-11-25.log
+-rw-r----- 1 root root 1.5M Nov 26 00:00 localhost_access_log.2017-11-25.txt
+-rw-r----- 1 root root  796 Nov 26 22:09 catalina.2017-11-26.log
+-rw-r----- 1 root root 1.5M Nov 27 00:00 localhost_access_log.2017-11-26.txt
+-rw-r----- 1 root root  796 Nov 27 20:13 catalina.2017-11-27.log
+-rw-r----- 1 root root 3.9M Nov 28 00:00 localhost_access_log.2017-11-27.txt
+-rw-r----- 1 root root  13K Nov 28 02:40 localhost.2017-11-28.log
+-rw-r----- 1 root root 1.4K Nov 28 20:31 catalina.2017-11-28.log
+-rw-r----- 1 root root 6.4M Nov 29 00:00 localhost_access_log.2017-11-28.txt
+-rw-r----- 1 root root  531 Nov 29 14:21 catalina.2017-11-29.log
+-rw-r----- 1 root root 4.5M Nov 29 23:59 localhost_access_log.2017-11-29.txt
+-rw-r----- 1 root root  531 Nov 30 08:38 catalina.2017-11-30.log
+-rw-r----- 1 root root 3.5M Nov 30 23:59 localhost_access_log.2017-11-30.txt
+-rw-r----- 1 root root  795 Dec  1 01:43 catalina.2017-12-01.log
+-rw-r----- 1 root root 5.1M Dec  2 00:00 localhost_access_log.2017-12-01.txt
+-rw-r----- 1 root root  795 Dec  2 16:30 catalina.2017-12-02.log
+-rw-r----- 1 root root 3.5M Dec  2 23:59 localhost_access_log.2017-12-02.txt
+-rw-r----- 1 root root  796 Dec  3 21:58 catalina.2017-12-03.log
+-rw-r----- 1 root root 2.2M Dec  4 00:00 localhost_access_log.2017-12-03.txt
+-rw-r----- 1 root root  530 Dec  4 22:33 catalina.2017-12-04.log
+-rw-r----- 1 root root 3.1M Dec  5 00:00 localhost_access_log.2017-12-04.txt
+-rw-r----- 1 root root 1.7K Dec  5 21:43 catalina.2017-12-05.log
+-rw-r----- 1 root root 2.5M Dec  5 23:59 localhost_access_log.2017-12-05.txt
+-rw-r----- 1 root root  266 Dec  6 17:10 catalina.2017-12-06.log
+-rw-r----- 1 root root 2.8M Dec  6 23:59 localhost_access_log.2017-12-06.txt
+-rw-r----- 1 root root  531 Dec  7 21:37 catalina.2017-12-07.log
+-rw-r----- 1 root root 2.6M Dec  8 00:00 localhost_access_log.2017-12-07.txt
+-rw-r----- 1 root root 1.7K Dec  8 22:48 catalina.2017-12-08.log
+-rw-r----- 1 root root 2.4M Dec  8 23:59 localhost_access_log.2017-12-08.txt
+-rw-r----- 1 root root  531 Dec  9 23:02 catalina.2017-12-09.log
+-rw-r----- 1 root root 2.1M Dec 10 00:00 localhost_access_log.2017-12-09.txt
+-rw-r----- 1 root root  531 Dec 10 18:18 catalina.2017-12-10.log
+-rw-r----- 1 root root 1.3M Dec 10 23:59 localhost_access_log.2017-12-10.txt
+-rw-r----- 1 root root  795 Dec 11 19:36 catalina.2017-12-11.log
+-rw-r----- 1 root root 2.2M Dec 12 00:00 localhost_access_log.2017-12-11.txt
+-rw-r----- 1 root root 1.2K Dec 12 07:10 catalina.2017-12-12.log
+-rw-r----- 1 root root 2.5M Dec 12 23:59 localhost_access_log.2017-12-12.txt
+-rw-r----- 1 root root  795 Dec 13 15:35 catalina.2017-12-13.log
+-rw-r----- 1 root root 2.1M Dec 13 23:59 localhost_access_log.2017-12-13.txt
+-rw-r----- 1 root root  795 Dec 14 20:10 catalina.2017-12-14.log
+-rw-r----- 1 root root  25K Dec 14 23:20 localhost.2017-12-14.log
+-rw-r----- 1 root root 2.5M Dec 14 23:59 localhost_access_log.2017-12-14.txt
+-rw-r----- 1 root root 2.6K Dec 15 22:59 catalina.2017-12-15.log
+-rw-r----- 1 root root 2.0M Dec 16 00:00 localhost_access_log.2017-12-15.txt
+-rw-r----- 1 root root 8.5K Dec 16 23:28 catalina.2017-12-16.log
+-rw-r----- 1 root root 1.5M Dec 17 00:00 localhost_access_log.2017-12-16.txt
+-rw-r----- 1 root root  531 Dec 17 10:15 catalina.2017-12-17.log
+-rw-r----- 1 root root 906K Dec 18 00:00 localhost_access_log.2017-12-17.txt
+-rw-r----- 1 root root    0 Dec 18 06:04 manager.2017-12-18.log
+-rw-r----- 1 root root    0 Dec 18 06:04 host-manager.2017-12-18.log
+-rw-r----- 1 root root 1.7K Dec 18 06:05 localhost.2017-12-18.log
+-rw-r----- 1 root root 474K Dec 18 22:30 catalina.2017-12-18.log
+-rw-r----- 1 root root 2.4M Dec 19 00:00 localhost_access_log.2017-12-18.txt
+-rw-r----- 1 root root  265 Dec 19 16:37 catalina.2017-12-19.log
+-rw-r----- 1 root root 1.9M Dec 20 00:00 localhost_access_log.2017-12-19.txt
+-rw-r----- 1 root root 2.6K Dec 20 19:08 catalina.2017-12-20.log
+-rw-r----- 1 root root 2.5M Dec 20 23:59 localhost_access_log.2017-12-20.txt
+-rw-r----- 1 root root 1.7K Dec 21 23:24 catalina.2017-12-21.log
+-rw-r----- 1 root root 2.2M Dec 22 00:00 localhost_access_log.2017-12-21.txt
+-rw-r----- 1 root root  795 Dec 22 21:20 catalina.2017-12-22.log
+-rw-r----- 1 root root 2.1M Dec 23 00:00 localhost_access_log.2017-12-22.txt
+-rw-r----- 1 root root 1.4K Dec 23 21:39 catalina.2017-12-23.log
+-rw-r----- 1 root root 1.3M Dec 23 23:59 localhost_access_log.2017-12-23.txt
+-rw-r----- 1 root root  795 Dec 24 19:44 catalina.2017-12-24.log
+-rw-r----- 1 root root 1.2M Dec 25 00:00 localhost_access_log.2017-12-24.txt
+-rw-r----- 1 root root  530 Dec 25 10:41 catalina.2017-12-25.log
+-rw-r----- 1 root root 1.2M Dec 26 00:00 localhost_access_log.2017-12-25.txt
+-rw-r----- 1 root root 1.3K Dec 26 20:35 catalina.2017-12-26.log
+-rw-r----- 1 root root 2.0M Dec 26 23:59 localhost_access_log.2017-12-26.txt
+-rw-r----- 1 root root  265 Dec 27 16:54 catalina.2017-12-27.log
+-rw-r----- 1 root root 2.1M Dec 28 00:00 localhost_access_log.2017-12-27.txt
+-rw-r----- 1 root root  530 Dec 28 06:05 catalina.2017-12-28.log
+-rw-r----- 1 root root 2.2M Dec 29 00:00 localhost_access_log.2017-12-28.txt
+-rw-r----- 1 root root  795 Dec 29 08:53 catalina.2017-12-29.log
+-rw-r----- 1 root root 1.9M Dec 29 23:59 localhost_access_log.2017-12-29.txt
+-rw-r----- 1 root root  530 Dec 30 20:24 catalina.2017-12-30.log
+-rw-r----- 1 root root 1.3M Dec 31 00:00 localhost_access_log.2017-12-30.txt
+-rw-r----- 1 root root  265 Dec 31 15:54 catalina.2017-12-31.log
+-rw-r----- 1 root root 1.3M Dec 31 23:59 localhost_access_log.2017-12-31.txt
+-rw-r----- 1 root root 1.2K Jan  1 07:05 catalina.2018-01-01.log
+-rw-r----- 1 root root 1.3M Jan  2 00:00 localhost_access_log.2018-01-01.txt
+-rw-r----- 1 root root  530 Jan  2 18:13 catalina.2018-01-02.log
+-rw-r----- 1 root root 2.2M Jan  3 00:00 localhost_access_log.2018-01-02.txt
+-rw-r----- 1 root root 1.3K Jan  3 22:40 catalina.2018-01-03.log
+-rw-r----- 1 root root 2.5M Jan  3 23:59 localhost_access_log.2018-01-03.txt
+-rw-r----- 1 root root  530 Jan  4 21:55 catalina.2018-01-04.log
+-rw-r----- 1 root root 2.4M Jan  4 23:59 localhost_access_log.2018-01-04.txt
+-rw-r----- 1 root root 1.7K Jan  5 15:47 catalina.2018-01-05.log
+-rw-r----- 1 root root 2.3M Jan  5 23:59 localhost_access_log.2018-01-05.txt
+-rw-r----- 1 root root  531 Jan  6 19:41 catalina.2018-01-06.log
+-rw-r----- 1 root root 1.3M Jan  6 23:59 localhost_access_log.2018-01-06.txt
+-rw-r----- 1 root root  531 Jan  7 21:11 catalina.2018-01-07.log
+-rw-r----- 1 root root 1.3M Jan  7 23:59 localhost_access_log.2018-01-07.txt
+-rw-r----- 1 root root 2.8M Jan  9 00:00 localhost_access_log.2018-01-08.txt
+-rw-r----- 1 root root  796 Jan  9 18:19 catalina.2018-01-09.log
+-rw-r----- 1 root root 2.5M Jan 10 00:00 localhost_access_log.2018-01-09.txt
+-rw-r----- 1 root root 1.7K Jan 10 09:48 localhost.2018-01-10.log
+-rw-r----- 1 root root 1.7K Jan 10 16:59 catalina.2018-01-10.log
+-rw-r----- 1 root root 3.7M Jan 11 00:00 localhost_access_log.2018-01-10.txt
+-rw-r----- 1 root root  530 Jan 11 20:05 catalina.2018-01-11.log
+-rw-r----- 1 root root 4.6M Jan 12 00:00 localhost_access_log.2018-01-11.txt
+-rw-r----- 1 root root 2.2K Jan 12 22:26 catalina.2018-01-12.log
+-rw-r----- 1 root root 4.1M Jan 13 00:00 localhost_access_log.2018-01-12.txt
+-rw-r----- 1 root root 1.2K Jan 13 10:30 catalina.2018-01-13.log
+-rw-r----- 1 root root 2.1M Jan 13 23:59 localhost_access_log.2018-01-13.txt
+-rw-r----- 1 root root 1.4M Jan 14 23:59 localhost_access_log.2018-01-14.txt
+-rw-r----- 1 root root  795 Jan 15 16:09 catalina.2018-01-15.log
+-rw-r----- 1 root root 2.5M Jan 15 23:59 localhost_access_log.2018-01-15.txt
+-rw-r----- 1 root root  531 Jan 16 18:22 catalina.2018-01-16.log
+-rw-r----- 1 root root 2.9M Jan 17 00:00 localhost_access_log.2018-01-16.txt
+-rw-r----- 1 root root 1.7K Jan 17 17:28 catalina.2018-01-17.log
+-rw-r----- 1 root root 3.1M Jan 17 23:59 localhost_access_log.2018-01-17.txt
+-rw-r----- 1 root root 2.0K Jan 18 22:15 catalina.2018-01-18.log
+-rw-r----- 1 root root 3.0M Jan 19 00:00 localhost_access_log.2018-01-18.txt
+-rw-r----- 1 root root    0 Jan 19 06:46 manager.2018-01-19.log
+-rw-r----- 1 root root    0 Jan 19 06:46 host-manager.2018-01-19.log
+-rw-r----- 1 root root 1.7K Jan 19 06:46 localhost.2018-01-19.log
+-rw-r----- 1 root root 485K Jan 19 14:51 catalina.2018-01-19.log
+-rw-r----- 1 root root 3.3M Jan 19 23:59 localhost_access_log.2018-01-19.txt
+-rw-r----- 1 root root  265 Jan 20 18:38 catalina.2018-01-20.log
+-rw-r----- 1 root root 1.5M Jan 21 00:00 localhost_access_log.2018-01-20.txt
+-rw-r----- 1 root root 2.8K Jan 21 21:19 catalina.2018-01-21.log
+-rw-r----- 1 root root 1.3M Jan 21 23:59 localhost_access_log.2018-01-21.txt
+-rw-r----- 1 root root  530 Jan 22 23:47 catalina.2018-01-22.log
+-rw-r----- 1 root root 3.1M Jan 23 00:00 localhost_access_log.2018-01-22.txt
+-rw-r----- 1 root root  531 Jan 23 13:51 catalina.2018-01-23.log
+-rw-r----- 1 root root 2.5M Jan 24 00:00 localhost_access_log.2018-01-23.txt
+-rw-r----- 1 root root  530 Jan 24 16:34 catalina.2018-01-24.log
+-rw-r----- 1 root root 2.7M Jan 25 00:00 localhost_access_log.2018-01-24.txt
+-rw-r----- 1 root root  796 Jan 25 22:44 catalina.2018-01-25.log
+-rw-r----- 1 root root 2.4M Jan 26 00:00 localhost_access_log.2018-01-25.txt
+-rw-r----- 1 root root 8.7K Jan 26 17:29 catalina.2018-01-26.log
+-rw-r----- 1 root root 2.3M Jan 26 23:59 localhost_access_log.2018-01-26.txt
+-rw-r----- 1 root root  530 Jan 27 21:49 catalina.2018-01-27.log
+-rw-r----- 1 root root 1.1M Jan 27 23:59 localhost_access_log.2018-01-27.txt
+-rw-r----- 1 root root  531 Jan 28 23:47 catalina.2018-01-28.log
+-rw-r----- 1 root root 993K Jan 28 23:59 localhost_access_log.2018-01-28.txt
+-rw-r----- 1 root root  530 Jan 29 23:23 catalina.2018-01-29.log
+-rw-r----- 1 root root 2.3M Jan 29 23:59 localhost_access_log.2018-01-29.txt
+-rw-r----- 1 root root 1.1K Jan 30 23:08 catalina.2018-01-30.log
+-rw-r----- 1 root root 2.9M Jan 30 23:59 localhost_access_log.2018-01-30.txt
+-rw-r----- 1 root root  796 Jan 31 14:35 catalina.2018-01-31.log
+-rw-r----- 1 root root 2.8M Jan 31 23:59 localhost_access_log.2018-01-31.txt
+-rw-r----- 1 root root    0 Feb  1 07:09 manager.2018-02-01.log
+-rw-r----- 1 root root    0 Feb  1 07:09 host-manager.2018-02-01.log
+-rw-r----- 1 root root  24K Feb  1 19:59 localhost.2018-02-01.log
+-rw-r----- 1 root root 444K Feb  1 21:43 catalina.2018-02-01.log
+-rw-r----- 1 root root 3.0M Feb  2 00:00 localhost_access_log.2018-02-01.txt
+-rw-r----- 1 root root 1.6K Feb  2 21:13 catalina.2018-02-02.log
+-rw-r----- 1 root root 2.5M Feb  3 00:00 localhost_access_log.2018-02-02.txt
+-rw-r----- 1 root root  265 Feb  3 14:44 catalina.2018-02-03.log
+-rw-r----- 1 root root 1.1M Feb  3 23:59 localhost_access_log.2018-02-03.txt
+-rw-r----- 1 root root  530 Feb  4 15:08 catalina.2018-02-04.log
+-rw-r----- 1 root root 946K Feb  4 23:59 localhost_access_log.2018-02-04.txt
+-rw-r----- 1 root root 1.1K Feb  5 22:39 catalina.2018-02-05.log
+-rw-r----- 1 root root 2.5M Feb  5 23:59 localhost_access_log.2018-02-05.txt
+-rw-r----- 1 root root 2.8K Feb  6 20:43 catalina.2018-02-06.log
+-rw-r----- 1 root root 2.4M Feb  7 00:00 localhost_access_log.2018-02-06.txt
+-rw-r----- 1 root root  530 Feb  7 20:37 catalina.2018-02-07.log
+-rw-r----- 1 root root 2.8M Feb  8 00:00 localhost_access_log.2018-02-07.txt
+-rw-r----- 1 root root  795 Feb  8 18:57 catalina.2018-02-08.log
+-rw-r----- 1 root root 2.9M Feb  9 00:00 localhost_access_log.2018-02-08.txt
+-rw-r----- 1 root root 1.7K Feb  9 19:00 catalina.2018-02-09.log
+-rw-r----- 1 root root 3.1M Feb  9 23:59 localhost_access_log.2018-02-09.txt
+-rw-r----- 1 root root  797 Feb 10 19:29 catalina.2018-02-10.log
+-rw-r----- 1 root root 1.2M Feb 10 23:59 localhost_access_log.2018-02-10.txt
+-rw-r----- 1 root root  266 Feb 11 19:02 catalina.2018-02-11.log
+-rw-r----- 1 root root 962K Feb 11 23:59 localhost_access_log.2018-02-11.txt
+-rw-r----- 1 root root 2.0K Feb 12 18:58 catalina.2018-02-12.log
+-rw-r----- 1 root root 2.5M Feb 12 23:59 localhost_access_log.2018-02-12.txt
+-rw-r----- 1 root root  266 Feb 13 01:27 catalina.2018-02-13.log
+-rw-r----- 1 root root  34K Feb 13 20:28 localhost.2018-02-13.log
+-rw-r----- 1 root root 2.6M Feb 14 00:00 localhost_access_log.2018-02-13.txt
+-rw-r----- 1 root root 1.1K Feb 14 20:49 catalina.2018-02-14.log
+-rw-r----- 1 root root  12K Feb 14 21:23 localhost.2018-02-14.log
+-rw-r----- 1 root root 2.6M Feb 15 00:00 localhost_access_log.2018-02-14.txt
+-rw-r----- 1 root root  265 Feb 15 01:24 catalina.2018-02-15.log
+-rw-r----- 1 root root 476K Feb 15 08:35 localhost_access_log.2018-02-15.txt
+-rw-rw---- 1 root root   20 Feb 15 08:36 catalina.out.1.gz
+-rw-rw---- 1 root root    0 Feb 15 08:36 catalina.out
+[root@ip-172-28-0-177 logs]# tail -f catalina.out
+^C
+[root@ip-172-28-0-177 logs]# tail -f catalina.out.1
+tail: cannot open ‘catalina.out.1’ for reading: No such file or directory
+tail: no files remaining
+[root@ip-172-28-0-177 logs]# df -h
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/xvda1       30G   26G  3.6G  88% /
+devtmpfs        3.9G   64K  3.9G   1% /dev
+tmpfs           3.9G     0  3.9G   0% /dev/shm
+[root@ip-172-28-0-177 logs]# du -sh catalina.*
+492K    catalina.2017-11-09.log
+240K    catalina.2017-11-13.log
+4.0K    catalina.2017-11-14.log
+252K    catalina.2017-11-15.log
+12K     catalina.2017-11-19.log
+4.0K    catalina.2017-11-20.log
+4.0K    catalina.2017-11-21.log
+4.0K    catalina.2017-11-22.log
+4.0K    catalina.2017-11-24.log
+4.0K    catalina.2017-11-25.log
+4.0K    catalina.2017-11-26.log
+4.0K    catalina.2017-11-27.log
+4.0K    catalina.2017-11-28.log
+4.0K    catalina.2017-11-29.log
+4.0K    catalina.2017-11-30.log
+4.0K    catalina.2017-12-01.log
+4.0K    catalina.2017-12-02.log
+4.0K    catalina.2017-12-03.log
+4.0K    catalina.2017-12-04.log
+4.0K    catalina.2017-12-05.log
+4.0K    catalina.2017-12-06.log
+4.0K    catalina.2017-12-07.log
+4.0K    catalina.2017-12-08.log
+4.0K    catalina.2017-12-09.log
+4.0K    catalina.2017-12-10.log
+4.0K    catalina.2017-12-11.log
+4.0K    catalina.2017-12-12.log
+4.0K    catalina.2017-12-13.log
+4.0K    catalina.2017-12-14.log
+4.0K    catalina.2017-12-15.log
+12K     catalina.2017-12-16.log
+4.0K    catalina.2017-12-17.log
+476K    catalina.2017-12-18.log
+4.0K    catalina.2017-12-19.log
+4.0K    catalina.2017-12-20.log
+4.0K    catalina.2017-12-21.log
+4.0K    catalina.2017-12-22.log
+4.0K    catalina.2017-12-23.log
+4.0K    catalina.2017-12-24.log
+4.0K    catalina.2017-12-25.log
+4.0K    catalina.2017-12-26.log
+4.0K    catalina.2017-12-27.log
+4.0K    catalina.2017-12-28.log
+4.0K    catalina.2017-12-29.log
+4.0K    catalina.2017-12-30.log
+4.0K    catalina.2017-12-31.log
+4.0K    catalina.2018-01-01.log
+4.0K    catalina.2018-01-02.log
+4.0K    catalina.2018-01-03.log
+4.0K    catalina.2018-01-04.log
+4.0K    catalina.2018-01-05.log
+4.0K    catalina.2018-01-06.log
+4.0K    catalina.2018-01-07.log
+4.0K    catalina.2018-01-09.log
+4.0K    catalina.2018-01-10.log
+4.0K    catalina.2018-01-11.log
+4.0K    catalina.2018-01-12.log
+4.0K    catalina.2018-01-13.log
+4.0K    catalina.2018-01-15.log
+4.0K    catalina.2018-01-16.log
+4.0K    catalina.2018-01-17.log
+4.0K    catalina.2018-01-18.log
+488K    catalina.2018-01-19.log
+4.0K    catalina.2018-01-20.log
+4.0K    catalina.2018-01-21.log
+4.0K    catalina.2018-01-22.log
+4.0K    catalina.2018-01-23.log
+4.0K    catalina.2018-01-24.log
+4.0K    catalina.2018-01-25.log
+12K     catalina.2018-01-26.log
+4.0K    catalina.2018-01-27.log
+4.0K    catalina.2018-01-28.log
+4.0K    catalina.2018-01-29.log
+4.0K    catalina.2018-01-30.log
+4.0K    catalina.2018-01-31.log
+444K    catalina.2018-02-01.log
+4.0K    catalina.2018-02-02.log
+4.0K    catalina.2018-02-03.log
+4.0K    catalina.2018-02-04.log
+4.0K    catalina.2018-02-05.log
+4.0K    catalina.2018-02-06.log
+4.0K    catalina.2018-02-07.log
+4.0K    catalina.2018-02-08.log
+4.0K    catalina.2018-02-09.log
+4.0K    catalina.2018-02-10.log
+4.0K    catalina.2018-02-11.log
+4.0K    catalina.2018-02-12.log
+4.0K    catalina.2018-02-13.log
+4.0K    catalina.2018-02-14.log
+4.0K    catalina.2018-02-15.log
+0       catalina.out
+4.0K    catalina.out.1.gz
+[root@ip-172-28-0-177 logs]# ls -ltr
+total 207184
+-rw-r----- 1 root root       0 Nov  9 12:09 manager.2017-11-09.log
+-rw-r----- 1 root root       0 Nov  9 12:09 host-manager.2017-11-09.log
+-rw-r----- 1 root root    1627 Nov  9 12:21 localhost.2017-11-09.log
+-rw-r----- 1 root root  499800 Nov  9 12:42 catalina.2017-11-09.log
+-rw-r----- 1 root root   14911 Nov  9 12:54 localhost_access_log.2017-11-09.txt
+-rw-r----- 1 root root       0 Nov 13 11:16 manager.2017-11-13.log
+-rw-r----- 1 root root       0 Nov 13 11:16 host-manager.2017-11-13.log
+-rw-r----- 1 root root     814 Nov 13 11:16 localhost.2017-11-13.log
+-rw-r----- 1 root root  242182 Nov 13 11:17 catalina.2017-11-13.log
+-rw-r----- 1 root root  326628 Nov 14 00:00 localhost_access_log.2017-11-13.txt
+-rw-r----- 1 root root    1352 Nov 14 10:17 catalina.2017-11-14.log
+-rw-r----- 1 root root  629570 Nov 15 00:00 localhost_access_log.2017-11-14.txt
+-rw-r----- 1 root root       0 Nov 15 11:30 manager.2017-11-15.log
+-rw-r----- 1 root root       0 Nov 15 11:30 host-manager.2017-11-15.log
+-rw-r----- 1 root root    1391 Nov 15 11:30 localhost.2017-11-15.log
+-rw-r----- 1 root root  256125 Nov 15 13:58 catalina.2017-11-15.log
+-rw-r----- 1 root root  977674 Nov 15 23:59 localhost_access_log.2017-11-15.txt
+-rw-r----- 1 root root       0 Nov 16 04:05 manager.2017-11-16.log
+-rw-r----- 1 root root       0 Nov 16 04:05 host-manager.2017-11-16.log
+-rw-r----- 1 root root    4287 Nov 16 13:02 localhost.2017-11-16.log
+-rw-r----- 1 root root  851219 Nov 16 23:59 localhost_access_log.2017-11-16.txt
+-rw-r----- 1 root root       0 Nov 17 06:39 manager.2017-11-17.log
+-rw-r----- 1 root root       0 Nov 17 06:39 host-manager.2017-11-17.log
+-rw-r----- 1 root root   74613 Nov 17 16:35 localhost.2017-11-17.log
+-rw-r----- 1 root root    8888 Nov 19 09:56 catalina.2017-11-19.log
+-rw-r----- 1 root root    1680 Nov 20 22:29 catalina.2017-11-20.log
+-rw-r----- 1 root root   12569 Nov 20 22:42 localhost.2017-11-20.log
+-rw-r----- 1 root root   12568 Nov 21 00:33 localhost.2017-11-21.log
+-rw-r----- 1 root root     795 Nov 21 21:47 catalina.2017-11-21.log
+-rw-r----- 1 root root     796 Nov 22 22:52 catalina.2017-11-22.log
+-rw-r----- 1 root root 2803129 Nov 22 23:59 localhost_access_log.2017-11-22.txt
+-rw-r----- 1 root root 1221655 Nov 24 00:00 localhost_access_log.2017-11-23.txt
+-rw-r----- 1 root root    1326 Nov 24 18:24 catalina.2017-11-24.log
+-rw-r----- 1 root root 1562569 Nov 25 00:00 localhost_access_log.2017-11-24.txt
+-rw-r----- 1 root root     265 Nov 25 16:25 catalina.2017-11-25.log
+-rw-r----- 1 root root 1557250 Nov 26 00:00 localhost_access_log.2017-11-25.txt
+-rw-r----- 1 root root     796 Nov 26 22:09 catalina.2017-11-26.log
+-rw-r----- 1 root root 1500965 Nov 27 00:00 localhost_access_log.2017-11-26.txt
+-rw-r----- 1 root root     796 Nov 27 20:13 catalina.2017-11-27.log
+-rw-r----- 1 root root 4002322 Nov 28 00:00 localhost_access_log.2017-11-27.txt
+-rw-r----- 1 root root   12568 Nov 28 02:40 localhost.2017-11-28.log
+-rw-r----- 1 root root    1415 Nov 28 20:31 catalina.2017-11-28.log
+-rw-r----- 1 root root 6613600 Nov 29 00:00 localhost_access_log.2017-11-28.txt
+-rw-r----- 1 root root     531 Nov 29 14:21 catalina.2017-11-29.log
+-rw-r----- 1 root root 4632050 Nov 29 23:59 localhost_access_log.2017-11-29.txt
+-rw-r----- 1 root root     531 Nov 30 08:38 catalina.2017-11-30.log
+-rw-r----- 1 root root 3603657 Nov 30 23:59 localhost_access_log.2017-11-30.txt
+-rw-r----- 1 root root     795 Dec  1 01:43 catalina.2017-12-01.log
+-rw-r----- 1 root root 5328764 Dec  2 00:00 localhost_access_log.2017-12-01.txt
+-rw-r----- 1 root root     795 Dec  2 16:30 catalina.2017-12-02.log
+-rw-r----- 1 root root 3586762 Dec  2 23:59 localhost_access_log.2017-12-02.txt
+-rw-r----- 1 root root     796 Dec  3 21:58 catalina.2017-12-03.log
+-rw-r----- 1 root root 2242711 Dec  4 00:00 localhost_access_log.2017-12-03.txt
+-rw-r----- 1 root root     530 Dec  4 22:33 catalina.2017-12-04.log
+-rw-r----- 1 root root 3201558 Dec  5 00:00 localhost_access_log.2017-12-04.txt
+-rw-r----- 1 root root    1682 Dec  5 21:43 catalina.2017-12-05.log
+-rw-r----- 1 root root 2606608 Dec  5 23:59 localhost_access_log.2017-12-05.txt
+-rw-r----- 1 root root     266 Dec  6 17:10 catalina.2017-12-06.log
+-rw-r----- 1 root root 2872833 Dec  6 23:59 localhost_access_log.2017-12-06.txt
+-rw-r----- 1 root root     531 Dec  7 21:37 catalina.2017-12-07.log
+-rw-r----- 1 root root 2713110 Dec  8 00:00 localhost_access_log.2017-12-07.txt
+-rw-r----- 1 root root    1681 Dec  8 22:48 catalina.2017-12-08.log
+-rw-r----- 1 root root 2429310 Dec  8 23:59 localhost_access_log.2017-12-08.txt
+-rw-r----- 1 root root     531 Dec  9 23:02 catalina.2017-12-09.log
+-rw-r----- 1 root root 2127307 Dec 10 00:00 localhost_access_log.2017-12-09.txt
+-rw-r----- 1 root root     531 Dec 10 18:18 catalina.2017-12-10.log
+-rw-r----- 1 root root 1277831 Dec 10 23:59 localhost_access_log.2017-12-10.txt
+-rw-r----- 1 root root     795 Dec 11 19:36 catalina.2017-12-11.log
+-rw-r----- 1 root root 2256629 Dec 12 00:00 localhost_access_log.2017-12-11.txt
+-rw-r----- 1 root root    1151 Dec 12 07:10 catalina.2017-12-12.log
+-rw-r----- 1 root root 2590293 Dec 12 23:59 localhost_access_log.2017-12-12.txt
+-rw-r----- 1 root root     795 Dec 13 15:35 catalina.2017-12-13.log
+-rw-r----- 1 root root 2145128 Dec 13 23:59 localhost_access_log.2017-12-13.txt
+-rw-r----- 1 root root     795 Dec 14 20:10 catalina.2017-12-14.log
+-rw-r----- 1 root root   25137 Dec 14 23:20 localhost.2017-12-14.log
+-rw-r----- 1 root root 2552275 Dec 14 23:59 localhost_access_log.2017-12-14.txt
+-rw-r----- 1 root root    2568 Dec 15 22:59 catalina.2017-12-15.log
+-rw-r----- 1 root root 2085543 Dec 16 00:00 localhost_access_log.2017-12-15.txt
+-rw-r----- 1 root root    8622 Dec 16 23:28 catalina.2017-12-16.log
+-rw-r----- 1 root root 1485796 Dec 17 00:00 localhost_access_log.2017-12-16.txt
+-rw-r----- 1 root root     531 Dec 17 10:15 catalina.2017-12-17.log
+-rw-r----- 1 root root  927172 Dec 18 00:00 localhost_access_log.2017-12-17.txt
+-rw-r----- 1 root root       0 Dec 18 06:04 manager.2017-12-18.log
+-rw-r----- 1 root root       0 Dec 18 06:04 host-manager.2017-12-18.log
+-rw-r----- 1 root root    1715 Dec 18 06:05 localhost.2017-12-18.log
+-rw-r----- 1 root root  485319 Dec 18 22:30 catalina.2017-12-18.log
+-rw-r----- 1 root root 2488768 Dec 19 00:00 localhost_access_log.2017-12-18.txt
+-rw-r----- 1 root root     265 Dec 19 16:37 catalina.2017-12-19.log
+-rw-r----- 1 root root 1988237 Dec 20 00:00 localhost_access_log.2017-12-19.txt
+-rw-r----- 1 root root    2566 Dec 20 19:08 catalina.2017-12-20.log
+-rw-r----- 1 root root 2562821 Dec 20 23:59 localhost_access_log.2017-12-20.txt
+-rw-r----- 1 root root    1680 Dec 21 23:24 catalina.2017-12-21.log
+-rw-r----- 1 root root 2226730 Dec 22 00:00 localhost_access_log.2017-12-21.txt
+-rw-r----- 1 root root     795 Dec 22 21:20 catalina.2017-12-22.log
+-rw-r----- 1 root root 2139031 Dec 23 00:00 localhost_access_log.2017-12-22.txt
+-rw-r----- 1 root root    1415 Dec 23 21:39 catalina.2017-12-23.log
+-rw-r----- 1 root root 1285253 Dec 23 23:59 localhost_access_log.2017-12-23.txt
+-rw-r----- 1 root root     795 Dec 24 19:44 catalina.2017-12-24.log
+-rw-r----- 1 root root 1212184 Dec 25 00:00 localhost_access_log.2017-12-24.txt
+-rw-r----- 1 root root     530 Dec 25 10:41 catalina.2017-12-25.log
+-rw-r----- 1 root root 1235302 Dec 26 00:00 localhost_access_log.2017-12-25.txt
+-rw-r----- 1 root root    1325 Dec 26 20:35 catalina.2017-12-26.log
+-rw-r----- 1 root root 1998596 Dec 26 23:59 localhost_access_log.2017-12-26.txt
+-rw-r----- 1 root root     265 Dec 27 16:54 catalina.2017-12-27.log
+-rw-r----- 1 root root 2138700 Dec 28 00:00 localhost_access_log.2017-12-27.txt
+-rw-r----- 1 root root     530 Dec 28 06:05 catalina.2017-12-28.log
+-rw-r----- 1 root root 2204218 Dec 29 00:00 localhost_access_log.2017-12-28.txt
+-rw-r----- 1 root root     795 Dec 29 08:53 catalina.2017-12-29.log
+-rw-r----- 1 root root 1945638 Dec 29 23:59 localhost_access_log.2017-12-29.txt
+-rw-r----- 1 root root     530 Dec 30 20:24 catalina.2017-12-30.log
+-rw-r----- 1 root root 1305027 Dec 31 00:00 localhost_access_log.2017-12-30.txt
+-rw-r----- 1 root root     265 Dec 31 15:54 catalina.2017-12-31.log
+-rw-r----- 1 root root 1358328 Dec 31 23:59 localhost_access_log.2017-12-31.txt
+-rw-r----- 1 root root    1150 Jan  1 07:05 catalina.2018-01-01.log
+-rw-r----- 1 root root 1360426 Jan  2 00:00 localhost_access_log.2018-01-01.txt
+-rw-r----- 1 root root     530 Jan  2 18:13 catalina.2018-01-02.log
+-rw-r----- 1 root root 2209844 Jan  3 00:00 localhost_access_log.2018-01-02.txt
+-rw-r----- 1 root root    1328 Jan  3 22:40 catalina.2018-01-03.log
+-rw-r----- 1 root root 2575137 Jan  3 23:59 localhost_access_log.2018-01-03.txt
+-rw-r----- 1 root root     530 Jan  4 21:55 catalina.2018-01-04.log
+-rw-r----- 1 root root 2439730 Jan  4 23:59 localhost_access_log.2018-01-04.txt
+-rw-r----- 1 root root    1682 Jan  5 15:47 catalina.2018-01-05.log
+-rw-r----- 1 root root 2345628 Jan  5 23:59 localhost_access_log.2018-01-05.txt
+-rw-r----- 1 root root     531 Jan  6 19:41 catalina.2018-01-06.log
+-rw-r----- 1 root root 1344585 Jan  6 23:59 localhost_access_log.2018-01-06.txt
+-rw-r----- 1 root root     531 Jan  7 21:11 catalina.2018-01-07.log
+-rw-r----- 1 root root 1272046 Jan  7 23:59 localhost_access_log.2018-01-07.txt
+-rw-r----- 1 root root 2876244 Jan  9 00:00 localhost_access_log.2018-01-08.txt
+-rw-r----- 1 root root     796 Jan  9 18:19 catalina.2018-01-09.log
+-rw-r----- 1 root root 2614176 Jan 10 00:00 localhost_access_log.2018-01-09.txt
+-rw-r----- 1 root root    1692 Jan 10 09:48 localhost.2018-01-10.log
+-rw-r----- 1 root root    1681 Jan 10 16:59 catalina.2018-01-10.log
+-rw-r----- 1 root root 3860104 Jan 11 00:00 localhost_access_log.2018-01-10.txt
+-rw-r----- 1 root root     530 Jan 11 20:05 catalina.2018-01-11.log
+-rw-r----- 1 root root 4745994 Jan 12 00:00 localhost_access_log.2018-01-11.txt
+-rw-r----- 1 root root    2210 Jan 12 22:26 catalina.2018-01-12.log
+-rw-r----- 1 root root 4229441 Jan 13 00:00 localhost_access_log.2018-01-12.txt
+-rw-r----- 1 root root    1151 Jan 13 10:30 catalina.2018-01-13.log
+-rw-r----- 1 root root 2180735 Jan 13 23:59 localhost_access_log.2018-01-13.txt
+-rw-r----- 1 root root 1381216 Jan 14 23:59 localhost_access_log.2018-01-14.txt
+-rw-r----- 1 root root     795 Jan 15 16:09 catalina.2018-01-15.log
+-rw-r----- 1 root root 2542867 Jan 15 23:59 localhost_access_log.2018-01-15.txt
+-rw-r----- 1 root root     531 Jan 16 18:22 catalina.2018-01-16.log
+-rw-r----- 1 root root 3013835 Jan 17 00:00 localhost_access_log.2018-01-16.txt
+-rw-r----- 1 root root    1682 Jan 17 17:28 catalina.2018-01-17.log
+-rw-r----- 1 root root 3157603 Jan 17 23:59 localhost_access_log.2018-01-17.txt
+-rw-r----- 1 root root    1947 Jan 18 22:15 catalina.2018-01-18.log
+-rw-r----- 1 root root 3048784 Jan 19 00:00 localhost_access_log.2018-01-18.txt
+-rw-r----- 1 root root       0 Jan 19 06:46 manager.2018-01-19.log
+-rw-r----- 1 root root       0 Jan 19 06:46 host-manager.2018-01-19.log
+-rw-r----- 1 root root    1714 Jan 19 06:46 localhost.2018-01-19.log
+-rw-r----- 1 root root  496522 Jan 19 14:51 catalina.2018-01-19.log
+-rw-r----- 1 root root 3370642 Jan 19 23:59 localhost_access_log.2018-01-19.txt
+-rw-r----- 1 root root     265 Jan 20 18:38 catalina.2018-01-20.log
+-rw-r----- 1 root root 1540485 Jan 21 00:00 localhost_access_log.2018-01-20.txt
+-rw-r----- 1 root root    2830 Jan 21 21:19 catalina.2018-01-21.log
+-rw-r----- 1 root root 1359439 Jan 21 23:59 localhost_access_log.2018-01-21.txt
+-rw-r----- 1 root root     530 Jan 22 23:47 catalina.2018-01-22.log
+-rw-r----- 1 root root 3179674 Jan 23 00:00 localhost_access_log.2018-01-22.txt
+-rw-r----- 1 root root     531 Jan 23 13:51 catalina.2018-01-23.log
+-rw-r----- 1 root root 2593879 Jan 24 00:00 localhost_access_log.2018-01-23.txt
+-rw-r----- 1 root root     530 Jan 24 16:34 catalina.2018-01-24.log
+-rw-r----- 1 root root 2808925 Jan 25 00:00 localhost_access_log.2018-01-24.txt
+-rw-r----- 1 root root     796 Jan 25 22:44 catalina.2018-01-25.log
+-rw-r----- 1 root root 2486708 Jan 26 00:00 localhost_access_log.2018-01-25.txt
+-rw-r----- 1 root root    8886 Jan 26 17:29 catalina.2018-01-26.log
+-rw-r----- 1 root root 2329039 Jan 26 23:59 localhost_access_log.2018-01-26.txt
+-rw-r----- 1 root root     530 Jan 27 21:49 catalina.2018-01-27.log
+-rw-r----- 1 root root 1150207 Jan 27 23:59 localhost_access_log.2018-01-27.txt
+-rw-r----- 1 root root     531 Jan 28 23:47 catalina.2018-01-28.log
+-rw-r----- 1 root root 1016343 Jan 28 23:59 localhost_access_log.2018-01-28.txt
+-rw-r----- 1 root root     530 Jan 29 23:23 catalina.2018-01-29.log
+-rw-r----- 1 root root 2401342 Jan 29 23:59 localhost_access_log.2018-01-29.txt
+-rw-r----- 1 root root    1063 Jan 30 23:08 catalina.2018-01-30.log
+-rw-r----- 1 root root 2938129 Jan 30 23:59 localhost_access_log.2018-01-30.txt
+-rw-r----- 1 root root     796 Jan 31 14:35 catalina.2018-01-31.log
+-rw-r----- 1 root root 2871459 Jan 31 23:59 localhost_access_log.2018-01-31.txt
+-rw-r----- 1 root root       0 Feb  1 07:09 manager.2018-02-01.log
+-rw-r----- 1 root root       0 Feb  1 07:09 host-manager.2018-02-01.log
+-rw-r----- 1 root root   24106 Feb  1 19:59 localhost.2018-02-01.log
+-rw-r----- 1 root root  454571 Feb  1 21:43 catalina.2018-02-01.log
+-rw-r----- 1 root root 3076189 Feb  2 00:00 localhost_access_log.2018-02-01.txt
+-rw-r----- 1 root root    1591 Feb  2 21:13 catalina.2018-02-02.log
+-rw-r----- 1 root root 2576706 Feb  3 00:00 localhost_access_log.2018-02-02.txt
+-rw-r----- 1 root root     265 Feb  3 14:44 catalina.2018-02-03.log
+-rw-r----- 1 root root 1120372 Feb  3 23:59 localhost_access_log.2018-02-03.txt
+-rw-r----- 1 root root     530 Feb  4 15:08 catalina.2018-02-04.log
+-rw-r----- 1 root root  968659 Feb  4 23:59 localhost_access_log.2018-02-04.txt
+-rw-r----- 1 root root    1061 Feb  5 22:39 catalina.2018-02-05.log
+-rw-r----- 1 root root 2592423 Feb  5 23:59 localhost_access_log.2018-02-05.txt
+-rw-r----- 1 root root    2832 Feb  6 20:43 catalina.2018-02-06.log
+-rw-r----- 1 root root 2465447 Feb  7 00:00 localhost_access_log.2018-02-06.txt
+-rw-r----- 1 root root     530 Feb  7 20:37 catalina.2018-02-07.log
+-rw-r----- 1 root root 2862611 Feb  8 00:00 localhost_access_log.2018-02-07.txt
+-rw-r----- 1 root root     795 Feb  8 18:57 catalina.2018-02-08.log
+-rw-r----- 1 root root 2970879 Feb  9 00:00 localhost_access_log.2018-02-08.txt
+-rw-r----- 1 root root    1683 Feb  9 19:00 catalina.2018-02-09.log
+-rw-r----- 1 root root 3190755 Feb  9 23:59 localhost_access_log.2018-02-09.txt
+-rw-r----- 1 root root     797 Feb 10 19:29 catalina.2018-02-10.log
+-rw-r----- 1 root root 1234899 Feb 10 23:59 localhost_access_log.2018-02-10.txt
+-rw-r----- 1 root root     266 Feb 11 19:02 catalina.2018-02-11.log
+-rw-r----- 1 root root  984853 Feb 11 23:59 localhost_access_log.2018-02-11.txt
+-rw-r----- 1 root root    1947 Feb 12 18:58 catalina.2018-02-12.log
+-rw-r----- 1 root root 2612319 Feb 12 23:59 localhost_access_log.2018-02-12.txt
+-rw-r----- 1 root root     266 Feb 13 01:27 catalina.2018-02-13.log
+-rw-r----- 1 root root   33825 Feb 13 20:28 localhost.2018-02-13.log
+-rw-r----- 1 root root 2690398 Feb 14 00:00 localhost_access_log.2018-02-13.txt
+-rw-r----- 1 root root    1064 Feb 14 20:49 catalina.2018-02-14.log
+-rw-r----- 1 root root   11276 Feb 14 21:23 localhost.2018-02-14.log
+-rw-r----- 1 root root 2626587 Feb 15 00:00 localhost_access_log.2018-02-14.txt
+-rw-r----- 1 root root     265 Feb 15 01:24 catalina.2018-02-15.log
+-rw-rw---- 1 root root      20 Feb 15 08:36 catalina.out.1.gz
+-rw-rw---- 1 root root       0 Feb 15 08:36 catalina.out
+-rw-r----- 1 root root  486813 Feb 15 08:36 localhost_access_log.2018-02-15.txt
+[root@ip-172-28-0-177 logs]# cd ..
+[root@ip-172-28-0-177 tomcat]# du -sh logs
+203M    logs
+[root@ip-172-28-0-177 tomcat]# df -h
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/xvda1       30G   26G  3.6G  88% /
+devtmpfs        3.9G   64K  3.9G   1% /dev
+tmpfs           3.9G     0  3.9G   0% /dev/shm
+[root@ip-172-28-0-177 tomcat]# tail -f logs/catalina.out
+^C
+[root@ip-172-28-0-177 tomcat]# tail -f logs/catalina.out.1.gz
+|F¦Z^C
+[root@ip-172-28-0-177 tomcat]# du -sh /opt/
+17G     /opt/
+[root@ip-172-28-0-177 tomcat]# tail -f logs/catalina.2018-02-15.log
+15-Feb-2018 01:24:05.996 INFO [http-nio-80-exec-1] org.apache.coyote.http11.Http11Processor.service Error parsing HTTP request header
+ Note: further occurrences of HTTP header parsing errors will be logged at DEBUG level.
+ java.lang.ArrayIndexOutOfBoundsException
+
+^C
+[root@ip-172-28-0-177 tomcat]# du -sh *
+804K    bin
+412K    conf
+7.9M    lib
+56K     LICENSE
+203M    logs
+4.0K    NOTICE
+8.0K    RELEASE-NOTES
+16K     RUNNING.txt
+13G     temp
+265M    webapps
+244K    work
+[root@ip-172-28-0-177 tomcat]# cd /
+[root@ip-172-28-0-177 /]# du -sh *
+7.1M    bin
+21M     boot
+4.0K    cgroup
+64K     dev
+44M     etc
+1.7G    home
+45M     lib
+23M     lib64
+4.0K    local
+16K     lost+found
+4.0K    media
+200M    mnt
+17G     opt
+du: cannot access ‘proc/3275/task/3275/fd/4’: No such file or directory
+du: cannot access ‘proc/3275/task/3275/fdinfo/4’: No such file or directory
+du: cannot access ‘proc/3275/fd/4’: No such file or directory
+du: cannot access ‘proc/3275/fdinfo/4’: No such file or directory
+0       proc
+308K    root
+8.0K    run
+14M     sbin
+8.0K    selinux
+4.0K    srv
+0       sys
+4.0K    test
+80K     tmp
+1.6G    usr
+317M    var
+[root@ip-172-28-0-177 /]# df -h
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/xvda1       30G   26G  3.6G  88% /
+devtmpfs        3.9G   64K  3.9G   1% /dev
+tmpfs           3.9G     0  3.9G   0% /dev/shm
+[root@ip-172-28-0-177 /]# cd /etc/logrotate.d/
+[root@ip-172-28-0-177 logrotate.d]# vi tomcat
+[root@ip-172-28-0-177 logrotate.d]# cd /opt/tomcat/logs/
+[root@ip-172-28-0-177 logs]# ll
+total 207188
+-rw-r----- 1 root root  499800 Nov  9 12:42 catalina.2017-11-09.log
+-rw-r----- 1 root root  242182 Nov 13 11:17 catalina.2017-11-13.log
+-rw-r----- 1 root root    1352 Nov 14 10:17 catalina.2017-11-14.log
+-rw-r----- 1 root root  256125 Nov 15 13:58 catalina.2017-11-15.log
+-rw-r----- 1 root root    8888 Nov 19 09:56 catalina.2017-11-19.log
+-rw-r----- 1 root root    1680 Nov 20 22:29 catalina.2017-11-20.log
+-rw-r----- 1 root root     795 Nov 21 21:47 catalina.2017-11-21.log
+-rw-r----- 1 root root     796 Nov 22 22:52 catalina.2017-11-22.log
+-rw-r----- 1 root root    1326 Nov 24 18:24 catalina.2017-11-24.log
+-rw-r----- 1 root root     265 Nov 25 16:25 catalina.2017-11-25.log
+-rw-r----- 1 root root     796 Nov 26 22:09 catalina.2017-11-26.log
+-rw-r----- 1 root root     796 Nov 27 20:13 catalina.2017-11-27.log
+-rw-r----- 1 root root    1415 Nov 28 20:31 catalina.2017-11-28.log
+-rw-r----- 1 root root     531 Nov 29 14:21 catalina.2017-11-29.log
+-rw-r----- 1 root root     531 Nov 30 08:38 catalina.2017-11-30.log
+-rw-r----- 1 root root     795 Dec  1 01:43 catalina.2017-12-01.log
+-rw-r----- 1 root root     795 Dec  2 16:30 catalina.2017-12-02.log
+-rw-r----- 1 root root     796 Dec  3 21:58 catalina.2017-12-03.log
+-rw-r----- 1 root root     530 Dec  4 22:33 catalina.2017-12-04.log
+-rw-r----- 1 root root    1682 Dec  5 21:43 catalina.2017-12-05.log
+-rw-r----- 1 root root     266 Dec  6 17:10 catalina.2017-12-06.log
+-rw-r----- 1 root root     531 Dec  7 21:37 catalina.2017-12-07.log
+-rw-r----- 1 root root    1681 Dec  8 22:48 catalina.2017-12-08.log
+-rw-r----- 1 root root     531 Dec  9 23:02 catalina.2017-12-09.log
+-rw-r----- 1 root root     531 Dec 10 18:18 catalina.2017-12-10.log
+-rw-r----- 1 root root     795 Dec 11 19:36 catalina.2017-12-11.log
+-rw-r----- 1 root root    1151 Dec 12 07:10 catalina.2017-12-12.log
+-rw-r----- 1 root root     795 Dec 13 15:35 catalina.2017-12-13.log
+-rw-r----- 1 root root     795 Dec 14 20:10 catalina.2017-12-14.log
+-rw-r----- 1 root root    2568 Dec 15 22:59 catalina.2017-12-15.log
+-rw-r----- 1 root root    8622 Dec 16 23:28 catalina.2017-12-16.log
+-rw-r----- 1 root root     531 Dec 17 10:15 catalina.2017-12-17.log
+-rw-r----- 1 root root  485319 Dec 18 22:30 catalina.2017-12-18.log
+-rw-r----- 1 root root     265 Dec 19 16:37 catalina.2017-12-19.log
+-rw-r----- 1 root root    2566 Dec 20 19:08 catalina.2017-12-20.log
+-rw-r----- 1 root root    1680 Dec 21 23:24 catalina.2017-12-21.log
+-rw-r----- 1 root root     795 Dec 22 21:20 catalina.2017-12-22.log
+-rw-r----- 1 root root    1415 Dec 23 21:39 catalina.2017-12-23.log
+-rw-r----- 1 root root     795 Dec 24 19:44 catalina.2017-12-24.log
+-rw-r----- 1 root root     530 Dec 25 10:41 catalina.2017-12-25.log
+-rw-r----- 1 root root    1325 Dec 26 20:35 catalina.2017-12-26.log
+-rw-r----- 1 root root     265 Dec 27 16:54 catalina.2017-12-27.log
+-rw-r----- 1 root root     530 Dec 28 06:05 catalina.2017-12-28.log
+-rw-r----- 1 root root     795 Dec 29 08:53 catalina.2017-12-29.log
+-rw-r----- 1 root root     530 Dec 30 20:24 catalina.2017-12-30.log
+-rw-r----- 1 root root     265 Dec 31 15:54 catalina.2017-12-31.log
+-rw-r----- 1 root root    1150 Jan  1 07:05 catalina.2018-01-01.log
+-rw-r----- 1 root root     530 Jan  2 18:13 catalina.2018-01-02.log
+-rw-r----- 1 root root    1328 Jan  3 22:40 catalina.2018-01-03.log
+-rw-r----- 1 root root     530 Jan  4 21:55 catalina.2018-01-04.log
+-rw-r----- 1 root root    1682 Jan  5 15:47 catalina.2018-01-05.log
+-rw-r----- 1 root root     531 Jan  6 19:41 catalina.2018-01-06.log
+-rw-r----- 1 root root     531 Jan  7 21:11 catalina.2018-01-07.log
+-rw-r----- 1 root root     796 Jan  9 18:19 catalina.2018-01-09.log
+-rw-r----- 1 root root    1681 Jan 10 16:59 catalina.2018-01-10.log
+-rw-r----- 1 root root     530 Jan 11 20:05 catalina.2018-01-11.log
+-rw-r----- 1 root root    2210 Jan 12 22:26 catalina.2018-01-12.log
+-rw-r----- 1 root root    1151 Jan 13 10:30 catalina.2018-01-13.log
+-rw-r----- 1 root root     795 Jan 15 16:09 catalina.2018-01-15.log
+-rw-r----- 1 root root     531 Jan 16 18:22 catalina.2018-01-16.log
+-rw-r----- 1 root root    1682 Jan 17 17:28 catalina.2018-01-17.log
+-rw-r----- 1 root root    1947 Jan 18 22:15 catalina.2018-01-18.log
+-rw-r----- 1 root root  496522 Jan 19 14:51 catalina.2018-01-19.log
+-rw-r----- 1 root root     265 Jan 20 18:38 catalina.2018-01-20.log
+-rw-r----- 1 root root    2830 Jan 21 21:19 catalina.2018-01-21.log
+-rw-r----- 1 root root     530 Jan 22 23:47 catalina.2018-01-22.log
+-rw-r----- 1 root root     531 Jan 23 13:51 catalina.2018-01-23.log
+-rw-r----- 1 root root     530 Jan 24 16:34 catalina.2018-01-24.log
+-rw-r----- 1 root root     796 Jan 25 22:44 catalina.2018-01-25.log
+-rw-r----- 1 root root    8886 Jan 26 17:29 catalina.2018-01-26.log
+-rw-r----- 1 root root     530 Jan 27 21:49 catalina.2018-01-27.log
+-rw-r----- 1 root root     531 Jan 28 23:47 catalina.2018-01-28.log
+-rw-r----- 1 root root     530 Jan 29 23:23 catalina.2018-01-29.log
+-rw-r----- 1 root root    1063 Jan 30 23:08 catalina.2018-01-30.log
+-rw-r----- 1 root root     796 Jan 31 14:35 catalina.2018-01-31.log
+-rw-r----- 1 root root  454571 Feb  1 21:43 catalina.2018-02-01.log
+-rw-r----- 1 root root    1591 Feb  2 21:13 catalina.2018-02-02.log
+-rw-r----- 1 root root     265 Feb  3 14:44 catalina.2018-02-03.log
+-rw-r----- 1 root root     530 Feb  4 15:08 catalina.2018-02-04.log
+-rw-r----- 1 root root    1061 Feb  5 22:39 catalina.2018-02-05.log
+-rw-r----- 1 root root    2832 Feb  6 20:43 catalina.2018-02-06.log
+-rw-r----- 1 root root     530 Feb  7 20:37 catalina.2018-02-07.log
+-rw-r----- 1 root root     795 Feb  8 18:57 catalina.2018-02-08.log
+-rw-r----- 1 root root    1683 Feb  9 19:00 catalina.2018-02-09.log
+-rw-r----- 1 root root     797 Feb 10 19:29 catalina.2018-02-10.log
+-rw-r----- 1 root root     266 Feb 11 19:02 catalina.2018-02-11.log
+-rw-r----- 1 root root    1947 Feb 12 18:58 catalina.2018-02-12.log
+-rw-r----- 1 root root     266 Feb 13 01:27 catalina.2018-02-13.log
+-rw-r----- 1 root root    1064 Feb 14 20:49 catalina.2018-02-14.log
+-rw-r----- 1 root root     265 Feb 15 01:24 catalina.2018-02-15.log
+-rw-rw---- 1 root root       0 Feb 15 08:36 catalina.out
+-rw-rw---- 1 root root      20 Feb 15 08:36 catalina.out.1.gz
+-rw-r----- 1 root root       0 Nov  9 12:09 host-manager.2017-11-09.log
+-rw-r----- 1 root root       0 Nov 13 11:16 host-manager.2017-11-13.log
+-rw-r----- 1 root root       0 Nov 15 11:30 host-manager.2017-11-15.log
+-rw-r----- 1 root root       0 Nov 16 04:05 host-manager.2017-11-16.log
+-rw-r----- 1 root root       0 Nov 17 06:39 host-manager.2017-11-17.log
+-rw-r----- 1 root root       0 Dec 18 06:04 host-manager.2017-12-18.log
+-rw-r----- 1 root root       0 Jan 19 06:46 host-manager.2018-01-19.log
+-rw-r----- 1 root root       0 Feb  1 07:09 host-manager.2018-02-01.log
+-rw-r----- 1 root root    1627 Nov  9 12:21 localhost.2017-11-09.log
+-rw-r----- 1 root root     814 Nov 13 11:16 localhost.2017-11-13.log
+-rw-r----- 1 root root    1391 Nov 15 11:30 localhost.2017-11-15.log
+-rw-r----- 1 root root    4287 Nov 16 13:02 localhost.2017-11-16.log
+-rw-r----- 1 root root   74613 Nov 17 16:35 localhost.2017-11-17.log
+-rw-r----- 1 root root   12569 Nov 20 22:42 localhost.2017-11-20.log
+-rw-r----- 1 root root   12568 Nov 21 00:33 localhost.2017-11-21.log
+-rw-r----- 1 root root   12568 Nov 28 02:40 localhost.2017-11-28.log
+-rw-r----- 1 root root   25137 Dec 14 23:20 localhost.2017-12-14.log
+-rw-r----- 1 root root    1715 Dec 18 06:05 localhost.2017-12-18.log
+-rw-r----- 1 root root    1692 Jan 10 09:48 localhost.2018-01-10.log
+-rw-r----- 1 root root    1714 Jan 19 06:46 localhost.2018-01-19.log
+-rw-r----- 1 root root   24106 Feb  1 19:59 localhost.2018-02-01.log
+-rw-r----- 1 root root   33825 Feb 13 20:28 localhost.2018-02-13.log
+-rw-r----- 1 root root   11276 Feb 14 21:23 localhost.2018-02-14.log
+-rw-r----- 1 root root   14911 Nov  9 12:54 localhost_access_log.2017-11-09.txt
+-rw-r----- 1 root root  326628 Nov 14 00:00 localhost_access_log.2017-11-13.txt
+-rw-r----- 1 root root  629570 Nov 15 00:00 localhost_access_log.2017-11-14.txt
+-rw-r----- 1 root root  977674 Nov 15 23:59 localhost_access_log.2017-11-15.txt
+-rw-r----- 1 root root  851219 Nov 16 23:59 localhost_access_log.2017-11-16.txt
+-rw-r----- 1 root root 2803129 Nov 22 23:59 localhost_access_log.2017-11-22.txt
+-rw-r----- 1 root root 1221655 Nov 24 00:00 localhost_access_log.2017-11-23.txt
+-rw-r----- 1 root root 1562569 Nov 25 00:00 localhost_access_log.2017-11-24.txt
+-rw-r----- 1 root root 1557250 Nov 26 00:00 localhost_access_log.2017-11-25.txt
+-rw-r----- 1 root root 1500965 Nov 27 00:00 localhost_access_log.2017-11-26.txt
+-rw-r----- 1 root root 4002322 Nov 28 00:00 localhost_access_log.2017-11-27.txt
+-rw-r----- 1 root root 6613600 Nov 29 00:00 localhost_access_log.2017-11-28.txt
+-rw-r----- 1 root root 4632050 Nov 29 23:59 localhost_access_log.2017-11-29.txt
+-rw-r----- 1 root root 3603657 Nov 30 23:59 localhost_access_log.2017-11-30.txt
+-rw-r----- 1 root root 5328764 Dec  2 00:00 localhost_access_log.2017-12-01.txt
+-rw-r----- 1 root root 3586762 Dec  2 23:59 localhost_access_log.2017-12-02.txt
+-rw-r----- 1 root root 2242711 Dec  4 00:00 localhost_access_log.2017-12-03.txt
+-rw-r----- 1 root root 3201558 Dec  5 00:00 localhost_access_log.2017-12-04.txt
+-rw-r----- 1 root root 2606608 Dec  5 23:59 localhost_access_log.2017-12-05.txt
+-rw-r----- 1 root root 2872833 Dec  6 23:59 localhost_access_log.2017-12-06.txt
+-rw-r----- 1 root root 2713110 Dec  8 00:00 localhost_access_log.2017-12-07.txt
+-rw-r----- 1 root root 2429310 Dec  8 23:59 localhost_access_log.2017-12-08.txt
+-rw-r----- 1 root root 2127307 Dec 10 00:00 localhost_access_log.2017-12-09.txt
+-rw-r----- 1 root root 1277831 Dec 10 23:59 localhost_access_log.2017-12-10.txt
+-rw-r----- 1 root root 2256629 Dec 12 00:00 localhost_access_log.2017-12-11.txt
+-rw-r----- 1 root root 2590293 Dec 12 23:59 localhost_access_log.2017-12-12.txt
+-rw-r----- 1 root root 2145128 Dec 13 23:59 localhost_access_log.2017-12-13.txt
+-rw-r----- 1 root root 2552275 Dec 14 23:59 localhost_access_log.2017-12-14.txt
+-rw-r----- 1 root root 2085543 Dec 16 00:00 localhost_access_log.2017-12-15.txt
+-rw-r----- 1 root root 1485796 Dec 17 00:00 localhost_access_log.2017-12-16.txt
+-rw-r----- 1 root root  927172 Dec 18 00:00 localhost_access_log.2017-12-17.txt
+-rw-r----- 1 root root 2488768 Dec 19 00:00 localhost_access_log.2017-12-18.txt
+-rw-r----- 1 root root 1988237 Dec 20 00:00 localhost_access_log.2017-12-19.txt
+-rw-r----- 1 root root 2562821 Dec 20 23:59 localhost_access_log.2017-12-20.txt
+-rw-r----- 1 root root 2226730 Dec 22 00:00 localhost_access_log.2017-12-21.txt
+-rw-r----- 1 root root 2139031 Dec 23 00:00 localhost_access_log.2017-12-22.txt
+-rw-r----- 1 root root 1285253 Dec 23 23:59 localhost_access_log.2017-12-23.txt
+-rw-r----- 1 root root 1212184 Dec 25 00:00 localhost_access_log.2017-12-24.txt
+-rw-r----- 1 root root 1235302 Dec 26 00:00 localhost_access_log.2017-12-25.txt
+-rw-r----- 1 root root 1998596 Dec 26 23:59 localhost_access_log.2017-12-26.txt
+-rw-r----- 1 root root 2138700 Dec 28 00:00 localhost_access_log.2017-12-27.txt
+-rw-r----- 1 root root 2204218 Dec 29 00:00 localhost_access_log.2017-12-28.txt
+-rw-r----- 1 root root 1945638 Dec 29 23:59 localhost_access_log.2017-12-29.txt
+-rw-r----- 1 root root 1305027 Dec 31 00:00 localhost_access_log.2017-12-30.txt
+-rw-r----- 1 root root 1358328 Dec 31 23:59 localhost_access_log.2017-12-31.txt
+-rw-r----- 1 root root 1360426 Jan  2 00:00 localhost_access_log.2018-01-01.txt
+-rw-r----- 1 root root 2209844 Jan  3 00:00 localhost_access_log.2018-01-02.txt
+-rw-r----- 1 root root 2575137 Jan  3 23:59 localhost_access_log.2018-01-03.txt
+-rw-r----- 1 root root 2439730 Jan  4 23:59 localhost_access_log.2018-01-04.txt
+-rw-r----- 1 root root 2345628 Jan  5 23:59 localhost_access_log.2018-01-05.txt
+-rw-r----- 1 root root 1344585 Jan  6 23:59 localhost_access_log.2018-01-06.txt
+-rw-r----- 1 root root 1272046 Jan  7 23:59 localhost_access_log.2018-01-07.txt
+-rw-r----- 1 root root 2876244 Jan  9 00:00 localhost_access_log.2018-01-08.txt
+-rw-r----- 1 root root 2614176 Jan 10 00:00 localhost_access_log.2018-01-09.txt
+-rw-r----- 1 root root 3860104 Jan 11 00:00 localhost_access_log.2018-01-10.txt
+-rw-r----- 1 root root 4745994 Jan 12 00:00 localhost_access_log.2018-01-11.txt
+-rw-r----- 1 root root 4229441 Jan 13 00:00 localhost_access_log.2018-01-12.txt
+-rw-r----- 1 root root 2180735 Jan 13 23:59 localhost_access_log.2018-01-13.txt
+-rw-r----- 1 root root 1381216 Jan 14 23:59 localhost_access_log.2018-01-14.txt
+-rw-r----- 1 root root 2542867 Jan 15 23:59 localhost_access_log.2018-01-15.txt
+-rw-r----- 1 root root 3013835 Jan 17 00:00 localhost_access_log.2018-01-16.txt
+-rw-r----- 1 root root 3157603 Jan 17 23:59 localhost_access_log.2018-01-17.txt
+-rw-r----- 1 root root 3048784 Jan 19 00:00 localhost_access_log.2018-01-18.txt
+-rw-r----- 1 root root 3370642 Jan 19 23:59 localhost_access_log.2018-01-19.txt
+-rw-r----- 1 root root 1540485 Jan 21 00:00 localhost_access_log.2018-01-20.txt
+-rw-r----- 1 root root 1359439 Jan 21 23:59 localhost_access_log.2018-01-21.txt
+-rw-r----- 1 root root 3179674 Jan 23 00:00 localhost_access_log.2018-01-22.txt
+-rw-r----- 1 root root 2593879 Jan 24 00:00 localhost_access_log.2018-01-23.txt
+-rw-r----- 1 root root 2808925 Jan 25 00:00 localhost_access_log.2018-01-24.txt
+-rw-r----- 1 root root 2486708 Jan 26 00:00 localhost_access_log.2018-01-25.txt
+-rw-r----- 1 root root 2329039 Jan 26 23:59 localhost_access_log.2018-01-26.txt
+-rw-r----- 1 root root 1150207 Jan 27 23:59 localhost_access_log.2018-01-27.txt
+-rw-r----- 1 root root 1016343 Jan 28 23:59 localhost_access_log.2018-01-28.txt
+-rw-r----- 1 root root 2401342 Jan 29 23:59 localhost_access_log.2018-01-29.txt
+-rw-r----- 1 root root 2938129 Jan 30 23:59 localhost_access_log.2018-01-30.txt
+-rw-r----- 1 root root 2871459 Jan 31 23:59 localhost_access_log.2018-01-31.txt
+-rw-r----- 1 root root 3076189 Feb  2 00:00 localhost_access_log.2018-02-01.txt
+-rw-r----- 1 root root 2576706 Feb  3 00:00 localhost_access_log.2018-02-02.txt
+-rw-r----- 1 root root 1120372 Feb  3 23:59 localhost_access_log.2018-02-03.txt
+-rw-r----- 1 root root  968659 Feb  4 23:59 localhost_access_log.2018-02-04.txt
+-rw-r----- 1 root root 2592423 Feb  5 23:59 localhost_access_log.2018-02-05.txt
+-rw-r----- 1 root root 2465447 Feb  7 00:00 localhost_access_log.2018-02-06.txt
+-rw-r----- 1 root root 2862611 Feb  8 00:00 localhost_access_log.2018-02-07.txt
+-rw-r----- 1 root root 2970879 Feb  9 00:00 localhost_access_log.2018-02-08.txt
+-rw-r----- 1 root root 3190755 Feb  9 23:59 localhost_access_log.2018-02-09.txt
+-rw-r----- 1 root root 1234899 Feb 10 23:59 localhost_access_log.2018-02-10.txt
+-rw-r----- 1 root root  984853 Feb 11 23:59 localhost_access_log.2018-02-11.txt
+-rw-r----- 1 root root 2612319 Feb 12 23:59 localhost_access_log.2018-02-12.txt
+-rw-r----- 1 root root 2690398 Feb 14 00:00 localhost_access_log.2018-02-13.txt
+-rw-r----- 1 root root 2626587 Feb 15 00:00 localhost_access_log.2018-02-14.txt
+-rw-r----- 1 root root  489224 Feb 15 08:40 localhost_access_log.2018-02-15.txt
+-rw-r----- 1 root root       0 Nov  9 12:09 manager.2017-11-09.log
+-rw-r----- 1 root root       0 Nov 13 11:16 manager.2017-11-13.log
+-rw-r----- 1 root root       0 Nov 15 11:30 manager.2017-11-15.log
+-rw-r----- 1 root root       0 Nov 16 04:05 manager.2017-11-16.log
+-rw-r----- 1 root root       0 Nov 17 06:39 manager.2017-11-17.log
+-rw-r----- 1 root root       0 Dec 18 06:04 manager.2017-12-18.log
+-rw-r----- 1 root root       0 Jan 19 06:46 manager.2018-01-19.log
+-rw-r----- 1 root root       0 Feb  1 07:09 manager.2018-02-01.log
+[root@ip-172-28-0-177 logs]# tail -f catalina.out
+^C
+[root@ip-172-28-0-177 logs]# top
+top - 08:41:55 up 113 days, 22:18,  2 users,  load average: 0.01, 0.02, 0.05
+Tasks:  94 total,   1 running,  93 sleeping,   0 stopped,   0 zombie
+Cpu(s):  0.0%us,  0.0%sy,  0.0%ni,100.0%id,  0.0%wa,  0.0%hi,  0.0%si,  0.0%st
+Mem:   8178648k total,  5040724k used,  3137924k free,   202844k buffers
+Swap:        0k total,        0k used,        0k free,  1798876k cached
+ Unknown command - try 'h' for help
+  PID USER      PR  NI  VIRT  RES  SHR S %CPU %MEM    TIME+  COMMAND
+    1 root      20   0 23764 2112 1768 S  0.0  0.0   0:05.66 init
+    2 root      20   0     0    0    0 S  0.0  0.0   0:00.01 kthreadd
+    3 root      20   0     0    0    0 S  0.0  0.0   0:10.88 ksoftirqd/0
+    5 root       0 -20     0    0    0 S  0.0  0.0   0:00.00 kworker/0:0H
+    7 root      20   0     0    0    0 S  0.0  0.0   4:17.37 rcu_sched
+    8 root      20   0     0    0    0 S  0.0  0.0   0:00.00 rcu_bh
+    9 root      RT   0     0    0    0 S  0.0  0.0   0:01.93 migration/0
+   10 root      RT   0     0    0    0 S  0.0  0.0   0:01.46 migration/1
+   11 root      20   0     0    0    0 S  0.0  0.0   0:14.74 ksoftirqd/1
+   13 root       0 -20     0    0    0 S  0.0  0.0   0:00.00 kworker/1:0H
+   14 root      20   0     0    0    0 S  0.0  0.0   0:00.00 kdevtmpfs
+   15 root       0 -20     0    0    0 S  0.0  0.0   0:00.00 netns
+   18 root       0 -20     0    0    0 S  0.0  0.0   0:00.00 perf
+   22 root      20   0     0    0    0 S  0.0  0.0   0:00.02 xenwatch
+   23 root      20   0     0    0    0 S  0.0  0.0   0:00.00 xenbus
+  132 root      20   0     0    0    0 S  0.0  0.0   0:04.38 khungtaskd
+  133 root       0 -20     0    0    0 S  0.0  0.0   0:00.00 writeback
+  135 root      25   5     0    0    0 S  0.0  0.0   0:00.00 ksmd
+  136 root      39  19     0    0    0 S  0.0  0.0   0:00.00 khugepaged
+  137 root       0 -20     0    0    0 S  0.0  0.0   0:00.00 crypto
+  138 root       0 -20     0    0    0 S  0.0  0.0   0:00.00 kintegrityd
+  139 root       0 -20     0    0    0 S  0.0  0.0   0:00.00 bioset
+  141 root       0 -20     0    0    0 S  0.0  0.0   0:00.00 kblockd
+  493 root       0 -20     0    0    0 S  0.0  0.0   0:00.00 md
+  623 root      20   0     0    0    0 S  0.0  0.0   0:04.54 kswapd0
+  624 root       0 -20     0    0    0 S  0.0  0.0   0:00.00 vmstat
+  696 root      20   0     0    0    0 S  0.0  0.0   0:00.00 fsnotify_mark
+  715 root       0 -20     0    0    0 S  0.0  0.0   0:00.00 kthrotld
+  754 root       0 -20     0    0    0 S  0.0  0.0   0:00.00 bioset
+  758 root       0 -20     0    0    0 S  0.0  0.0   0:00.00 bioset
+  761 root       0 -20     0    0    0 S  0.0  0.0   0:00.00 deferwq
+ 1387 root       0 -20     0    0    0 S  0.0  0.0   0:00.00 ata_sff
+ 1423 root      20   0     0    0    0 S  0.0  0.0   0:00.00 scsi_eh_0
+ 1424 root       0 -20     0    0    0 S  0.0  0.0   0:00.00 scsi_tmf_0
+ 1443 root      20   0     0    0    0 S  0.0  0.0   0:00.00 scsi_eh_1
+ 1475 root       0 -20     0    0    0 S  0.0  0.0   0:00.00 scsi_tmf_1
+ 1546 root      20   0     0    0    0 S  0.0  0.0   1:47.62 jbd2/xvda1-8
+[root@ip-172-28-0-177 logs]# cd /opt/tomcat/logs/
+[root@ip-172-28-0-177 logs]# ll
+total 207188
+-rw-r----- 1 root root  499800 Nov  9 12:42 catalina.2017-11-09.log
+-rw-r----- 1 root root  242182 Nov 13 11:17 catalina.2017-11-13.log
+-rw-r----- 1 root root    1352 Nov 14 10:17 catalina.2017-11-14.log
+-rw-r----- 1 root root  256125 Nov 15 13:58 catalina.2017-11-15.log
+-rw-r----- 1 root root    8888 Nov 19 09:56 catalina.2017-11-19.log
+-rw-r----- 1 root root    1680 Nov 20 22:29 catalina.2017-11-20.log
+-rw-r----- 1 root root     795 Nov 21 21:47 catalina.2017-11-21.log
+-rw-r----- 1 root root     796 Nov 22 22:52 catalina.2017-11-22.log
+-rw-r----- 1 root root    1326 Nov 24 18:24 catalina.2017-11-24.log
+-rw-r----- 1 root root     265 Nov 25 16:25 catalina.2017-11-25.log
+-rw-r----- 1 root root     796 Nov 26 22:09 catalina.2017-11-26.log
+-rw-r----- 1 root root     796 Nov 27 20:13 catalina.2017-11-27.log
+-rw-r----- 1 root root    1415 Nov 28 20:31 catalina.2017-11-28.log
+-rw-r----- 1 root root     531 Nov 29 14:21 catalina.2017-11-29.log
+-rw-r----- 1 root root     531 Nov 30 08:38 catalina.2017-11-30.log
+-rw-r----- 1 root root     795 Dec  1 01:43 catalina.2017-12-01.log
+-rw-r----- 1 root root     795 Dec  2 16:30 catalina.2017-12-02.log
+-rw-r----- 1 root root     796 Dec  3 21:58 catalina.2017-12-03.log
+-rw-r----- 1 root root     530 Dec  4 22:33 catalina.2017-12-04.log
+-rw-r----- 1 root root    1682 Dec  5 21:43 catalina.2017-12-05.log
+-rw-r----- 1 root root     266 Dec  6 17:10 catalina.2017-12-06.log
+-rw-r----- 1 root root     531 Dec  7 21:37 catalina.2017-12-07.log
+-rw-r----- 1 root root    1681 Dec  8 22:48 catalina.2017-12-08.log
+-rw-r----- 1 root root     531 Dec  9 23:02 catalina.2017-12-09.log
+-rw-r----- 1 root root     531 Dec 10 18:18 catalina.2017-12-10.log
+-rw-r----- 1 root root     795 Dec 11 19:36 catalina.2017-12-11.log
+-rw-r----- 1 root root    1151 Dec 12 07:10 catalina.2017-12-12.log
+-rw-r----- 1 root root     795 Dec 13 15:35 catalina.2017-12-13.log
+-rw-r----- 1 root root     795 Dec 14 20:10 catalina.2017-12-14.log
+-rw-r----- 1 root root    2568 Dec 15 22:59 catalina.2017-12-15.log
+-rw-r----- 1 root root    8622 Dec 16 23:28 catalina.2017-12-16.log
+-rw-r----- 1 root root     531 Dec 17 10:15 catalina.2017-12-17.log
+-rw-r----- 1 root root  485319 Dec 18 22:30 catalina.2017-12-18.log
+-rw-r----- 1 root root     265 Dec 19 16:37 catalina.2017-12-19.log
+-rw-r----- 1 root root    2566 Dec 20 19:08 catalina.2017-12-20.log
+-rw-r----- 1 root root    1680 Dec 21 23:24 catalina.2017-12-21.log
+-rw-r----- 1 root root     795 Dec 22 21:20 catalina.2017-12-22.log
+-rw-r----- 1 root root    1415 Dec 23 21:39 catalina.2017-12-23.log
+-rw-r----- 1 root root     795 Dec 24 19:44 catalina.2017-12-24.log
+-rw-r----- 1 root root     530 Dec 25 10:41 catalina.2017-12-25.log
+-rw-r----- 1 root root    1325 Dec 26 20:35 catalina.2017-12-26.log
+-rw-r----- 1 root root     265 Dec 27 16:54 catalina.2017-12-27.log
+-rw-r----- 1 root root     530 Dec 28 06:05 catalina.2017-12-28.log
+-rw-r----- 1 root root     795 Dec 29 08:53 catalina.2017-12-29.log
+-rw-r----- 1 root root     530 Dec 30 20:24 catalina.2017-12-30.log
+-rw-r----- 1 root root     265 Dec 31 15:54 catalina.2017-12-31.log
+-rw-r----- 1 root root    1150 Jan  1 07:05 catalina.2018-01-01.log
+-rw-r----- 1 root root     530 Jan  2 18:13 catalina.2018-01-02.log
+-rw-r----- 1 root root    1328 Jan  3 22:40 catalina.2018-01-03.log
+-rw-r----- 1 root root     530 Jan  4 21:55 catalina.2018-01-04.log
+-rw-r----- 1 root root    1682 Jan  5 15:47 catalina.2018-01-05.log
+-rw-r----- 1 root root     531 Jan  6 19:41 catalina.2018-01-06.log
+-rw-r----- 1 root root     531 Jan  7 21:11 catalina.2018-01-07.log
+-rw-r----- 1 root root     796 Jan  9 18:19 catalina.2018-01-09.log
+-rw-r----- 1 root root    1681 Jan 10 16:59 catalina.2018-01-10.log
+-rw-r----- 1 root root     530 Jan 11 20:05 catalina.2018-01-11.log
+-rw-r----- 1 root root    2210 Jan 12 22:26 catalina.2018-01-12.log
+-rw-r----- 1 root root    1151 Jan 13 10:30 catalina.2018-01-13.log
+-rw-r----- 1 root root     795 Jan 15 16:09 catalina.2018-01-15.log
+-rw-r----- 1 root root     531 Jan 16 18:22 catalina.2018-01-16.log
+-rw-r----- 1 root root    1682 Jan 17 17:28 catalina.2018-01-17.log
+-rw-r----- 1 root root    1947 Jan 18 22:15 catalina.2018-01-18.log
+-rw-r----- 1 root root  496522 Jan 19 14:51 catalina.2018-01-19.log
+-rw-r----- 1 root root     265 Jan 20 18:38 catalina.2018-01-20.log
+-rw-r----- 1 root root    2830 Jan 21 21:19 catalina.2018-01-21.log
+-rw-r----- 1 root root     530 Jan 22 23:47 catalina.2018-01-22.log
+-rw-r----- 1 root root     531 Jan 23 13:51 catalina.2018-01-23.log
+-rw-r----- 1 root root     530 Jan 24 16:34 catalina.2018-01-24.log
+-rw-r----- 1 root root     796 Jan 25 22:44 catalina.2018-01-25.log
+-rw-r----- 1 root root    8886 Jan 26 17:29 catalina.2018-01-26.log
+-rw-r----- 1 root root     530 Jan 27 21:49 catalina.2018-01-27.log
+-rw-r----- 1 root root     531 Jan 28 23:47 catalina.2018-01-28.log
+-rw-r----- 1 root root     530 Jan 29 23:23 catalina.2018-01-29.log
+-rw-r----- 1 root root    1063 Jan 30 23:08 catalina.2018-01-30.log
+-rw-r----- 1 root root     796 Jan 31 14:35 catalina.2018-01-31.log
+-rw-r----- 1 root root  454571 Feb  1 21:43 catalina.2018-02-01.log
+-rw-r----- 1 root root    1591 Feb  2 21:13 catalina.2018-02-02.log
+-rw-r----- 1 root root     265 Feb  3 14:44 catalina.2018-02-03.log
+-rw-r----- 1 root root     530 Feb  4 15:08 catalina.2018-02-04.log
+-rw-r----- 1 root root    1061 Feb  5 22:39 catalina.2018-02-05.log
+-rw-r----- 1 root root    2832 Feb  6 20:43 catalina.2018-02-06.log
+-rw-r----- 1 root root     530 Feb  7 20:37 catalina.2018-02-07.log
+-rw-r----- 1 root root     795 Feb  8 18:57 catalina.2018-02-08.log
+-rw-r----- 1 root root    1683 Feb  9 19:00 catalina.2018-02-09.log
+-rw-r----- 1 root root     797 Feb 10 19:29 catalina.2018-02-10.log
+-rw-r----- 1 root root     266 Feb 11 19:02 catalina.2018-02-11.log
+-rw-r----- 1 root root    1947 Feb 12 18:58 catalina.2018-02-12.log
+-rw-r----- 1 root root     266 Feb 13 01:27 catalina.2018-02-13.log
+-rw-r----- 1 root root    1064 Feb 14 20:49 catalina.2018-02-14.log
+-rw-r----- 1 root root     265 Feb 15 01:24 catalina.2018-02-15.log
+-rw-rw---- 1 root root       0 Feb 15 08:36 catalina.out
+-rw-rw---- 1 root root      20 Feb 15 08:36 catalina.out.1.gz
+-rw-r----- 1 root root       0 Nov  9 12:09 host-manager.2017-11-09.log
+-rw-r----- 1 root root       0 Nov 13 11:16 host-manager.2017-11-13.log
+-rw-r----- 1 root root       0 Nov 15 11:30 host-manager.2017-11-15.log
+-rw-r----- 1 root root       0 Nov 16 04:05 host-manager.2017-11-16.log
+-rw-r----- 1 root root       0 Nov 17 06:39 host-manager.2017-11-17.log
+-rw-r----- 1 root root       0 Dec 18 06:04 host-manager.2017-12-18.log
+-rw-r----- 1 root root       0 Jan 19 06:46 host-manager.2018-01-19.log
+-rw-r----- 1 root root       0 Feb  1 07:09 host-manager.2018-02-01.log
+-rw-r----- 1 root root    1627 Nov  9 12:21 localhost.2017-11-09.log
+-rw-r----- 1 root root     814 Nov 13 11:16 localhost.2017-11-13.log
+-rw-r----- 1 root root    1391 Nov 15 11:30 localhost.2017-11-15.log
+-rw-r----- 1 root root    4287 Nov 16 13:02 localhost.2017-11-16.log
+-rw-r----- 1 root root   74613 Nov 17 16:35 localhost.2017-11-17.log
+-rw-r----- 1 root root   12569 Nov 20 22:42 localhost.2017-11-20.log
+-rw-r----- 1 root root   12568 Nov 21 00:33 localhost.2017-11-21.log
+-rw-r----- 1 root root   12568 Nov 28 02:40 localhost.2017-11-28.log
+-rw-r----- 1 root root   25137 Dec 14 23:20 localhost.2017-12-14.log
+-rw-r----- 1 root root    1715 Dec 18 06:05 localhost.2017-12-18.log
+-rw-r----- 1 root root    1692 Jan 10 09:48 localhost.2018-01-10.log
+-rw-r----- 1 root root    1714 Jan 19 06:46 localhost.2018-01-19.log
+-rw-r----- 1 root root   24106 Feb  1 19:59 localhost.2018-02-01.log
+-rw-r----- 1 root root   33825 Feb 13 20:28 localhost.2018-02-13.log
+-rw-r----- 1 root root   11276 Feb 14 21:23 localhost.2018-02-14.log
+-rw-r----- 1 root root   14911 Nov  9 12:54 localhost_access_log.2017-11-09.txt
+-rw-r----- 1 root root  326628 Nov 14 00:00 localhost_access_log.2017-11-13.txt
+-rw-r----- 1 root root  629570 Nov 15 00:00 localhost_access_log.2017-11-14.txt
+-rw-r----- 1 root root  977674 Nov 15 23:59 localhost_access_log.2017-11-15.txt
+-rw-r----- 1 root root  851219 Nov 16 23:59 localhost_access_log.2017-11-16.txt
+-rw-r----- 1 root root 2803129 Nov 22 23:59 localhost_access_log.2017-11-22.txt
+-rw-r----- 1 root root 1221655 Nov 24 00:00 localhost_access_log.2017-11-23.txt
+-rw-r----- 1 root root 1562569 Nov 25 00:00 localhost_access_log.2017-11-24.txt
+-rw-r----- 1 root root 1557250 Nov 26 00:00 localhost_access_log.2017-11-25.txt
+-rw-r----- 1 root root 1500965 Nov 27 00:00 localhost_access_log.2017-11-26.txt
+-rw-r----- 1 root root 4002322 Nov 28 00:00 localhost_access_log.2017-11-27.txt
+-rw-r----- 1 root root 6613600 Nov 29 00:00 localhost_access_log.2017-11-28.txt
+-rw-r----- 1 root root 4632050 Nov 29 23:59 localhost_access_log.2017-11-29.txt
+-rw-r----- 1 root root 3603657 Nov 30 23:59 localhost_access_log.2017-11-30.txt
+-rw-r----- 1 root root 5328764 Dec  2 00:00 localhost_access_log.2017-12-01.txt
+-rw-r----- 1 root root 3586762 Dec  2 23:59 localhost_access_log.2017-12-02.txt
+-rw-r----- 1 root root 2242711 Dec  4 00:00 localhost_access_log.2017-12-03.txt
+-rw-r----- 1 root root 3201558 Dec  5 00:00 localhost_access_log.2017-12-04.txt
+-rw-r----- 1 root root 2606608 Dec  5 23:59 localhost_access_log.2017-12-05.txt
+-rw-r----- 1 root root 2872833 Dec  6 23:59 localhost_access_log.2017-12-06.txt
+-rw-r----- 1 root root 2713110 Dec  8 00:00 localhost_access_log.2017-12-07.txt
+-rw-r----- 1 root root 2429310 Dec  8 23:59 localhost_access_log.2017-12-08.txt
+-rw-r----- 1 root root 2127307 Dec 10 00:00 localhost_access_log.2017-12-09.txt
+-rw-r----- 1 root root 1277831 Dec 10 23:59 localhost_access_log.2017-12-10.txt
+-rw-r----- 1 root root 2256629 Dec 12 00:00 localhost_access_log.2017-12-11.txt
+-rw-r----- 1 root root 2590293 Dec 12 23:59 localhost_access_log.2017-12-12.txt
+-rw-r----- 1 root root 2145128 Dec 13 23:59 localhost_access_log.2017-12-13.txt
+-rw-r----- 1 root root 2552275 Dec 14 23:59 localhost_access_log.2017-12-14.txt
+-rw-r----- 1 root root 2085543 Dec 16 00:00 localhost_access_log.2017-12-15.txt
+-rw-r----- 1 root root 1485796 Dec 17 00:00 localhost_access_log.2017-12-16.txt
+-rw-r----- 1 root root  927172 Dec 18 00:00 localhost_access_log.2017-12-17.txt
+-rw-r----- 1 root root 2488768 Dec 19 00:00 localhost_access_log.2017-12-18.txt
+-rw-r----- 1 root root 1988237 Dec 20 00:00 localhost_access_log.2017-12-19.txt
+-rw-r----- 1 root root 2562821 Dec 20 23:59 localhost_access_log.2017-12-20.txt
+-rw-r----- 1 root root 2226730 Dec 22 00:00 localhost_access_log.2017-12-21.txt
+-rw-r----- 1 root root 2139031 Dec 23 00:00 localhost_access_log.2017-12-22.txt
+-rw-r----- 1 root root 1285253 Dec 23 23:59 localhost_access_log.2017-12-23.txt
+-rw-r----- 1 root root 1212184 Dec 25 00:00 localhost_access_log.2017-12-24.txt
+-rw-r----- 1 root root 1235302 Dec 26 00:00 localhost_access_log.2017-12-25.txt
+-rw-r----- 1 root root 1998596 Dec 26 23:59 localhost_access_log.2017-12-26.txt
+-rw-r----- 1 root root 2138700 Dec 28 00:00 localhost_access_log.2017-12-27.txt
+-rw-r----- 1 root root 2204218 Dec 29 00:00 localhost_access_log.2017-12-28.txt
+-rw-r----- 1 root root 1945638 Dec 29 23:59 localhost_access_log.2017-12-29.txt
+-rw-r----- 1 root root 1305027 Dec 31 00:00 localhost_access_log.2017-12-30.txt
+-rw-r----- 1 root root 1358328 Dec 31 23:59 localhost_access_log.2017-12-31.txt
+-rw-r----- 1 root root 1360426 Jan  2 00:00 localhost_access_log.2018-01-01.txt
+-rw-r----- 1 root root 2209844 Jan  3 00:00 localhost_access_log.2018-01-02.txt
+-rw-r----- 1 root root 2575137 Jan  3 23:59 localhost_access_log.2018-01-03.txt
+-rw-r----- 1 root root 2439730 Jan  4 23:59 localhost_access_log.2018-01-04.txt
+-rw-r----- 1 root root 2345628 Jan  5 23:59 localhost_access_log.2018-01-05.txt
+-rw-r----- 1 root root 1344585 Jan  6 23:59 localhost_access_log.2018-01-06.txt
+-rw-r----- 1 root root 1272046 Jan  7 23:59 localhost_access_log.2018-01-07.txt
+-rw-r----- 1 root root 2876244 Jan  9 00:00 localhost_access_log.2018-01-08.txt
+-rw-r----- 1 root root 2614176 Jan 10 00:00 localhost_access_log.2018-01-09.txt
+-rw-r----- 1 root root 3860104 Jan 11 00:00 localhost_access_log.2018-01-10.txt
+-rw-r----- 1 root root 4745994 Jan 12 00:00 localhost_access_log.2018-01-11.txt
+-rw-r----- 1 root root 4229441 Jan 13 00:00 localhost_access_log.2018-01-12.txt
+-rw-r----- 1 root root 2180735 Jan 13 23:59 localhost_access_log.2018-01-13.txt
+-rw-r----- 1 root root 1381216 Jan 14 23:59 localhost_access_log.2018-01-14.txt
+-rw-r----- 1 root root 2542867 Jan 15 23:59 localhost_access_log.2018-01-15.txt
+-rw-r----- 1 root root 3013835 Jan 17 00:00 localhost_access_log.2018-01-16.txt
+-rw-r----- 1 root root 3157603 Jan 17 23:59 localhost_access_log.2018-01-17.txt
+-rw-r----- 1 root root 3048784 Jan 19 00:00 localhost_access_log.2018-01-18.txt
+-rw-r----- 1 root root 3370642 Jan 19 23:59 localhost_access_log.2018-01-19.txt
+-rw-r----- 1 root root 1540485 Jan 21 00:00 localhost_access_log.2018-01-20.txt
+-rw-r----- 1 root root 1359439 Jan 21 23:59 localhost_access_log.2018-01-21.txt
+-rw-r----- 1 root root 3179674 Jan 23 00:00 localhost_access_log.2018-01-22.txt
+-rw-r----- 1 root root 2593879 Jan 24 00:00 localhost_access_log.2018-01-23.txt
+-rw-r----- 1 root root 2808925 Jan 25 00:00 localhost_access_log.2018-01-24.txt
+-rw-r----- 1 root root 2486708 Jan 26 00:00 localhost_access_log.2018-01-25.txt
+-rw-r----- 1 root root 2329039 Jan 26 23:59 localhost_access_log.2018-01-26.txt
+-rw-r----- 1 root root 1150207 Jan 27 23:59 localhost_access_log.2018-01-27.txt
+-rw-r----- 1 root root 1016343 Jan 28 23:59 localhost_access_log.2018-01-28.txt
+-rw-r----- 1 root root 2401342 Jan 29 23:59 localhost_access_log.2018-01-29.txt
+-rw-r----- 1 root root 2938129 Jan 30 23:59 localhost_access_log.2018-01-30.txt
+-rw-r----- 1 root root 2871459 Jan 31 23:59 localhost_access_log.2018-01-31.txt
+-rw-r----- 1 root root 3076189 Feb  2 00:00 localhost_access_log.2018-02-01.txt
+-rw-r----- 1 root root 2576706 Feb  3 00:00 localhost_access_log.2018-02-02.txt
+-rw-r----- 1 root root 1120372 Feb  3 23:59 localhost_access_log.2018-02-03.txt
+-rw-r----- 1 root root  968659 Feb  4 23:59 localhost_access_log.2018-02-04.txt
+-rw-r----- 1 root root 2592423 Feb  5 23:59 localhost_access_log.2018-02-05.txt
+-rw-r----- 1 root root 2465447 Feb  7 00:00 localhost_access_log.2018-02-06.txt
+-rw-r----- 1 root root 2862611 Feb  8 00:00 localhost_access_log.2018-02-07.txt
+-rw-r----- 1 root root 2970879 Feb  9 00:00 localhost_access_log.2018-02-08.txt
+-rw-r----- 1 root root 3190755 Feb  9 23:59 localhost_access_log.2018-02-09.txt
+-rw-r----- 1 root root 1234899 Feb 10 23:59 localhost_access_log.2018-02-10.txt
+-rw-r----- 1 root root  984853 Feb 11 23:59 localhost_access_log.2018-02-11.txt
+-rw-r----- 1 root root 2612319 Feb 12 23:59 localhost_access_log.2018-02-12.txt
+-rw-r----- 1 root root 2690398 Feb 14 00:00 localhost_access_log.2018-02-13.txt
+-rw-r----- 1 root root 2626587 Feb 15 00:00 localhost_access_log.2018-02-14.txt
+-rw-r----- 1 root root  489969 Feb 15 08:41 localhost_access_log.2018-02-15.txt
+-rw-r----- 1 root root       0 Nov  9 12:09 manager.2017-11-09.log
+-rw-r----- 1 root root       0 Nov 13 11:16 manager.2017-11-13.log
+-rw-r----- 1 root root       0 Nov 15 11:30 manager.2017-11-15.log
+-rw-r----- 1 root root       0 Nov 16 04:05 manager.2017-11-16.log
+-rw-r----- 1 root root       0 Nov 17 06:39 manager.2017-11-17.log
+-rw-r----- 1 root root       0 Dec 18 06:04 manager.2017-12-18.log
+-rw-r----- 1 root root       0 Jan 19 06:46 manager.2018-01-19.log
+-rw-r----- 1 root root       0 Feb  1 07:09 manager.2018-02-01.log
+[root@ip-172-28-0-177 logs]# du -sh catalina.out.1.gz
+4.0K    catalina.out.1.gz
+[root@ip-172-28-0-177 logs]# cd
+[root@ip-172-28-0-177 ~]#
+[root@ip-172-28-0-177 ~]#
+[root@ip-172-28-0-177 ~]#
+[root@ip-172-28-0-177 ~]# df -h
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/xvda1       30G   26G  3.6G  88% /
+devtmpfs        3.9G   64K  3.9G   1% /dev
+tmpfs           3.9G     0  3.9G   0% /dev/shm
+[root@ip-172-28-0-177 ~]# /etc/init.d/
+acpid             cloud-config      httpd             lvm2-monitor      network           postgresql92      rpcgssd           snmpd
+atd               cloud-final       ip6tables         mcstrans          nfs               postgresql95      rpcidmapd         snmptrapd
+auditd            cloud-init        iptables          mdmonitor         nfslock           psacct            rpcsvcgssd        sshd
+blk-availability  cloud-init-local  irqbalance        memcached         nrpe              quota_nld         rsyslog           svnserve
+cfn-hup           crond             kdump             messagebus        ntpd              rdisc             saslauthd         udev-post
+cgconfig          halt              killall           netconsole        ntpdate           rngd              sendmail          vsftpd
+cgred             htcacheclean      lvm2-lvmetad      netfs             postgresql        rpcbind           single
+[root@ip-172-28-0-177 ~]# /etc/init.d/
+acpid             cloud-config      httpd             lvm2-monitor      network           postgresql92      rpcgssd           snmpd
+atd               cloud-final       ip6tables         mcstrans          nfs               postgresql95      rpcidmapd         snmptrapd
+auditd            cloud-init        iptables          mdmonitor         nfslock           psacct            rpcsvcgssd        sshd
+blk-availability  cloud-init-local  irqbalance        memcached         nrpe              quota_nld         rsyslog           svnserve
+cfn-hup           crond             kdump             messagebus        ntpd              rdisc             saslauthd         udev-post
+cgconfig          halt              killall           netconsole        ntpdate           rngd              sendmail          vsftpd
+cgred             htcacheclean      lvm2-lvmetad      netfs             postgresql        rpcbind           single
+[root@ip-172-28-0-177 ~]# /etc/init.d/rsyslog reload
+[root@ip-172-28-0-177 ~]# /etc/init.d/rsyslog status
+rsyslogd (pid  2578) is running...
+[root@ip-172-28-0-177 ~]# cd /opt/tomcat/logs/
+[root@ip-172-28-0-177 logs]# ls -lhtr
+total 203M
+-rw-r----- 1 root root    0 Nov  9 12:09 manager.2017-11-09.log
+-rw-r----- 1 root root    0 Nov  9 12:09 host-manager.2017-11-09.log
+-rw-r----- 1 root root 1.6K Nov  9 12:21 localhost.2017-11-09.log
+-rw-r----- 1 root root 489K Nov  9 12:42 catalina.2017-11-09.log
+-rw-r----- 1 root root  15K Nov  9 12:54 localhost_access_log.2017-11-09.txt
+-rw-r----- 1 root root    0 Nov 13 11:16 manager.2017-11-13.log
+-rw-r----- 1 root root    0 Nov 13 11:16 host-manager.2017-11-13.log
+-rw-r----- 1 root root  814 Nov 13 11:16 localhost.2017-11-13.log
+-rw-r----- 1 root root 237K Nov 13 11:17 catalina.2017-11-13.log
+-rw-r----- 1 root root 319K Nov 14 00:00 localhost_access_log.2017-11-13.txt
+-rw-r----- 1 root root 1.4K Nov 14 10:17 catalina.2017-11-14.log
+-rw-r----- 1 root root 615K Nov 15 00:00 localhost_access_log.2017-11-14.txt
+-rw-r----- 1 root root    0 Nov 15 11:30 manager.2017-11-15.log
+-rw-r----- 1 root root    0 Nov 15 11:30 host-manager.2017-11-15.log
+-rw-r----- 1 root root 1.4K Nov 15 11:30 localhost.2017-11-15.log
+-rw-r----- 1 root root 251K Nov 15 13:58 catalina.2017-11-15.log
+-rw-r----- 1 root root 955K Nov 15 23:59 localhost_access_log.2017-11-15.txt
+-rw-r----- 1 root root    0 Nov 16 04:05 manager.2017-11-16.log
+-rw-r----- 1 root root    0 Nov 16 04:05 host-manager.2017-11-16.log
+-rw-r----- 1 root root 4.2K Nov 16 13:02 localhost.2017-11-16.log
+-rw-r----- 1 root root 832K Nov 16 23:59 localhost_access_log.2017-11-16.txt
+-rw-r----- 1 root root    0 Nov 17 06:39 manager.2017-11-17.log
+-rw-r----- 1 root root    0 Nov 17 06:39 host-manager.2017-11-17.log
+-rw-r----- 1 root root  73K Nov 17 16:35 localhost.2017-11-17.log
+-rw-r----- 1 root root 8.7K Nov 19 09:56 catalina.2017-11-19.log
+-rw-r----- 1 root root 1.7K Nov 20 22:29 catalina.2017-11-20.log
+-rw-r----- 1 root root  13K Nov 20 22:42 localhost.2017-11-20.log
+-rw-r----- 1 root root  13K Nov 21 00:33 localhost.2017-11-21.log
+-rw-r----- 1 root root  795 Nov 21 21:47 catalina.2017-11-21.log
+-rw-r----- 1 root root  796 Nov 22 22:52 catalina.2017-11-22.log
+-rw-r----- 1 root root 2.7M Nov 22 23:59 localhost_access_log.2017-11-22.txt
+-rw-r----- 1 root root 1.2M Nov 24 00:00 localhost_access_log.2017-11-23.txt
+-rw-r----- 1 root root 1.3K Nov 24 18:24 catalina.2017-11-24.log
+-rw-r----- 1 root root 1.5M Nov 25 00:00 localhost_access_log.2017-11-24.txt
+-rw-r----- 1 root root  265 Nov 25 16:25 catalina.2017-11-25.log
+-rw-r----- 1 root root 1.5M Nov 26 00:00 localhost_access_log.2017-11-25.txt
+-rw-r----- 1 root root  796 Nov 26 22:09 catalina.2017-11-26.log
+-rw-r----- 1 root root 1.5M Nov 27 00:00 localhost_access_log.2017-11-26.txt
+-rw-r----- 1 root root  796 Nov 27 20:13 catalina.2017-11-27.log
+-rw-r----- 1 root root 3.9M Nov 28 00:00 localhost_access_log.2017-11-27.txt
+-rw-r----- 1 root root  13K Nov 28 02:40 localhost.2017-11-28.log
+-rw-r----- 1 root root 1.4K Nov 28 20:31 catalina.2017-11-28.log
+-rw-r----- 1 root root 6.4M Nov 29 00:00 localhost_access_log.2017-11-28.txt
+-rw-r----- 1 root root  531 Nov 29 14:21 catalina.2017-11-29.log
+-rw-r----- 1 root root 4.5M Nov 29 23:59 localhost_access_log.2017-11-29.txt
+-rw-r----- 1 root root  531 Nov 30 08:38 catalina.2017-11-30.log
+-rw-r----- 1 root root 3.5M Nov 30 23:59 localhost_access_log.2017-11-30.txt
+-rw-r----- 1 root root  795 Dec  1 01:43 catalina.2017-12-01.log
+-rw-r----- 1 root root 5.1M Dec  2 00:00 localhost_access_log.2017-12-01.txt
+-rw-r----- 1 root root  795 Dec  2 16:30 catalina.2017-12-02.log
+-rw-r----- 1 root root 3.5M Dec  2 23:59 localhost_access_log.2017-12-02.txt
+-rw-r----- 1 root root  796 Dec  3 21:58 catalina.2017-12-03.log
+-rw-r----- 1 root root 2.2M Dec  4 00:00 localhost_access_log.2017-12-03.txt
+-rw-r----- 1 root root  530 Dec  4 22:33 catalina.2017-12-04.log
+-rw-r----- 1 root root 3.1M Dec  5 00:00 localhost_access_log.2017-12-04.txt
+-rw-r----- 1 root root 1.7K Dec  5 21:43 catalina.2017-12-05.log
+-rw-r----- 1 root root 2.5M Dec  5 23:59 localhost_access_log.2017-12-05.txt
+-rw-r----- 1 root root  266 Dec  6 17:10 catalina.2017-12-06.log
+-rw-r----- 1 root root 2.8M Dec  6 23:59 localhost_access_log.2017-12-06.txt
+-rw-r----- 1 root root  531 Dec  7 21:37 catalina.2017-12-07.log
+-rw-r----- 1 root root 2.6M Dec  8 00:00 localhost_access_log.2017-12-07.txt
+-rw-r----- 1 root root 1.7K Dec  8 22:48 catalina.2017-12-08.log
+-rw-r----- 1 root root 2.4M Dec  8 23:59 localhost_access_log.2017-12-08.txt
+-rw-r----- 1 root root  531 Dec  9 23:02 catalina.2017-12-09.log
+-rw-r----- 1 root root 2.1M Dec 10 00:00 localhost_access_log.2017-12-09.txt
+-rw-r----- 1 root root  531 Dec 10 18:18 catalina.2017-12-10.log
+-rw-r----- 1 root root 1.3M Dec 10 23:59 localhost_access_log.2017-12-10.txt
+-rw-r----- 1 root root  795 Dec 11 19:36 catalina.2017-12-11.log
+-rw-r----- 1 root root 2.2M Dec 12 00:00 localhost_access_log.2017-12-11.txt
+-rw-r----- 1 root root 1.2K Dec 12 07:10 catalina.2017-12-12.log
+-rw-r----- 1 root root 2.5M Dec 12 23:59 localhost_access_log.2017-12-12.txt
+-rw-r----- 1 root root  795 Dec 13 15:35 catalina.2017-12-13.log
+-rw-r----- 1 root root 2.1M Dec 13 23:59 localhost_access_log.2017-12-13.txt
+-rw-r----- 1 root root  795 Dec 14 20:10 catalina.2017-12-14.log
+-rw-r----- 1 root root  25K Dec 14 23:20 localhost.2017-12-14.log
+-rw-r----- 1 root root 2.5M Dec 14 23:59 localhost_access_log.2017-12-14.txt
+-rw-r----- 1 root root 2.6K Dec 15 22:59 catalina.2017-12-15.log
+-rw-r----- 1 root root 2.0M Dec 16 00:00 localhost_access_log.2017-12-15.txt
+-rw-r----- 1 root root 8.5K Dec 16 23:28 catalina.2017-12-16.log
+-rw-r----- 1 root root 1.5M Dec 17 00:00 localhost_access_log.2017-12-16.txt
+-rw-r----- 1 root root  531 Dec 17 10:15 catalina.2017-12-17.log
+-rw-r----- 1 root root 906K Dec 18 00:00 localhost_access_log.2017-12-17.txt
+-rw-r----- 1 root root    0 Dec 18 06:04 manager.2017-12-18.log
+-rw-r----- 1 root root    0 Dec 18 06:04 host-manager.2017-12-18.log
+-rw-r----- 1 root root 1.7K Dec 18 06:05 localhost.2017-12-18.log
+-rw-r----- 1 root root 474K Dec 18 22:30 catalina.2017-12-18.log
+-rw-r----- 1 root root 2.4M Dec 19 00:00 localhost_access_log.2017-12-18.txt
+-rw-r----- 1 root root  265 Dec 19 16:37 catalina.2017-12-19.log
+-rw-r----- 1 root root 1.9M Dec 20 00:00 localhost_access_log.2017-12-19.txt
+-rw-r----- 1 root root 2.6K Dec 20 19:08 catalina.2017-12-20.log
+-rw-r----- 1 root root 2.5M Dec 20 23:59 localhost_access_log.2017-12-20.txt
+-rw-r----- 1 root root 1.7K Dec 21 23:24 catalina.2017-12-21.log
+-rw-r----- 1 root root 2.2M Dec 22 00:00 localhost_access_log.2017-12-21.txt
+-rw-r----- 1 root root  795 Dec 22 21:20 catalina.2017-12-22.log
+-rw-r----- 1 root root 2.1M Dec 23 00:00 localhost_access_log.2017-12-22.txt
+-rw-r----- 1 root root 1.4K Dec 23 21:39 catalina.2017-12-23.log
+-rw-r----- 1 root root 1.3M Dec 23 23:59 localhost_access_log.2017-12-23.txt
+-rw-r----- 1 root root  795 Dec 24 19:44 catalina.2017-12-24.log
+-rw-r----- 1 root root 1.2M Dec 25 00:00 localhost_access_log.2017-12-24.txt
+-rw-r----- 1 root root  530 Dec 25 10:41 catalina.2017-12-25.log
+-rw-r----- 1 root root 1.2M Dec 26 00:00 localhost_access_log.2017-12-25.txt
+-rw-r----- 1 root root 1.3K Dec 26 20:35 catalina.2017-12-26.log
+-rw-r----- 1 root root 2.0M Dec 26 23:59 localhost_access_log.2017-12-26.txt
+-rw-r----- 1 root root  265 Dec 27 16:54 catalina.2017-12-27.log
+-rw-r----- 1 root root 2.1M Dec 28 00:00 localhost_access_log.2017-12-27.txt
+-rw-r----- 1 root root  530 Dec 28 06:05 catalina.2017-12-28.log
+-rw-r----- 1 root root 2.2M Dec 29 00:00 localhost_access_log.2017-12-28.txt
+-rw-r----- 1 root root  795 Dec 29 08:53 catalina.2017-12-29.log
+-rw-r----- 1 root root 1.9M Dec 29 23:59 localhost_access_log.2017-12-29.txt
+-rw-r----- 1 root root  530 Dec 30 20:24 catalina.2017-12-30.log
+-rw-r----- 1 root root 1.3M Dec 31 00:00 localhost_access_log.2017-12-30.txt
+-rw-r----- 1 root root  265 Dec 31 15:54 catalina.2017-12-31.log
+-rw-r----- 1 root root 1.3M Dec 31 23:59 localhost_access_log.2017-12-31.txt
+-rw-r----- 1 root root 1.2K Jan  1 07:05 catalina.2018-01-01.log
+-rw-r----- 1 root root 1.3M Jan  2 00:00 localhost_access_log.2018-01-01.txt
+-rw-r----- 1 root root  530 Jan  2 18:13 catalina.2018-01-02.log
+-rw-r----- 1 root root 2.2M Jan  3 00:00 localhost_access_log.2018-01-02.txt
+-rw-r----- 1 root root 1.3K Jan  3 22:40 catalina.2018-01-03.log
+-rw-r----- 1 root root 2.5M Jan  3 23:59 localhost_access_log.2018-01-03.txt
+-rw-r----- 1 root root  530 Jan  4 21:55 catalina.2018-01-04.log
+-rw-r----- 1 root root 2.4M Jan  4 23:59 localhost_access_log.2018-01-04.txt
+-rw-r----- 1 root root 1.7K Jan  5 15:47 catalina.2018-01-05.log
+-rw-r----- 1 root root 2.3M Jan  5 23:59 localhost_access_log.2018-01-05.txt
+-rw-r----- 1 root root  531 Jan  6 19:41 catalina.2018-01-06.log
+-rw-r----- 1 root root 1.3M Jan  6 23:59 localhost_access_log.2018-01-06.txt
+-rw-r----- 1 root root  531 Jan  7 21:11 catalina.2018-01-07.log
+-rw-r----- 1 root root 1.3M Jan  7 23:59 localhost_access_log.2018-01-07.txt
+-rw-r----- 1 root root 2.8M Jan  9 00:00 localhost_access_log.2018-01-08.txt
+-rw-r----- 1 root root  796 Jan  9 18:19 catalina.2018-01-09.log
+-rw-r----- 1 root root 2.5M Jan 10 00:00 localhost_access_log.2018-01-09.txt
+-rw-r----- 1 root root 1.7K Jan 10 09:48 localhost.2018-01-10.log
+-rw-r----- 1 root root 1.7K Jan 10 16:59 catalina.2018-01-10.log
+-rw-r----- 1 root root 3.7M Jan 11 00:00 localhost_access_log.2018-01-10.txt
+-rw-r----- 1 root root  530 Jan 11 20:05 catalina.2018-01-11.log
+-rw-r----- 1 root root 4.6M Jan 12 00:00 localhost_access_log.2018-01-11.txt
+-rw-r----- 1 root root 2.2K Jan 12 22:26 catalina.2018-01-12.log
+-rw-r----- 1 root root 4.1M Jan 13 00:00 localhost_access_log.2018-01-12.txt
+-rw-r----- 1 root root 1.2K Jan 13 10:30 catalina.2018-01-13.log
+-rw-r----- 1 root root 2.1M Jan 13 23:59 localhost_access_log.2018-01-13.txt
+-rw-r----- 1 root root 1.4M Jan 14 23:59 localhost_access_log.2018-01-14.txt
+-rw-r----- 1 root root  795 Jan 15 16:09 catalina.2018-01-15.log
+-rw-r----- 1 root root 2.5M Jan 15 23:59 localhost_access_log.2018-01-15.txt
+-rw-r----- 1 root root  531 Jan 16 18:22 catalina.2018-01-16.log
+-rw-r----- 1 root root 2.9M Jan 17 00:00 localhost_access_log.2018-01-16.txt
+-rw-r----- 1 root root 1.7K Jan 17 17:28 catalina.2018-01-17.log
+-rw-r----- 1 root root 3.1M Jan 17 23:59 localhost_access_log.2018-01-17.txt
+-rw-r----- 1 root root 2.0K Jan 18 22:15 catalina.2018-01-18.log
+-rw-r----- 1 root root 3.0M Jan 19 00:00 localhost_access_log.2018-01-18.txt
+-rw-r----- 1 root root    0 Jan 19 06:46 manager.2018-01-19.log
+-rw-r----- 1 root root    0 Jan 19 06:46 host-manager.2018-01-19.log
+-rw-r----- 1 root root 1.7K Jan 19 06:46 localhost.2018-01-19.log
+-rw-r----- 1 root root 485K Jan 19 14:51 catalina.2018-01-19.log
+-rw-r----- 1 root root 3.3M Jan 19 23:59 localhost_access_log.2018-01-19.txt
+-rw-r----- 1 root root  265 Jan 20 18:38 catalina.2018-01-20.log
+-rw-r----- 1 root root 1.5M Jan 21 00:00 localhost_access_log.2018-01-20.txt
+-rw-r----- 1 root root 2.8K Jan 21 21:19 catalina.2018-01-21.log
+-rw-r----- 1 root root 1.3M Jan 21 23:59 localhost_access_log.2018-01-21.txt
+-rw-r----- 1 root root  530 Jan 22 23:47 catalina.2018-01-22.log
+-rw-r----- 1 root root 3.1M Jan 23 00:00 localhost_access_log.2018-01-22.txt
+-rw-r----- 1 root root  531 Jan 23 13:51 catalina.2018-01-23.log
+-rw-r----- 1 root root 2.5M Jan 24 00:00 localhost_access_log.2018-01-23.txt
+-rw-r----- 1 root root  530 Jan 24 16:34 catalina.2018-01-24.log
+-rw-r----- 1 root root 2.7M Jan 25 00:00 localhost_access_log.2018-01-24.txt
+-rw-r----- 1 root root  796 Jan 25 22:44 catalina.2018-01-25.log
+-rw-r----- 1 root root 2.4M Jan 26 00:00 localhost_access_log.2018-01-25.txt
+-rw-r----- 1 root root 8.7K Jan 26 17:29 catalina.2018-01-26.log
+-rw-r----- 1 root root 2.3M Jan 26 23:59 localhost_access_log.2018-01-26.txt
+-rw-r----- 1 root root  530 Jan 27 21:49 catalina.2018-01-27.log
+-rw-r----- 1 root root 1.1M Jan 27 23:59 localhost_access_log.2018-01-27.txt
+-rw-r----- 1 root root  531 Jan 28 23:47 catalina.2018-01-28.log
+-rw-r----- 1 root root 993K Jan 28 23:59 localhost_access_log.2018-01-28.txt
+-rw-r----- 1 root root  530 Jan 29 23:23 catalina.2018-01-29.log
+-rw-r----- 1 root root 2.3M Jan 29 23:59 localhost_access_log.2018-01-29.txt
+-rw-r----- 1 root root 1.1K Jan 30 23:08 catalina.2018-01-30.log
+-rw-r----- 1 root root 2.9M Jan 30 23:59 localhost_access_log.2018-01-30.txt
+-rw-r----- 1 root root  796 Jan 31 14:35 catalina.2018-01-31.log
+-rw-r----- 1 root root 2.8M Jan 31 23:59 localhost_access_log.2018-01-31.txt
+-rw-r----- 1 root root    0 Feb  1 07:09 manager.2018-02-01.log
+-rw-r----- 1 root root    0 Feb  1 07:09 host-manager.2018-02-01.log
+-rw-r----- 1 root root  24K Feb  1 19:59 localhost.2018-02-01.log
+-rw-r----- 1 root root 444K Feb  1 21:43 catalina.2018-02-01.log
+-rw-r----- 1 root root 3.0M Feb  2 00:00 localhost_access_log.2018-02-01.txt
+-rw-r----- 1 root root 1.6K Feb  2 21:13 catalina.2018-02-02.log
+-rw-r----- 1 root root 2.5M Feb  3 00:00 localhost_access_log.2018-02-02.txt
+-rw-r----- 1 root root  265 Feb  3 14:44 catalina.2018-02-03.log
+-rw-r----- 1 root root 1.1M Feb  3 23:59 localhost_access_log.2018-02-03.txt
+-rw-r----- 1 root root  530 Feb  4 15:08 catalina.2018-02-04.log
+-rw-r----- 1 root root 946K Feb  4 23:59 localhost_access_log.2018-02-04.txt
+-rw-r----- 1 root root 1.1K Feb  5 22:39 catalina.2018-02-05.log
+-rw-r----- 1 root root 2.5M Feb  5 23:59 localhost_access_log.2018-02-05.txt
+-rw-r----- 1 root root 2.8K Feb  6 20:43 catalina.2018-02-06.log
+-rw-r----- 1 root root 2.4M Feb  7 00:00 localhost_access_log.2018-02-06.txt
+-rw-r----- 1 root root  530 Feb  7 20:37 catalina.2018-02-07.log
+-rw-r----- 1 root root 2.8M Feb  8 00:00 localhost_access_log.2018-02-07.txt
+-rw-r----- 1 root root  795 Feb  8 18:57 catalina.2018-02-08.log
+-rw-r----- 1 root root 2.9M Feb  9 00:00 localhost_access_log.2018-02-08.txt
+-rw-r----- 1 root root 1.7K Feb  9 19:00 catalina.2018-02-09.log
+-rw-r----- 1 root root 3.1M Feb  9 23:59 localhost_access_log.2018-02-09.txt
+-rw-r----- 1 root root  797 Feb 10 19:29 catalina.2018-02-10.log
+-rw-r----- 1 root root 1.2M Feb 10 23:59 localhost_access_log.2018-02-10.txt
+-rw-r----- 1 root root  266 Feb 11 19:02 catalina.2018-02-11.log
+-rw-r----- 1 root root 962K Feb 11 23:59 localhost_access_log.2018-02-11.txt
+-rw-r----- 1 root root 2.0K Feb 12 18:58 catalina.2018-02-12.log
+-rw-r----- 1 root root 2.5M Feb 12 23:59 localhost_access_log.2018-02-12.txt
+-rw-r----- 1 root root  266 Feb 13 01:27 catalina.2018-02-13.log
+-rw-r----- 1 root root  34K Feb 13 20:28 localhost.2018-02-13.log
+-rw-r----- 1 root root 2.6M Feb 14 00:00 localhost_access_log.2018-02-13.txt
+-rw-r----- 1 root root 1.1K Feb 14 20:49 catalina.2018-02-14.log
+-rw-r----- 1 root root  12K Feb 14 21:23 localhost.2018-02-14.log
+-rw-r----- 1 root root 2.6M Feb 15 00:00 localhost_access_log.2018-02-14.txt
+-rw-r----- 1 root root  265 Feb 15 01:24 catalina.2018-02-15.log
+-rw-rw---- 1 root root   20 Feb 15 08:36 catalina.out.1.gz
+-rw-rw---- 1 root root    0 Feb 15 08:36 catalina.out
+-rw-r----- 1 root root 481K Feb 15 08:46 localhost_access_log.2018-02-15.txt
+[root@ip-172-28-0-177 logs]# tail -ff catalina.out
+catalina.out       catalina.out.1.gz
+[root@ip-172-28-0-177 logs]# tail -ff catalina.out
+^[^C
+[root@ip-172-28-0-177 logs]# cd
+[root@ip-172-28-0-177 ~]#
+[root@ip-172-28-0-177 ~]#
+[root@ip-172-28-0-177 ~]#
+[root@ip-172-28-0-177 ~]# fdisk -l
+WARNING: fdisk GPT support is currently new, and therefore in an experimental phase. Use at your own discretion.
+
+Disk /dev/xvda: 32.2 GB, 32212254720 bytes, 62914560 sectors
+Units = sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+Disk label type: gpt
+
+
+#         Start          End    Size  Type            Name
+ 1         4096     62914526     30G  Linux filesyste Linux
+128         2048         4095      1M  BIOS boot parti BIOS Boot Partition
+
+Disk /dev/xvdb: 53.7 GB, 53687091200 bytes, 104857600 sectors
+Units = sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+
+WARNING: fdisk GPT support is currently new, and therefore in an experimental phase. Use at your own discretion.
+
+Disk /dev/xvdf: 32.2 GB, 32212254720 bytes, 62914560 sectors
+Units = sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+Disk label type: gpt
+
+
+#         Start          End    Size  Type            Name
+ 1         4096     62914526     30G  Linux filesyste Linux
+128         2048         4095      1M  BIOS boot parti BIOS Boot Partition
+[root@ip-172-28-0-177 ~]# df -h
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/xvda1       30G   26G  3.6G  88% /
+devtmpfs        3.9G   72K  3.9G   1% /dev
+tmpfs           3.9G     0  3.9G   0% /dev/shm
+[root@ip-172-28-0-177 ~]# mkdir backup
+[root@ip-172-28-0-177 ~]# mount /dev/xvdf /backup
+mount: mount point /backup does not exist
+[root@ip-172-28-0-177 ~]# mount /dev/xvdf
+.aws/          .bash_history  .bash_profile  CloudWatch/    java0.log      java1.log      logsbackup/    .pki/          .ssh/          .tcshrc        .wget-hsts
+backup/        .bash_logout   .bashrc        .cshrc         java0.log.lck  java1.log.lck  onboard.csv    .psql_history  .subversion/   .viminfo
+[root@ip-172-28-0-177 ~]# mount /dev/xvdf
+.aws/          .bash_history  .bash_profile  CloudWatch/    java0.log      java1.log      logsbackup/    .pki/          .ssh/          .tcshrc        .wget-hsts
+backup/        .bash_logout   .bashrc        .cshrc         java0.log.lck  java1.log.lck  onboard.csv    .psql_history  .subversion/   .viminfo
+[root@ip-172-28-0-177 ~]# mount /dev/xvdf backup/
+mount: /dev/xvdf is write-protected, mounting read-only
+mount: wrong fs type, bad option, bad superblock on /dev/xvdf,
+       missing codepage or helper program, or other error
+
+       In some cases useful info is found in syslog - try
+       dmesg | tail or so.
+[root@ip-172-28-0-177 ~]# df -h
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/xvda1       30G   26G  3.6G  88% /
+devtmpfs        3.9G   72K  3.9G   1% /dev
+tmpfs           3.9G     0  3.9G   0% /dev/shm
+[root@ip-172-28-0-177 ~]# fdisk -l
+WARNING: fdisk GPT support is currently new, and therefore in an experimental phase. Use at your own discretion.
+
+Disk /dev/xvda: 32.2 GB, 32212254720 bytes, 62914560 sectors
+Units = sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+Disk label type: gpt
+
+
+#         Start          End    Size  Type            Name
+ 1         4096     62914526     30G  Linux filesyste Linux
+128         2048         4095      1M  BIOS boot parti BIOS Boot Partition
+
+Disk /dev/xvdb: 53.7 GB, 53687091200 bytes, 104857600 sectors
+Units = sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+
+WARNING: fdisk GPT support is currently new, and therefore in an experimental phase. Use at your own discretion.
+
+Disk /dev/xvdf: 32.2 GB, 32212254720 bytes, 62914560 sectors
+Units = sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+Disk label type: gpt
+
+
+#         Start          End    Size  Type            Name
+ 1         4096     62914526     30G  Linux filesyste Linux
+128         2048         4095      1M  BIOS boot parti BIOS Boot Partition
+[root@ip-172-28-0-177 ~]# mount /dev/xvdf
+xvdf   xvdf1
+[root@ip-172-28-0-177 ~]# mount /dev/xvdf
+xvdf   xvdf1
+[root@ip-172-28-0-177 ~]# mount /dev/xvdf backup/
+mount: /dev/xvdf is write-protected, mounting read-only
+mount: wrong fs type, bad option, bad superblock on /dev/xvdf,
+       missing codepage or helper program, or other error
+
+       In some cases useful info is found in syslog - try
+       dmesg | tail or so.
+[root@ip-172-28-0-177 ~]# cat /etc/i
+idmapd.conf  image-id     init/        init.d/      inittab      inputrc      iproute2/    issue        issue.net
+[root@ip-172-28-0-177 ~]# cat /etc/i
+idmapd.conf  image-id     init/        init.d/      inittab      inputrc      iproute2/    issue        issue.net
+[root@ip-172-28-0-177 ~]# cat /etc/issue
+Amazon Linux AMI release 2016.03
+Kernel \r on an \m
+
+[root@ip-172-28-0-177 ~]# df -h
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/xvda1       30G   26G  3.6G  88% /
+devtmpfs        3.9G   72K  3.9G   1% /dev
+tmpfs           3.9G     0  3.9G   0% /dev/shm
+[root@ip-172-28-0-177 ~]# mount /dev/xvdf backup/
+xvdf   xvdf1
+[root@ip-172-28-0-177 ~]# mount /dev/xvdf backup/
+xvdf   xvdf1
+[root@ip-172-28-0-177 ~]# mount /dev/xvdf1 backup/
+[root@ip-172-28-0-177 ~]# cd backup/
+[root@ip-172-28-0-177 backup]# ls
+bin  boot  cgroup  dev  etc  home  lib  lib64  local  lost+found  media  mnt  opt  proc  root  run  sbin  selinux  srv  sys  test  tmp  usr  var
+[root@ip-172-28-0-177 backup]# cd opt/tomcat/logs/
+[root@ip-172-28-0-177 logs]# ls
+catalina.2017-11-09.log  catalina.2017-12-29.log  catalina.2018-02-12.log              localhost_access_log.2017-12-02.txt  localhost_access_log.2018-01-14.txt
+catalina.2017-11-13.log  catalina.2017-12-30.log  catalina.2018-02-13.log              localhost_access_log.2017-12-03.txt  localhost_access_log.2018-01-15.txt
+catalina.2017-11-14.log  catalina.2017-12-31.log  catalina.2018-02-14.log              localhost_access_log.2017-12-04.txt  localhost_access_log.2018-01-16.txt
+catalina.2017-11-15.log  catalina.2018-01-01.log  catalina.2018-02-15.log              localhost_access_log.2017-12-05.txt  localhost_access_log.2018-01-17.txt
+catalina.2017-11-19.log  catalina.2018-01-02.log  catalina.out                         localhost_access_log.2017-12-06.txt  localhost_access_log.2018-01-18.txt
+catalina.2017-11-20.log  catalina.2018-01-03.log  host-manager.2017-11-09.log          localhost_access_log.2017-12-07.txt  localhost_access_log.2018-01-19.txt
+catalina.2017-11-21.log  catalina.2018-01-04.log  host-manager.2017-11-13.log          localhost_access_log.2017-12-08.txt  localhost_access_log.2018-01-20.txt
+catalina.2017-11-22.log  catalina.2018-01-05.log  host-manager.2017-11-15.log          localhost_access_log.2017-12-09.txt  localhost_access_log.2018-01-21.txt
+catalina.2017-11-24.log  catalina.2018-01-06.log  host-manager.2017-11-16.log          localhost_access_log.2017-12-10.txt  localhost_access_log.2018-01-22.txt
+catalina.2017-11-25.log  catalina.2018-01-07.log  host-manager.2017-11-17.log          localhost_access_log.2017-12-11.txt  localhost_access_log.2018-01-23.txt
+catalina.2017-11-26.log  catalina.2018-01-09.log  host-manager.2017-12-18.log          localhost_access_log.2017-12-12.txt  localhost_access_log.2018-01-24.txt
+catalina.2017-11-27.log  catalina.2018-01-10.log  host-manager.2018-01-19.log          localhost_access_log.2017-12-13.txt  localhost_access_log.2018-01-25.txt
+catalina.2017-11-28.log  catalina.2018-01-11.log  host-manager.2018-02-01.log          localhost_access_log.2017-12-14.txt  localhost_access_log.2018-01-26.txt
+catalina.2017-11-29.log  catalina.2018-01-12.log  localhost.2017-11-09.log             localhost_access_log.2017-12-15.txt  localhost_access_log.2018-01-27.txt
+catalina.2017-11-30.log  catalina.2018-01-13.log  localhost.2017-11-13.log             localhost_access_log.2017-12-16.txt  localhost_access_log.2018-01-28.txt
+catalina.2017-12-01.log  catalina.2018-01-15.log  localhost.2017-11-15.log             localhost_access_log.2017-12-17.txt  localhost_access_log.2018-01-29.txt
+catalina.2017-12-02.log  catalina.2018-01-16.log  localhost.2017-11-16.log             localhost_access_log.2017-12-18.txt  localhost_access_log.2018-01-30.txt
+catalina.2017-12-03.log  catalina.2018-01-17.log  localhost.2017-11-17.log             localhost_access_log.2017-12-19.txt  localhost_access_log.2018-01-31.txt
+catalina.2017-12-04.log  catalina.2018-01-18.log  localhost.2017-11-20.log             localhost_access_log.2017-12-20.txt  localhost_access_log.2018-02-01.txt
+catalina.2017-12-05.log  catalina.2018-01-19.log  localhost.2017-11-21.log             localhost_access_log.2017-12-21.txt  localhost_access_log.2018-02-02.txt
+catalina.2017-12-06.log  catalina.2018-01-20.log  localhost.2017-11-28.log             localhost_access_log.2017-12-22.txt  localhost_access_log.2018-02-03.txt
+catalina.2017-12-07.log  catalina.2018-01-21.log  localhost.2017-12-14.log             localhost_access_log.2017-12-23.txt  localhost_access_log.2018-02-04.txt
+catalina.2017-12-08.log  catalina.2018-01-22.log  localhost.2017-12-18.log             localhost_access_log.2017-12-24.txt  localhost_access_log.2018-02-05.txt
+catalina.2017-12-09.log  catalina.2018-01-23.log  localhost.2018-01-10.log             localhost_access_log.2017-12-25.txt  localhost_access_log.2018-02-06.txt
+catalina.2017-12-10.log  catalina.2018-01-24.log  localhost.2018-01-19.log             localhost_access_log.2017-12-26.txt  localhost_access_log.2018-02-07.txt
+catalina.2017-12-11.log  catalina.2018-01-25.log  localhost.2018-02-01.log             localhost_access_log.2017-12-27.txt  localhost_access_log.2018-02-08.txt
+catalina.2017-12-12.log  catalina.2018-01-26.log  localhost.2018-02-13.log             localhost_access_log.2017-12-28.txt  localhost_access_log.2018-02-09.txt
+catalina.2017-12-13.log  catalina.2018-01-27.log  localhost.2018-02-14.log             localhost_access_log.2017-12-29.txt  localhost_access_log.2018-02-10.txt
+catalina.2017-12-14.log  catalina.2018-01-28.log  localhost_access_log.2017-11-09.txt  localhost_access_log.2017-12-30.txt  localhost_access_log.2018-02-11.txt
+catalina.2017-12-15.log  catalina.2018-01-29.log  localhost_access_log.2017-11-13.txt  localhost_access_log.2017-12-31.txt  localhost_access_log.2018-02-12.txt
+catalina.2017-12-16.log  catalina.2018-01-30.log  localhost_access_log.2017-11-14.txt  localhost_access_log.2018-01-01.txt  localhost_access_log.2018-02-13.txt
+catalina.2017-12-17.log  catalina.2018-01-31.log  localhost_access_log.2017-11-15.txt  localhost_access_log.2018-01-02.txt  localhost_access_log.2018-02-14.txt
+catalina.2017-12-18.log  catalina.2018-02-01.log  localhost_access_log.2017-11-16.txt  localhost_access_log.2018-01-03.txt  localhost_access_log.2018-02-15.txt
+catalina.2017-12-19.log  catalina.2018-02-02.log  localhost_access_log.2017-11-22.txt  localhost_access_log.2018-01-04.txt  manager.2017-11-09.log
+catalina.2017-12-20.log  catalina.2018-02-03.log  localhost_access_log.2017-11-23.txt  localhost_access_log.2018-01-05.txt  manager.2017-11-13.log
+catalina.2017-12-21.log  catalina.2018-02-04.log  localhost_access_log.2017-11-24.txt  localhost_access_log.2018-01-06.txt  manager.2017-11-15.log
+catalina.2017-12-22.log  catalina.2018-02-05.log  localhost_access_log.2017-11-25.txt  localhost_access_log.2018-01-07.txt  manager.2017-11-16.log
+catalina.2017-12-23.log  catalina.2018-02-06.log  localhost_access_log.2017-11-26.txt  localhost_access_log.2018-01-08.txt  manager.2017-11-17.log
+catalina.2017-12-24.log  catalina.2018-02-07.log  localhost_access_log.2017-11-27.txt  localhost_access_log.2018-01-09.txt  manager.2017-12-18.log
+catalina.2017-12-25.log  catalina.2018-02-08.log  localhost_access_log.2017-11-28.txt  localhost_access_log.2018-01-10.txt  manager.2018-01-19.log
+catalina.2017-12-26.log  catalina.2018-02-09.log  localhost_access_log.2017-11-29.txt  localhost_access_log.2018-01-11.txt  manager.2018-02-01.log
+catalina.2017-12-27.log  catalina.2018-02-10.log  localhost_access_log.2017-11-30.txt  localhost_access_log.2018-01-12.txt
+catalina.2017-12-28.log  catalina.2018-02-11.log  localhost_access_log.2017-12-01.txt  localhost_access_log.2018-01-13.txt
+[root@ip-172-28-0-177 logs]# ls -lhtr
+total 5.4G
+-rw-r----- 1 root root    0 Nov  9 12:09 manager.2017-11-09.log
+-rw-r----- 1 root root    0 Nov  9 12:09 host-manager.2017-11-09.log
+-rw-r----- 1 root root 1.6K Nov  9 12:21 localhost.2017-11-09.log
+-rw-r----- 1 root root 489K Nov  9 12:42 catalina.2017-11-09.log
+-rw-r----- 1 root root  15K Nov  9 12:54 localhost_access_log.2017-11-09.txt
+-rw-r----- 1 root root    0 Nov 13 11:16 manager.2017-11-13.log
+-rw-r----- 1 root root    0 Nov 13 11:16 host-manager.2017-11-13.log
+-rw-r----- 1 root root  814 Nov 13 11:16 localhost.2017-11-13.log
+-rw-r----- 1 root root 237K Nov 13 11:17 catalina.2017-11-13.log
+-rw-r----- 1 root root 319K Nov 14 00:00 localhost_access_log.2017-11-13.txt
+-rw-r----- 1 root root 1.4K Nov 14 10:17 catalina.2017-11-14.log
+-rw-r----- 1 root root 615K Nov 15 00:00 localhost_access_log.2017-11-14.txt
+-rw-r----- 1 root root    0 Nov 15 11:30 manager.2017-11-15.log
+-rw-r----- 1 root root    0 Nov 15 11:30 host-manager.2017-11-15.log
+-rw-r----- 1 root root 1.4K Nov 15 11:30 localhost.2017-11-15.log
+-rw-r----- 1 root root 251K Nov 15 13:58 catalina.2017-11-15.log
+-rw-r----- 1 root root 955K Nov 15 23:59 localhost_access_log.2017-11-15.txt
+-rw-r----- 1 root root    0 Nov 16 04:05 manager.2017-11-16.log
+-rw-r----- 1 root root    0 Nov 16 04:05 host-manager.2017-11-16.log
+-rw-r----- 1 root root 4.2K Nov 16 13:02 localhost.2017-11-16.log
+-rw-r----- 1 root root 832K Nov 16 23:59 localhost_access_log.2017-11-16.txt
+-rw-r----- 1 root root    0 Nov 17 06:39 manager.2017-11-17.log
+-rw-r----- 1 root root    0 Nov 17 06:39 host-manager.2017-11-17.log
+-rw-r----- 1 root root  73K Nov 17 16:35 localhost.2017-11-17.log
+-rw-r----- 1 root root 8.7K Nov 19 09:56 catalina.2017-11-19.log
+-rw-r----- 1 root root 1.7K Nov 20 22:29 catalina.2017-11-20.log
+-rw-r----- 1 root root  13K Nov 20 22:42 localhost.2017-11-20.log
+-rw-r----- 1 root root  13K Nov 21 00:33 localhost.2017-11-21.log
+-rw-r----- 1 root root  795 Nov 21 21:47 catalina.2017-11-21.log
+-rw-r----- 1 root root  796 Nov 22 22:52 catalina.2017-11-22.log
+-rw-r----- 1 root root 2.7M Nov 22 23:59 localhost_access_log.2017-11-22.txt
+-rw-r----- 1 root root 1.2M Nov 24 00:00 localhost_access_log.2017-11-23.txt
+-rw-r----- 1 root root 1.3K Nov 24 18:24 catalina.2017-11-24.log
+-rw-r----- 1 root root 1.5M Nov 25 00:00 localhost_access_log.2017-11-24.txt
+-rw-r----- 1 root root  265 Nov 25 16:25 catalina.2017-11-25.log
+-rw-r----- 1 root root 1.5M Nov 26 00:00 localhost_access_log.2017-11-25.txt
+-rw-r----- 1 root root  796 Nov 26 22:09 catalina.2017-11-26.log
+-rw-r----- 1 root root 1.5M Nov 27 00:00 localhost_access_log.2017-11-26.txt
+-rw-r----- 1 root root  796 Nov 27 20:13 catalina.2017-11-27.log
+-rw-r----- 1 root root 3.9M Nov 28 00:00 localhost_access_log.2017-11-27.txt
+-rw-r----- 1 root root  13K Nov 28 02:40 localhost.2017-11-28.log
+-rw-r----- 1 root root 1.4K Nov 28 20:31 catalina.2017-11-28.log
+-rw-r----- 1 root root 6.4M Nov 29 00:00 localhost_access_log.2017-11-28.txt
+-rw-r----- 1 root root  531 Nov 29 14:21 catalina.2017-11-29.log
+-rw-r----- 1 root root 4.5M Nov 29 23:59 localhost_access_log.2017-11-29.txt
+-rw-r----- 1 root root  531 Nov 30 08:38 catalina.2017-11-30.log
+-rw-r----- 1 root root 3.5M Nov 30 23:59 localhost_access_log.2017-11-30.txt
+-rw-r----- 1 root root  795 Dec  1 01:43 catalina.2017-12-01.log
+-rw-r----- 1 root root 5.1M Dec  2 00:00 localhost_access_log.2017-12-01.txt
+-rw-r----- 1 root root  795 Dec  2 16:30 catalina.2017-12-02.log
+-rw-r----- 1 root root 3.5M Dec  2 23:59 localhost_access_log.2017-12-02.txt
+-rw-r----- 1 root root  796 Dec  3 21:58 catalina.2017-12-03.log
+-rw-r----- 1 root root 2.2M Dec  4 00:00 localhost_access_log.2017-12-03.txt
+-rw-r----- 1 root root  530 Dec  4 22:33 catalina.2017-12-04.log
+-rw-r----- 1 root root 3.1M Dec  5 00:00 localhost_access_log.2017-12-04.txt
+-rw-r----- 1 root root 1.7K Dec  5 21:43 catalina.2017-12-05.log
+-rw-r----- 1 root root 2.5M Dec  5 23:59 localhost_access_log.2017-12-05.txt
+-rw-r----- 1 root root  266 Dec  6 17:10 catalina.2017-12-06.log
+-rw-r----- 1 root root 2.8M Dec  6 23:59 localhost_access_log.2017-12-06.txt
+-rw-r----- 1 root root  531 Dec  7 21:37 catalina.2017-12-07.log
+-rw-r----- 1 root root 2.6M Dec  8 00:00 localhost_access_log.2017-12-07.txt
+-rw-r----- 1 root root 1.7K Dec  8 22:48 catalina.2017-12-08.log
+-rw-r----- 1 root root 2.4M Dec  8 23:59 localhost_access_log.2017-12-08.txt
+-rw-r----- 1 root root  531 Dec  9 23:02 catalina.2017-12-09.log
+-rw-r----- 1 root root 2.1M Dec 10 00:00 localhost_access_log.2017-12-09.txt
+-rw-r----- 1 root root  531 Dec 10 18:18 catalina.2017-12-10.log
+-rw-r----- 1 root root 1.3M Dec 10 23:59 localhost_access_log.2017-12-10.txt
+-rw-r----- 1 root root  795 Dec 11 19:36 catalina.2017-12-11.log
+-rw-r----- 1 root root 2.2M Dec 12 00:00 localhost_access_log.2017-12-11.txt
+-rw-r----- 1 root root 1.2K Dec 12 07:10 catalina.2017-12-12.log
+-rw-r----- 1 root root 2.5M Dec 12 23:59 localhost_access_log.2017-12-12.txt
+-rw-r----- 1 root root  795 Dec 13 15:35 catalina.2017-12-13.log
+-rw-r----- 1 root root 2.1M Dec 13 23:59 localhost_access_log.2017-12-13.txt
+-rw-r----- 1 root root  795 Dec 14 20:10 catalina.2017-12-14.log
+-rw-r----- 1 root root  25K Dec 14 23:20 localhost.2017-12-14.log
+-rw-r----- 1 root root 2.5M Dec 14 23:59 localhost_access_log.2017-12-14.txt
+-rw-r----- 1 root root 2.6K Dec 15 22:59 catalina.2017-12-15.log
+-rw-r----- 1 root root 2.0M Dec 16 00:00 localhost_access_log.2017-12-15.txt
+-rw-r----- 1 root root 8.5K Dec 16 23:28 catalina.2017-12-16.log
+-rw-r----- 1 root root 1.5M Dec 17 00:00 localhost_access_log.2017-12-16.txt
+-rw-r----- 1 root root  531 Dec 17 10:15 catalina.2017-12-17.log
+-rw-r----- 1 root root 906K Dec 18 00:00 localhost_access_log.2017-12-17.txt
+-rw-r----- 1 root root    0 Dec 18 06:04 manager.2017-12-18.log
+-rw-r----- 1 root root    0 Dec 18 06:04 host-manager.2017-12-18.log
+-rw-r----- 1 root root 1.7K Dec 18 06:05 localhost.2017-12-18.log
+-rw-r----- 1 root root 474K Dec 18 22:30 catalina.2017-12-18.log
+-rw-r----- 1 root root 2.4M Dec 19 00:00 localhost_access_log.2017-12-18.txt
+-rw-r----- 1 root root  265 Dec 19 16:37 catalina.2017-12-19.log
+-rw-r----- 1 root root 1.9M Dec 20 00:00 localhost_access_log.2017-12-19.txt
+-rw-r----- 1 root root 2.6K Dec 20 19:08 catalina.2017-12-20.log
+-rw-r----- 1 root root 2.5M Dec 20 23:59 localhost_access_log.2017-12-20.txt
+-rw-r----- 1 root root 1.7K Dec 21 23:24 catalina.2017-12-21.log
+-rw-r----- 1 root root 2.2M Dec 22 00:00 localhost_access_log.2017-12-21.txt
+-rw-r----- 1 root root  795 Dec 22 21:20 catalina.2017-12-22.log
+-rw-r----- 1 root root 2.1M Dec 23 00:00 localhost_access_log.2017-12-22.txt
+-rw-r----- 1 root root 1.4K Dec 23 21:39 catalina.2017-12-23.log
+-rw-r----- 1 root root 1.3M Dec 23 23:59 localhost_access_log.2017-12-23.txt
+-rw-r----- 1 root root  795 Dec 24 19:44 catalina.2017-12-24.log
+-rw-r----- 1 root root 1.2M Dec 25 00:00 localhost_access_log.2017-12-24.txt
+-rw-r----- 1 root root  530 Dec 25 10:41 catalina.2017-12-25.log
+-rw-r----- 1 root root 1.2M Dec 26 00:00 localhost_access_log.2017-12-25.txt
+-rw-r----- 1 root root 1.3K Dec 26 20:35 catalina.2017-12-26.log
+-rw-r----- 1 root root 2.0M Dec 26 23:59 localhost_access_log.2017-12-26.txt
+-rw-r----- 1 root root  265 Dec 27 16:54 catalina.2017-12-27.log
+-rw-r----- 1 root root 2.1M Dec 28 00:00 localhost_access_log.2017-12-27.txt
+-rw-r----- 1 root root  530 Dec 28 06:05 catalina.2017-12-28.log
+-rw-r----- 1 root root 2.2M Dec 29 00:00 localhost_access_log.2017-12-28.txt
+-rw-r----- 1 root root  795 Dec 29 08:53 catalina.2017-12-29.log
+-rw-r----- 1 root root 1.9M Dec 29 23:59 localhost_access_log.2017-12-29.txt
+-rw-r----- 1 root root  530 Dec 30 20:24 catalina.2017-12-30.log
+-rw-r----- 1 root root 1.3M Dec 31 00:00 localhost_access_log.2017-12-30.txt
+-rw-r----- 1 root root  265 Dec 31 15:54 catalina.2017-12-31.log
+-rw-r----- 1 root root 1.3M Dec 31 23:59 localhost_access_log.2017-12-31.txt
+-rw-r----- 1 root root 1.2K Jan  1 07:05 catalina.2018-01-01.log
+-rw-r----- 1 root root 1.3M Jan  2 00:00 localhost_access_log.2018-01-01.txt
+-rw-r----- 1 root root  530 Jan  2 18:13 catalina.2018-01-02.log
+-rw-r----- 1 root root 2.2M Jan  3 00:00 localhost_access_log.2018-01-02.txt
+-rw-r----- 1 root root 1.3K Jan  3 22:40 catalina.2018-01-03.log
+-rw-r----- 1 root root 2.5M Jan  3 23:59 localhost_access_log.2018-01-03.txt
+-rw-r----- 1 root root  530 Jan  4 21:55 catalina.2018-01-04.log
+-rw-r----- 1 root root 2.4M Jan  4 23:59 localhost_access_log.2018-01-04.txt
+-rw-r----- 1 root root 1.7K Jan  5 15:47 catalina.2018-01-05.log
+-rw-r----- 1 root root 2.3M Jan  5 23:59 localhost_access_log.2018-01-05.txt
+-rw-r----- 1 root root  531 Jan  6 19:41 catalina.2018-01-06.log
+-rw-r----- 1 root root 1.3M Jan  6 23:59 localhost_access_log.2018-01-06.txt
+-rw-r----- 1 root root  531 Jan  7 21:11 catalina.2018-01-07.log
+-rw-r----- 1 root root 1.3M Jan  7 23:59 localhost_access_log.2018-01-07.txt
+-rw-r----- 1 root root 2.8M Jan  9 00:00 localhost_access_log.2018-01-08.txt
+-rw-r----- 1 root root  796 Jan  9 18:19 catalina.2018-01-09.log
+-rw-r----- 1 root root 2.5M Jan 10 00:00 localhost_access_log.2018-01-09.txt
+-rw-r----- 1 root root 1.7K Jan 10 09:48 localhost.2018-01-10.log
+-rw-r----- 1 root root 1.7K Jan 10 16:59 catalina.2018-01-10.log
+-rw-r----- 1 root root 3.7M Jan 11 00:00 localhost_access_log.2018-01-10.txt
+-rw-r----- 1 root root  530 Jan 11 20:05 catalina.2018-01-11.log
+-rw-r----- 1 root root 4.6M Jan 12 00:00 localhost_access_log.2018-01-11.txt
+-rw-r----- 1 root root 2.2K Jan 12 22:26 catalina.2018-01-12.log
+-rw-r----- 1 root root 4.1M Jan 13 00:00 localhost_access_log.2018-01-12.txt
+-rw-r----- 1 root root 1.2K Jan 13 10:30 catalina.2018-01-13.log
+-rw-r----- 1 root root 2.1M Jan 13 23:59 localhost_access_log.2018-01-13.txt
+-rw-r----- 1 root root 1.4M Jan 14 23:59 localhost_access_log.2018-01-14.txt
+-rw-r----- 1 root root  795 Jan 15 16:09 catalina.2018-01-15.log
+-rw-r----- 1 root root 2.5M Jan 15 23:59 localhost_access_log.2018-01-15.txt
+-rw-r----- 1 root root  531 Jan 16 18:22 catalina.2018-01-16.log
+-rw-r----- 1 root root 2.9M Jan 17 00:00 localhost_access_log.2018-01-16.txt
+-rw-r----- 1 root root 1.7K Jan 17 17:28 catalina.2018-01-17.log
+-rw-r----- 1 root root 3.1M Jan 17 23:59 localhost_access_log.2018-01-17.txt
+-rw-r----- 1 root root 2.0K Jan 18 22:15 catalina.2018-01-18.log
+-rw-r----- 1 root root 3.0M Jan 19 00:00 localhost_access_log.2018-01-18.txt
+-rw-r----- 1 root root    0 Jan 19 06:46 manager.2018-01-19.log
+-rw-r----- 1 root root    0 Jan 19 06:46 host-manager.2018-01-19.log
+-rw-r----- 1 root root 1.7K Jan 19 06:46 localhost.2018-01-19.log
+-rw-r----- 1 root root 485K Jan 19 14:51 catalina.2018-01-19.log
+-rw-r----- 1 root root 3.3M Jan 19 23:59 localhost_access_log.2018-01-19.txt
+-rw-r----- 1 root root  265 Jan 20 18:38 catalina.2018-01-20.log
+-rw-r----- 1 root root 1.5M Jan 21 00:00 localhost_access_log.2018-01-20.txt
+-rw-r----- 1 root root 2.8K Jan 21 21:19 catalina.2018-01-21.log
+-rw-r----- 1 root root 1.3M Jan 21 23:59 localhost_access_log.2018-01-21.txt
+-rw-r----- 1 root root  530 Jan 22 23:47 catalina.2018-01-22.log
+-rw-r----- 1 root root 3.1M Jan 23 00:00 localhost_access_log.2018-01-22.txt
+-rw-r----- 1 root root  531 Jan 23 13:51 catalina.2018-01-23.log
+-rw-r----- 1 root root 2.5M Jan 24 00:00 localhost_access_log.2018-01-23.txt
+-rw-r----- 1 root root  530 Jan 24 16:34 catalina.2018-01-24.log
+-rw-r----- 1 root root 2.7M Jan 25 00:00 localhost_access_log.2018-01-24.txt
+-rw-r----- 1 root root  796 Jan 25 22:44 catalina.2018-01-25.log
+-rw-r----- 1 root root 2.4M Jan 26 00:00 localhost_access_log.2018-01-25.txt
+-rw-r----- 1 root root 8.7K Jan 26 17:29 catalina.2018-01-26.log
+-rw-r----- 1 root root 2.3M Jan 26 23:59 localhost_access_log.2018-01-26.txt
+-rw-r----- 1 root root  530 Jan 27 21:49 catalina.2018-01-27.log
+-rw-r----- 1 root root 1.1M Jan 27 23:59 localhost_access_log.2018-01-27.txt
+-rw-r----- 1 root root  531 Jan 28 23:47 catalina.2018-01-28.log
+-rw-r----- 1 root root 993K Jan 28 23:59 localhost_access_log.2018-01-28.txt
+-rw-r----- 1 root root  530 Jan 29 23:23 catalina.2018-01-29.log
+-rw-r----- 1 root root 2.3M Jan 29 23:59 localhost_access_log.2018-01-29.txt
+-rw-r----- 1 root root 1.1K Jan 30 23:08 catalina.2018-01-30.log
+-rw-r----- 1 root root 2.9M Jan 30 23:59 localhost_access_log.2018-01-30.txt
+-rw-r----- 1 root root  796 Jan 31 14:35 catalina.2018-01-31.log
+-rw-r----- 1 root root 2.8M Jan 31 23:59 localhost_access_log.2018-01-31.txt
+-rw-r----- 1 root root    0 Feb  1 07:09 manager.2018-02-01.log
+-rw-r----- 1 root root    0 Feb  1 07:09 host-manager.2018-02-01.log
+-rw-r----- 1 root root  24K Feb  1 19:59 localhost.2018-02-01.log
+-rw-r----- 1 root root 444K Feb  1 21:43 catalina.2018-02-01.log
+-rw-r----- 1 root root 3.0M Feb  2 00:00 localhost_access_log.2018-02-01.txt
+-rw-r----- 1 root root 1.6K Feb  2 21:13 catalina.2018-02-02.log
+-rw-r----- 1 root root 2.5M Feb  3 00:00 localhost_access_log.2018-02-02.txt
+-rw-r----- 1 root root  265 Feb  3 14:44 catalina.2018-02-03.log
+-rw-r----- 1 root root 1.1M Feb  3 23:59 localhost_access_log.2018-02-03.txt
+-rw-r----- 1 root root  530 Feb  4 15:08 catalina.2018-02-04.log
+-rw-r----- 1 root root 946K Feb  4 23:59 localhost_access_log.2018-02-04.txt
+-rw-r----- 1 root root 1.1K Feb  5 22:39 catalina.2018-02-05.log
+-rw-r----- 1 root root 2.5M Feb  5 23:59 localhost_access_log.2018-02-05.txt
+-rw-r----- 1 root root 2.8K Feb  6 20:43 catalina.2018-02-06.log
+-rw-r----- 1 root root 2.4M Feb  7 00:00 localhost_access_log.2018-02-06.txt
+-rw-r----- 1 root root  530 Feb  7 20:37 catalina.2018-02-07.log
+-rw-r----- 1 root root 2.8M Feb  8 00:00 localhost_access_log.2018-02-07.txt
+-rw-r----- 1 root root  795 Feb  8 18:57 catalina.2018-02-08.log
+-rw-r----- 1 root root 2.9M Feb  9 00:00 localhost_access_log.2018-02-08.txt
+-rw-r----- 1 root root 1.7K Feb  9 19:00 catalina.2018-02-09.log
+-rw-r----- 1 root root 3.1M Feb  9 23:59 localhost_access_log.2018-02-09.txt
+-rw-r----- 1 root root  797 Feb 10 19:29 catalina.2018-02-10.log
+-rw-r----- 1 root root 1.2M Feb 10 23:59 localhost_access_log.2018-02-10.txt
+-rw-r----- 1 root root  266 Feb 11 19:02 catalina.2018-02-11.log
+-rw-r----- 1 root root 962K Feb 11 23:59 localhost_access_log.2018-02-11.txt
+-rw-r----- 1 root root 2.0K Feb 12 18:58 catalina.2018-02-12.log
+-rw-r----- 1 root root 2.5M Feb 12 23:59 localhost_access_log.2018-02-12.txt
+-rw-r----- 1 root root  266 Feb 13 01:27 catalina.2018-02-13.log
+-rw-r----- 1 root root  34K Feb 13 20:28 localhost.2018-02-13.log
+-rw-r----- 1 root root 2.6M Feb 14 00:00 localhost_access_log.2018-02-13.txt
+-rw-r----- 1 root root 1.1K Feb 14 20:49 catalina.2018-02-14.log
+-rw-r----- 1 root root  12K Feb 14 21:23 localhost.2018-02-14.log
+-rw-r----- 1 root root 2.6M Feb 15 00:00 localhost_access_log.2018-02-14.txt
+-rw-r----- 1 root root  265 Feb 15 01:24 catalina.2018-02-15.log
+-rw-r----- 1 root root 5.2G Feb 15 08:03 catalina.out
+-rw-r----- 1 root root 457K Feb 15 08:03 localhost_access_log.2018-02-15.txt
+[root@ip-172-28-0-177 logs]# history | grep aws
+  502  cat server_prd.xml | grep "pzv.ch4smfewd2v9.us-west-1.rds.amazonaws.com"
+  503  cat server_prd.xml | grep "pzvprodclone.ch4smfewd2v9.us-west-1.rds.amazonaws.com"
+  504  cat server.xml | grep "pzvprodclone.ch4smfewd2v9.us-west-1.rds.amazonaws.com"
+  505  cat server.xml | grep "pzvprodclone.ch4smfewd2v9.us-west-1.rds.amazonaws.com"
+  506  cat server.xml | grep "pzv.ch4smfewd2v9.us-west-1.rds.amazonaws.com"
+  761  psql -n -h pzv30.ch4smfewd2v9.us-west-1.rds.amazonaws.com:5432 -p 5432 -d pzv2 -U pzvaftermarketappuser2
+  762  psql -n -h pzv30.ch4smfewd2v9.us-west-1.rds.amazonaws.com -p 5432 -d pzv2 -U pzvaftermarketappuser2
+  816  aws s3 cp /opt/tomcat/logs/localhost_access_log.2017-11* s3://logsfrom172.28.0.177/
+  822  aws s3 cp localhost_access_log.2017-11-09.txt s3://logsfrom172.28.0.177/
+  823  aws s3 sync localhost_access_log.2017-11-13.txt s3://logsfrom172.28.0.177/
+  824  aws s3 sync localhost_access_log.2017-11 * s3://logsfrom172.28.0.177/
+  825  aws s3 sync localhost_access_log.2017-11* s3://logsfrom172.28.0.177/
+  826  aws s3 sync localhost_access_log.2017-11-* s3://logsfrom172.28.0.177/
+  827  aws s3 sync localhost_access_log.2017-11*  s3://logsfrom172.28.0.177/
+  828  aws s3 sync localhost_access_log.2017-11*  s3://logsfrom172.28.0.177
+  829  aws s3 sync localhost_access_log.2017-11*  s3://logsfrom172.28.0.177/
+  830  aws s3 sync localhost_access_log.2017-11-1*  s3://logsfrom172.28.0.177/
+  831  aws s3 sync localhost_access_log.2017-11-1 *  s3://logsfrom172.28.0.177/
+  832  aws s3 sync localhost_access_log.2017-11-* s3://logsfrom172.28.0.177
+  833  aws s3 sync localhost_access_log.2017-11- * s3://logsfrom172.28.0.177
+  834  aws s3 sync localhost_access_log.2017-11-22 * s3://logsfrom172.28.0.177
+  908  aws s3 cp secure-* s3://logsfrom172.28.0.177/
+  909  aws s3 cp secure-20180824 s3://logsfrom172.28.0.177/
+  910  aws s3 cp secure-20180204 s3://logsfrom172.28.0.177/
+  911  aws s3 cp secure-20180211 s3://logsfrom172.28.0.177/
+  912  aws s3 cp secure-20180128 s3://logsfrom172.28.0.177/
+  913  aws s3 cp secure-20180121 s3://logsfrom172.28.0.177/
+  918  aws s3 cp localhost_access_log.2017-11-17.txt s3://logsfrom172.28.0.177/
+  919  aws s3 cp localhost_access_log.2017-11-18.txt s3://logsfrom172.28.0.177/
+  920  aws s3 cp localhost_access_log.2017-11-19.txt s3://logsfrom172.28.0.177/
+  921  aws s3 cp localhost_access_log.2017-11-20.txt s3://logsfrom172.28.0.177/
+  922  aws s3 cp localhost_access_log.2017-11-21.txt s3://logsfrom172.28.0.177/
+  931  aws s3 cp catalina.2017-11-16.log s3://logsfrom172.28.0.177/
+  932  aws s3 cp  s3://logsfrom172.28.0.177/
+  952  aws s3 sync audit_old/ s3://logsfrom172.28.0.177/
+  960  aws s3 sync amazon-ssm-agent.log.1 s3://logsfrom172.28.0.177/
+  961  aws s3 sync amazon-ssm-agent.log.1 s3://logsfrom172.28.0.177/
+  962  aws s3 cp amazon-ssm-agent.log.1 s3://logsfrom172.28.0.177/
+  964  aws s3 cp amazon-ssm-agent.log.2 s3://logsfrom172.28.0.177/
+  967  aws s3 cp amazon-ssm-agent.log.3 s3://logsfrom172.28.0.177/
+  968  aws s3 cp amazon-ssm-agent.log.4 s3://logsfrom172.28.0.177/
+  975  aws s3  sync old_ssm_error/ s3://logsfrom172.28.0.177/
+  983  aws s3  cp messages-20180211 s3://logsfrom172.28.0.177/
+ 1153  history | grep aws
+[root@ip-172-28-0-177 logs]# aws s3  cp catalina.out s3://logsfrom172.28.0.177/
+upload: ./catalina.out to s3://logsfrom172.28.0.177/catalina.out
+[root@ip-172-28-0-177 logs]# df -h
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/xvda1       30G   26G  3.6G  88% /
+devtmpfs        3.9G   72K  3.9G   1% /dev
+tmpfs           3.9G     0  3.9G   0% /dev/shm
+/dev/xvdf1       30G   26G  3.7G  88% /root/backup
+[root@ip-172-28-0-177 logs]# cd /
+[root@ip-172-28-0-177 /]# cd /opt/
+[root@ip-172-28-0-177 opt]# ll
+total 24
+drwxr-xr-x  5 root root 4096 Jun  3  2016 aws
+drwxr-xr-x  3 root root 4096 Jun 28  2016 java
+drwxr-xr-x  3 root root 4096 Dec  5  2016 pzv
+drwxr-xr-x  3 root root 4096 Dec  9  2016 scripts
+drwxr-xr-x  9 root root 4096 Dec  2  2016 tomcat
+drwxr-xr-x 10 root root 4096 Feb  1 09:21 wso2is-5.1.0
+[root@ip-172-28-0-177 opt]# cd
+[root@ip-172-28-0-177 ~]#
+[root@ip-172-28-0-177 ~]#
+[root@ip-172-28-0-177 ~]#
+[root@ip-172-28-0-177 ~]#
+[root@ip-172-28-0-177 ~]#
+[root@ip-172-28-0-177 ~]#
+[root@ip-172-28-0-177 ~]#
+[root@ip-172-28-0-177 ~]#
+[root@ip-172-28-0-177 ~]#
+[root@ip-172-28-0-177 ~]#
+[root@ip-172-28-0-177 ~]#
+[root@ip-172-28-0-177 ~]# free -g
+             total       used       free     shared    buffers     cached
+Mem:             7          7          0          0          0          4
+-/+ buffers/cache:          3          4
+Swap:            0          0          0
+[root@ip-172-28-0-177 ~]# sync; echo 1 > /proc/sys/vm/drop_caches
+[root@ip-172-28-0-177 ~]# free -g
+             total       used       free     shared    buffers     cached
+Mem:             7          3          4          0          0          0
+-/+ buffers/cache:          3          4
+Swap:            0          0          0
+[root@ip-172-28-0-177 ~]# logout
+[admin@ip-172-28-0-177 ~]$ logout
+Connection to 172.28.0.177 closed.
+[admin@ip-172-32-0-132 ~]$

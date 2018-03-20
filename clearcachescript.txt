@@ -1,0 +1,25 @@
+
+1. create a file called clearcache.sh
+
+copy the below lines 
+
+#!/bin/bash
+OUTPUT=`/root/check_mem -f -w 20 -c 10 | cut -b 1-2`
+if [ $OUTPUT == OK ]
+then
+ echo "memory is fine"
+else
+ echo "clear cache"
+ echo 1 > /proc/sys/vm/drop_caches
+fi
+
+change the permission to chmod 755 for excution 
+
+
+
+then create a cronjob :
+
+Below line need to add crontb-e 
+
+#added by admin team
+0 */2 * * * /root/clearcache.sh >> /tmp/clearcache.log 2>&1

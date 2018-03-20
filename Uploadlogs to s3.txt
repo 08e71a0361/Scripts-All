@@ -1,0 +1,8 @@
+ aws s3 cp catalina.out  s3://logsfrom172.28.0.41/
+
+
+next clear the logs from file
+
+command: >catalina.out
+
+upload all logs to s3 
