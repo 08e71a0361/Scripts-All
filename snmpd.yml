@@ -1,0 +1,16 @@
+---
+- hosts: all
+
+  tasks:
+  - name: Install snmp packages
+    yum: name=net-snmp state=latest
+
+  - name: Enable snmp service
+    service: name=snmpd enabled=yes
+
+  - copy:
+            src: /home/admin/playbook/snmpd.conf
+            dest: /etc/snmp/snmpd.conf
+
+  - name: Restart snmpd service
+    service:  name=snmpd state=restarted
