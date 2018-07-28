@@ -1,0 +1,15 @@
+ansible PROD -m user -a "name=subhash"
+
+ansible QA -m file -a "dest=/home/amit/.ssh mode=755 owner=amit group=amit state=directory"
+
+ansible QA -m copy -a "dest=/home/amit/.ssh/authorized_keys mode=6400  owner=amit group=amit content='ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCtpGRFEqIucvMU7pSwH8qh7WFm9oeNvbOjOzcoFvaYsCrArg/2vyhzwFPx8WL+I1Y2NmbK5d3sKow2c4XG1WNG0y7dofXPLKOSQH09RTdslw0P7L1PvQEmjwRsfWiettEacvWekNPTXdgXNgBy33AwvLtBMULfAsX3/EoKbGJj2KtcmArt24PZ2NRDFeRr086JjtN8sBoi0vebzG2ipe0Q6T+ea3312DimZftKVIKNbRmuEdE1Av7GtbQM0TrEyzUghwRpnPmU3i8xagkHLxbF6NvrzLL/XclA6YxIe0p9qBv+/rO62cKAEWrvLDOuZRpcno7/g4GeGTzT3vfAniBf amit@ip-172-32-0-132'"
+
+
+ansible PROD -m user -a "name=subhash"
+
+
+ansible PROD -m file -a "dest=/home/subhash/.ssh mode=755 owner=subhash group=subhash state=directory"
+
+ansible PROD -m copy -a "dest=/home/subhash/.ssh/authorized_keys mode=6400  owner=subhash group=subhash content='ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCymG0OEVUAoi+Pz9Vt9v27+D4o3gKvNPfaBY3PM0rYi1mRC2HxjGW4KPv7OUYtJecmnKyj2xQeJryP8E2D7h0Ipfpykfnqm5LiT7ONColKMxZNV4y7BDmuoSxcwzrUz8+PbPLywixO4Xjj/Xv7uA5zekP067MIkYSEPQSWM/qw5ko89oUP1ZoV8/26BKY50ooVg+NHFqZ5l7UbTle37CkG6rFc+yvDQMvq4aSHHt3vqcPx7PMcJkwNQbeoVCcts00kttuBtLCRh7hwQ/fIYIAqHCleMBC/UnESwIX03N6mbwMZOr+BYV157RX/NYiUPHX/hE5H2PJKq1sh3q926RhB subhash@ip-172-32-0-132'"
+
+ansible PROD -m lineinfile -a "dest=/etc/sudoers line='chandru ALL=(ALL)     NOPASSWD: ALL'"
