@@ -1,0 +1,35 @@
+bastion server need to create user 
+
+step1: admin (Jump)
+
+command: adduser admin 
+next command for key : ssh-keygen
+
+we will get id_rsa   and id_rsa.pub
+
+mv id_rsa.pub to authorized_keys (need to create the dir)
+
+chmod 600 authorized_keys
+
+download the id_rsa key as a pem and convert into ppk by using putty gen
+
+u can able to login using ppk file 
+
+step2: client (which server needs to login)
+
+command: adduser admin
+
+next command for key : ssh-keygen
+
+we will get id_rsa   and id_rsa.pub  "don't use these keys"
+
+copy the jump admin authorized_keys to create here same authorized_keys and paste here 
+ chmod 600 authorized_keys
+
+
+Jump server  to client server 
+
+copy the same id_rsa.pub   to all client serevrs 
+
+for login to jump serevr use id_rsa key as ppk key 
+
