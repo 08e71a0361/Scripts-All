@@ -1,0 +1,34 @@
+'use strict';
+// Load the AWS SDK
+
+var aws = require('aws-sdk');
+
+// Construct the AWS S3 Object - 
+http: //docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/S3.html#constructor-property
+var s3 = new aws.S3({
+   apiVersion: '2006-03-01'
+});
+
+// Define 2 new variables for the source and destination buckets
+var srcBucket = "testsource001";
+var destBucket = "testdest001";
+var sourceObject = "search1.PNG";
+
+//Main function
+exports.handler = function (event, context, callback) {
+
+   //Copy the current object to the destination bucket
+   http: //docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/S3.html#copyObject-property
+   s3.copyObject({
+      CopySource: srcBucket + '/' + sourceObject,
+      Bucket: destBucket,
+      Key: sourceObject
+   }, function (copyErr, copyData) {
+      if (copyErr) {
+         console.log("Error: " + copyErr);
+      } else {
+         console.log('Copied OK');
+      }
+   });
+   callback(null, 'All done!');
+};
