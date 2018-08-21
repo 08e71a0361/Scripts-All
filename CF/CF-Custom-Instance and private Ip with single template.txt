@@ -1,0 +1,43 @@
+{
+  "AWSTemplateFormatVersion": "2010-09-09",
+  "Resources": {
+    "MyEc2Instance1": {
+      "Type": "AWS::EC2::Instance",
+      "Properties": {
+        "ImageId": "ami-0bed1f7c964e76b88",
+        "KeyName": "saas-centos-pod2",
+        "InstanceType": "t2.micro",
+        "SecurityGroupIds": [
+          "sg-0ae0309e36b60b2fd"
+        ],
+        "SubnetId": "subnet-0bea688500dce168a",
+        "Tags": [
+          {
+            "Key": "Name",
+            "Value": "Saas-pod1"
+          }
+        ],
+        "PrivateIpAddress": "172.21.11.13"
+      }
+    },
+    "MyEc2Instance2": {
+      "Type": "AWS::EC2::Instance",
+      "Properties": {
+        "ImageId": "ami-0bed1f7c964e76b88",
+        "KeyName": "saas-centos-pod2",
+        "InstanceType": "t2.micro",
+        "SecurityGroupIds": [
+          "sg-0ae0309e36b60b2fd"
+        ],
+        "SubnetId": "subnet-0bea688500dce168a",
+        "Tags": [
+          {
+            "Key": "Name",
+            "Value": "Saas-Pod2"
+          }
+        ]
+      }
+    }
+  },
+  "Description": "Multiple EC2 instances"
+}
