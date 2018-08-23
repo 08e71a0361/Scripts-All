@@ -1,0 +1,33 @@
+{
+  "Type": "AWS::EC2::SecurityGroup",
+  "Properties": {
+    "GroupName": "Allow http to client host",
+    "GroupDescription": "Allow http to client host",
+    "SecurityGroupEgress": [
+      {
+        "IpProtocol": "tcp",
+        "FromPort": 80,
+        "ToPort": 80,
+        "CidrIp": "0.0.0.0/0"
+      }
+    ],
+    "SecurityGroupIngress": [
+      {
+        "IpProtocol": "tcp",
+        "FromPort": 80,
+        "ToPort": 80,
+        "CidrIp": "0.0.0.0/0"
+      },
+      {
+        "IpProtocol": "tcp",
+        "CidrIp": "54.250.253.192/26",
+        "FromPort": "443",
+        "ToPort": "443"
+      }
+    ],
+    "Tags": [
+      "Name"
+    ],
+    "VpcId": "vpc-0fd58338e694c0684"
+  }
+}
